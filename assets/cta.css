@@ -32,3 +32,9 @@
 @media (max-width: 700px){
   .site-ctas{ left:12px; bottom:12px; }
 }
+
+/* small extra spacing between the two CTAs */
+.site-ctas .cta + .cta,
+.sidebar-ctas .cta + .cta,
+.home-ctas .cta + .cta { margin-left: 6px; margin-top: 6px; }
+
