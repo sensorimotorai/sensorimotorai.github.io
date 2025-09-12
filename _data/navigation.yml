@@ -1,0 +1,9 @@
+main:
+  - title: Home
+    url: /
+  - title: Schedule
+    url: /schedule/
+  - title: Tags
+    url: /tags/
+  - title: RL Debates
+    url: /debates/
