@@ -1,0 +1,19 @@
+.header-ctas {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.header-ctas a {
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-ctas a.primary {
+  background: #5b8def;
+  color: #fff;
+  border-color: #5b8def;
+}

@@ -7,3 +7,10 @@ main:
     url: /tags/
   - title: RL Debates
     url: /debates/
+
+timeline:
+  - title: 2025 Sep
+    url: /archive/#2025-09
+  - title: 2025 Aug
+    url: /archive/#2025-08
+

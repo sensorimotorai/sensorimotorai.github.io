@@ -22,3 +22,20 @@ nav:
 
 slack_url: https://join.slack.com/t/sensorimotorai/shared_invite/zt-39l98agsh-Y9U1nsk~DTw7WiPBsZtdAA
 youtube_url: https://www.youtube.com/@SensorimotorAI
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: timeline
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sidebar:
+        nav: timeline
+
