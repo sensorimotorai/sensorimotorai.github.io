@@ -3,10 +3,12 @@ description: Monthly journal club and RL Debate Series
 url: https://sensorimotorai.github.io
 theme: null
 remote_theme: mmistakes/minimal-mistakes
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 minimal_mistakes_skin: default
 
