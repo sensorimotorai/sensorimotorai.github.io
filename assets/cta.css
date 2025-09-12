@@ -17,3 +17,18 @@
   color: #fff;
   border-color: #5b8def;
 }
+
+.site-ctas{
+  position:fixed; left:16px; bottom:16px; display:flex; flex-direction:column; gap:8px;
+  z-index:9999;
+}
+.site-ctas .cta{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 12px; border-radius:12px; border:1px solid #ddd; background:#fff;
+  text-decoration:none; font-weight:600; box-shadow:0 8px 24px #0001;
+}
+.site-ctas .cta.primary{ background:#5b8def; color:#fff; border-color:#5b8def; }
+.site-ctas .icon{ height:16px; width:16px; display:inline-block; }
+@media (max-width: 700px){
+  .site-ctas{ left:12px; bottom:12px; }
+}
