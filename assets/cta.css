@@ -67,8 +67,9 @@ html {
 }
 .timeline-list .t-month {
   font-weight: 700;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 .timeline-list .t-title {
   font-weight: 400;
+  margin-left: 8px;
 }
