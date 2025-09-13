@@ -8,6 +8,8 @@ We are an interdisciplinary group of researchers from around the world who want 
 
 ![Sensorimotor AI Flyer](/assets/images/sensorimotor_flyer.png)
 
+![The organizers](/assets/images/organizers.jpeg)
+
 ---
 
 We primarily use Slack to communicate, organize future meetings, and share resources:
@@ -18,12 +20,6 @@ If you'd like to receive monthly email digest updates, sign up here:
 
 - [Sign up form]({{ site.signup_form_url }})
 
----
-
 Hope to see you on Slack!
 
-Once you're in, feel free to say hi in the **#social_introduce-yourself** channel.
-
----
-
-![The organizers](/assets/images/organizers.jpeg)
+Once you're in, feel free to say hi in the *#social_introduce-yourself* channel.

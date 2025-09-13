@@ -8,4 +8,4 @@ excerpt: Monthly journal club plus the RL Debate Series
   <img src="/assets/images/sensorimotor.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Oct 2, 2025 - *Active Inference* (leads: Eli Sennesh & Tommaso Salvatori)
+**Next session**: Oct 2, 2025 - *Active Inference* (presenters: Eli Sennesh & Tommaso Salvatori)
