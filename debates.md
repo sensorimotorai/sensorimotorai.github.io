@@ -4,11 +4,13 @@ title: "RL Debate Series"
 permalink: /debates/
 ---
 
-Why do we have brains? Simple! Brains are for *survival* and *reproduction*. And neither is possible without ***some action***. Therfore, brains are for producing actions (or behvaior).
+Why do we have brains? Simple! Brains are for *survival* and *reproduction*. And neither is possible without ***some action***.
 
-All animals move, even the ones that don't see. This puts *action* center stage in our quest for intelligence. But how can we formalize active learning?
+Therfore, brains are for producing *actions* (or behvaior).
 
-The mainstream approach is **reinforcement** learning (RL), which posits agents "act" to maximize "rewards".
+This puts action center stage in our quest for intelligence. But how can we formalize active learning?
+
+The mainstream approach is **reinforcement** learning (RL), which posits that agents "act" to maximize "rewards".
 
 Consider this canonical figure from the Sutton and Barto RL textbook:
 
