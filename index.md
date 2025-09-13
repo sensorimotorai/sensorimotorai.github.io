@@ -11,4 +11,5 @@ excerpt: Monthly journal club plus the RL Debate Series
 **Next session**: Thursday, Oct 2, 2025
 
 **Topic**: Active Inference
+
 **Presenters**: Eli Sennesh & Tommaso Salvatori
