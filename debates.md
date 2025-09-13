@@ -8,7 +8,7 @@ Why do we have brains? Simple! Brains are for *survival* and *reproduction*. And
 
 This puts action center stage in our quest for intelligence. But how can we formalize active learning?
 
-The mainstream approach is **reinforcement** learning (RL), which posits that agents "act" to maximize "rewards". Consider this canonical figure from the Sutton and Barto RL textbook:
+The mainstream approach is **reinforcement learning** (RL), which posits that agents "act" to maximize "rewards". Consider this canonical figure from the Sutton & Barto RL textbook:
 
 ![Sutton and Barto RL Diagram](/assets/images/sutton-barto.png)
 

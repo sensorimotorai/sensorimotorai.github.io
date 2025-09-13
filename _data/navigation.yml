@@ -11,6 +11,8 @@ main:
     url: "/debates/"
 
 timeline:
+  - title: "Archive"
+    url: "/archive/"
   - title: "2025 Oct — RL Debate #1: Active Inference"
     url: "/archive/#2025-10"
   - title: "2025 Sep — BONE, Duran-Martin et al., 2025"
