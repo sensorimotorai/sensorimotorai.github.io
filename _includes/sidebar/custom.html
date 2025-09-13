@@ -1,11 +1,11 @@
-<!-- Dynamic month list: each month links directly to that month's first post -->
+<!-- Dynamic month list: one post per month -->
 <ul class="timeline-list">
   {% assign groups = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" %}
   {% for g in groups %}
     {% assign first = g.items | first %}
     {% assign label = first.timeline_title %}
     {% if label == nil or label == "" %}
-      {% assign label = first.date | date: "%Y %b" | append: " — " | append: first.title %}
+      {% assign label = first.date | date: "%Y %b" | append: " - " | append: first.title %}
     {% endif %}
     <li><a href="{{ first.url | relative_url }}">{{ label }}</a></li>
   {% endfor %}
