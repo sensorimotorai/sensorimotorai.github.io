@@ -38,6 +38,11 @@ html {
   font-size: 19px; /* default is 16px in browsers */
 }
 
+/* Set site-wide background color */
+body {
+  background-color: #f9f6f5;
+}
+
 /* small extra spacing between the two CTAs */
 .site-ctas .cta + .cta,
 .sidebar-ctas .cta + .cta,
