@@ -5,8 +5,8 @@ main:
     url: "/about/"
   # - title: "Schedule"
   #  url: "/schedule/"
-  - title: "Tags"
-    url: "/tags/"
+  # - title: "Tags"
+  #   url: "/tags/"
   - title: "RL Debates"
     url: "/debates/"
 
