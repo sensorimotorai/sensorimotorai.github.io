@@ -8,7 +8,7 @@ excerpt: Monthly journal club plus the RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-First Thursday of every month, 9:00-11:00 AM Pacific Time
+<div style="text-align: center;">First Thursday of every month, 9:00-11:00 AM Pacific Time</div>
 
 **Next session**: Thursday, Oct 2, 2025<br>
 **Topic**: Active Inference<br>
