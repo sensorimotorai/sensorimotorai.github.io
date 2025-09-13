@@ -33,37 +33,9 @@
   .site-ctas{ left:12px; bottom:12px; }
 }
 
-/* Reduce overall font size by ~1 step */
+/* Global font size */
 html {
-  font-size: 19px; /* default is 16px in browsers */
-}
-
-/* Set site-wide background color */
-/* body {
-/*   background-color: #f9f6f5;
-/* }
-
-/* Default light theme */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #5b8def;
-}
-
-/* Dark theme */
-[data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --link-color: #9bbcff;
-}
-
-/* Apply variables globally */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-a {
-  color: var(--link-color);
+  font-size: 19px;
 }
 
 /* small extra spacing between the two CTAs */
@@ -100,4 +72,74 @@ a {
 .timeline-list .t-title {
   font-weight: 400;
   margin-left: 6px;
+}
+
+/* Set site-wide background color
+body {
+  background-color: #f9f6f5;
+}
+*/
+
+/* THEME VARIABLES */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --muted-color: #666666;
+  --link-color: #5b8def;
+
+  --card-bg: #ffffff;
+  --border-color: #e6e6e6;
+  --masthead-bg: #ffffff;
+  --sidebar-bg: #ffffff;
+  --footer-bg: #ffffff;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --bg-color: #111214;
+  --text-color: #e9e9ea;
+  --muted-color: #b1b1b6;
+  --link-color: #9bbcff;
+
+  --card-bg: #17181b;
+  --border-color: #2a2c33;
+  --masthead-bg: #121316;
+  --sidebar-bg: #14161a;
+  --footer-bg: #121316;
+}
+
+/* APPLY COLORS */
+html, body { background-color: var(--bg-color); color: var(--text-color); }
+a { color: var(--link-color); }
+
+/* Minimal Mistakes wrappers that otherwise stay white */
+.masthead,
+.page,
+.page__inner-wrap,
+.page__content,
+.page__meta,
+.page__hero,
+.page__footer,
+.page__related,
+.page__share,
+.page__title,
+.site-footer,
+.footer,
+.sidebar,
+.page__sidebar,
+.sidebar__right {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* Top bar and footer */
+.masthead { background-color: var(--masthead-bg); }
+.site-footer, .footer { background-color: var(--footer-bg); }
+
+/* Optional: lighten table/grid borders in dark mode */
+[data-theme="dark"] table, 
+[data-theme="dark"] hr, 
+[data-theme="dark"] .archive__item {
+  border-color: var(--border-color);
 }
