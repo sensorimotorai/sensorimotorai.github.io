@@ -38,3 +38,8 @@
 .sidebar-ctas .cta + .cta,
 .home-ctas .cta + .cta { margin-left: 6px; margin-top: 6px; }
 
+/* Prevent timeline nav titles from being forced to uppercase */
+.nav__list .nav__items li a {
+  text-transform: none !important;
+}
+

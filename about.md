@@ -18,4 +18,12 @@ If you'd like to receive monthly email digest updates, sign up here:
 
 - [Sign up form]({{ site.signup_form_url }})
 
-Hope to see you on Slack! Once you're in, feel free to say hi in the *#social_introduce-yourself* channel.
+---
+
+Hope to see you on Slack!
+
+Once you're in, feel free to say hi in the **#social_introduce-yourself** channel.
+
+---
+
+![The organizers](/assets/images/organizers.jpeg)
