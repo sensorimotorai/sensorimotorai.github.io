@@ -33,6 +33,11 @@
   .site-ctas{ left:12px; bottom:12px; }
 }
 
+/* Reduce overall font size by ~1 step */
+html {
+  font-size: 14px; /* default is 16px in browsers */
+}
+
 /* small extra spacing between the two CTAs */
 .site-ctas .cta + .cta,
 .sidebar-ctas .cta + .cta,

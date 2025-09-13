@@ -6,7 +6,7 @@ permalink: /debates/
 
 Why do we have brains? Simple! Brains are for *survival* and *reproduction*. And neither is possible without ***some action***.
 
-Therfore, brains are for producing *actions* (or behvaior).
+Therfore, brains are for generating *actions* (or behvaior).
 
 This puts action center stage in our quest for intelligence. But how can we formalize active learning?
 
