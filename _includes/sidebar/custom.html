@@ -1,16 +1,11 @@
-<!-- Dynamic month timeline that links directly to each month's first post -->
+<!-- Dynamic month list: each month links directly to that month's first post -->
 <ul class="timeline-list">
   {% assign groups = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" %}
   {% for g in groups %}
     {% assign first = g.items | first %}
-    {% comment %}
-      Optional override: set `timeline_title:` in a post's front matter to customize the label
-      Example:
-      timeline_title: "2025 Sep - BONE, Duran-Martin et al., 2025"
-    {% endcomment %}
     {% assign label = first.timeline_title %}
     {% if label == nil or label == "" %}
-      {% assign label = first.date | date: "%Y %b" | append: " - " | append: first.title %}
+      {% assign label = first.date | date: "%Y %b" | append: " — " | append: first.title %}
     {% endif %}
     <li><a href="{{ first.url | relative_url }}">{{ label }}</a></li>
   {% endfor %}

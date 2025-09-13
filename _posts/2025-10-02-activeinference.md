@@ -1,5 +1,5 @@
 ---
-title: "Active Inference (RL Debate #1, presented by Eli Sennesh & Tommaso Salvatori)"
+title: "RL Debate #1: Active Inference"
 layout: single
 tags: [active-inference]
 categories: [2025, October]

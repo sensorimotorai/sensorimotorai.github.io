@@ -13,9 +13,4 @@ main:
 timeline:
   - title: "Archive"
     url: "/archive/"
-  - title: "2025 Oct — RL Debate #1: Active Inference"
-    url: "/archive/#2025-10"
-  - title: "2025 Sep — BONE, Duran-Martin et al., 2025"
-    url: "/archive/#2025-09"
-  - title: "2025 Aug — BONG, Jones et al., 2024"
-    url: "/archive/#2025-08"
+

@@ -53,11 +53,6 @@ html {
 }
 
 /* Sidebar dynamic timeline styling */
-.timeline-list {
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-}
+.timeline-list { list-style: none; margin: 12px 0 0; padding: 0; }
 .timeline-list li + li { margin-top: 6px; }
 .timeline-list a { text-decoration: none; }
-
