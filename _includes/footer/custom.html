@@ -6,3 +6,21 @@
     <img class="icon" src="/assets/images/logo_youtube.svg" alt="YouTube"> Subscribe on YouTube      
   </a>
 </div>
+
+
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const root = document.documentElement;
+  const storedTheme = localStorage.getItem("theme");
+
+  if (storedTheme) {
+    root.setAttribute("data-theme", storedTheme);
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const current = root.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  });
+</script>
