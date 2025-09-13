@@ -16,6 +16,8 @@ minimal_mistakes_skin: default
 nav:
   - title: Home
     url: /
+  - title: About
+    url: /about/
   - title: Schedule
     url: /schedule/
   - title: Tags
@@ -25,6 +27,7 @@ nav:
 
 slack_url: https://join.slack.com/t/sensorimotorai/shared_invite/zt-39l98agsh-Y9U1nsk~DTw7WiPBsZtdAA
 youtube_url: https://www.youtube.com/@SensorimotorAI
+signup_form_url: https://forms.gle/o5DXD4WMdhTgHa4F9
 
 defaults:
   - scope:
