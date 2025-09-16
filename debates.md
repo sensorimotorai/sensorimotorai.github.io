@@ -4,13 +4,17 @@ title: "RL Debate Series"
 permalink: /debates/
 ---
 
-Why do we have brains? Simple: to survive and reproduce. And neither is possible without ***some action***. Therefore, brains are for generating behavior. This puts action center stage in our quest to *understand* and *build* intelligence. But how do we formalize *active learning*?
+Why do we have brains? Simple: to survive and reproduce. And neither is possible without ***some action***. Therefore, brains are for generating behavior.
+
+This puts action center stage in our quest to *understand* and *build* intelligence. But how do we formalize *active learning*?
 
 The mainstream approach here is **reinforcement learning (RL)**, which posits that agents 'act' to maximize 'rewards'. Consider this canonical figure from the Sutton & Barto textbook:
 
 ![Sutton and Barto RL Diagram](/assets/images/sutton-barto.png)
 
-At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning. But RL faces fundamental challenges. To name a few:
+At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning.
+
+But RL faces fundamental challenges. To name a few:
 
 1. Rewards are inferred, not given.  
 2. The scalar reward is ill-defined for complex behaviors.
@@ -24,7 +28,6 @@ Meet our three contenders, each ready to get in on the action and defend their f
 
 ![RL Debate Series Flyer](/assets/images/rl_debates_flyer.png)
 
----
 
 ## Appendix: shortcomings of mainstream RL
 
@@ -71,7 +74,7 @@ In the early 20th century, *behaviorism* was dominant. Behaviorists weren't inte
 
 A famous example is Pavlov's dog: you ring a bell (input stimulus), the dog salivates (output behavior).
 
-But some rebels, like Edward Tolman at UC Berkeley, weren't convinced. They believed animals form internal representations of the world, not just stimulus–response reflexes. Tolman's famous maze experiments provided the first concrete evidence.
+But some rebels, like Edward Tolman at UC Berkeley, weren't convinced. They argued that animals go beyond just stimulus-response reflexes, and build internal representations of the world that enables intelligent behavior. Tolman's maze experiments offered compelling early evidence for this view.
 
 #### (3.1) Experiment setup
 
@@ -103,11 +106,11 @@ This finding can be read in two ways:
 
 1. **Reward is _NOT_ enough**: We may need to upgrade or replace RL with a framework that isn't solely reward-based.
 2. **_Intrinsic_ motivation**: Maybe learning is driven by curiosity, exploration, or other intrinsic drives. What if these are just different scalar rewards that add up?
-    - But treating these as "rewards" delivered by the environment leads to a critical logical inconsistency: intrinsic motivation cannot simply be handed down by the environment, as shown in the Sutton & Barto diagram.
+    - But treating these as "rewards" delivered by the environment leads to a critical logical inconsistency: intrinsic motivation cannot simply be handed down by the environment, as shown in the Sutton & Barto diagram above.
 
-### (4) Final remarks
+## Final remarks
 
-There you have it: three glaring issues with the Sutton & Barto view. It makes you wonder---what if the reason we haven't solved agency is that we've been using the wrong theoretical framework all along?
+There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if the reason we haven't solved agency is not because it's too hard, but maybe it's that we've been using the wrong theoretical framework all along?
 
 Join our *RL Debate Series*, and maybe, together we can find a way forward.
 
