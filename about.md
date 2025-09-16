@@ -8,7 +8,7 @@ We are an interdisciplinary group of researchers from around the world who want 
 
 ![Sensorimotor AI Flyer](/assets/images/sensorimotor_flyer.png)
 
-![The organizers](/assets/images/organizers.jpeg)
+![Meet the organizers](/assets/images/organizers.jpeg)
 
 ---
 
