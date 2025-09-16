@@ -41,7 +41,7 @@ Everything else is *inferred*.
 
 It's the same with color: photons exist, color does not. Color is an inferred quantity, constructed by the brain from incoming sensory data.
 
-Rewards work the same way (frankly, just like literally everything esle). They aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
+Rewards work the same way (frankly, just like literally everything else). They aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
 
 This is the first major problem with the Sutton & Barto view: the environment doesn't hand out rewards. It provides sensory evidence that may or may not be interpreted as rewarding, depending on the agent.
 
@@ -62,7 +62,7 @@ Even in neuroscience, the behaviors we study in the lab often rely on artificial
 
 Which brings us to the deeper question: is reward maximization really "[enough](https://www.sciencedirect.com/science/article/pii/S0004370221000862)" to model complex, real-world behaviors?
 
-Consider a monk sitting silently under a tree for hours. What scalar reward, exactly, is being maximized? Or a toddler crawling on the floor, putting random objects in its mouth. What objective environmental reward is being dispensed here?
+Consider a monk sitting in meditation for hours, seeking nothing but inner stillness and serenity. What scalar environmental reward, exactly, is being maximized? Or a child obsessively stacking blocks just to knock them down, over and over. What objective environmental reward is being dispensed here?
 
 These cases highlight the problem: in complex environments, a single, externally defined reward signal may be ill-defined, insufficient, or even *misleading* as a basis for behavior.
 
@@ -105,12 +105,15 @@ Crucially:
 This finding can be read in two ways:
 
 1. **Reward is _NOT_ enough**: We may need to upgrade or replace RL with a framework that isn't solely reward-based.
-2. **_Intrinsic_ motivation**: Maybe learning is driven by curiosity, exploration, or other intrinsic drives. What if these are just different scalar rewards that add up?
-    - But treating these as "rewards" delivered by the environment leads to a critical logical inconsistency: intrinsic motivation cannot simply be handed down by the environment, as shown in the Sutton & Barto diagram above.
+2. **_Intrinsic_ motivation**: Maybe learning is driven by curiosity, exploration, or other intrinsic drives. What if exploration and curiosity are simply additional scalar rewards?
+    - But this interpretation leads to a critical logical inconsistency: if intrinsic motivation is truly "intrinsic," it must originate within the agent itself, not be delivered by the environment as the Sutton & Barto diagram suggests.
+    - This breaks the fundamental assumption that rewards come from the environment.
+
+To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s - over six decades before Sutton & Barto wrote their book 🙂
 
 ## Final remarks
 
-There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if the reason we haven't solved agency is not because it's too hard, but maybe it's that we've been using the wrong theoretical framework all along?
+There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if we haven't solved agency not because it's too hard, but because we've been using the wrong theoretical framework all along?
 
-Join our *RL Debate Series*, and maybe, together we can find a way forward.
+Join our *RL Debate Series*, and together we may find a way forward.
 
