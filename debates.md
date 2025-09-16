@@ -4,23 +4,23 @@ title: "RL Debate Series"
 permalink: /debates/
 ---
 
-Why do we have brains? Simple! Brains are for *survival* and *reproduction*. And neither is possible without ***some action***. Therefore, brains are for generating actions (or behavior).
+Why do we have brains? Simple: to survive and reproduce. And neither is possible without ***some action***. Therefore, brains are for generating behavior.
 
-All animals move, even the ones that don't see. This puts action center stage in our quest for intelligence. But how can we formalize active learning?
+All animals move, even the ones that don't see. This puts action center stage in our quest to understand and build intelligence. But how do we formalize active learning?
 
-The mainstream approach here is **reinforcement learning (RL)**, which posits that agents <p>&lsquo;act&rsquo; to maximize &lsquo;rewards&rsquo;</p>. Consider this canonical figure from the Sutton & Barto RL textbook:
+The mainstream approach here is **reinforcement learning (RL)**, which posits that agents 'act' to maximize 'rewards'. Consider this canonical figure from the Sutton & Barto textbook:
 
 ![Sutton and Barto RL Diagram](/assets/images/sutton-barto.png)
 
-The agent produces action *A<sub>t</sub>* at time *t*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This is the standard textbook approach to model active learning. But there are fundamental challenges with this view. To name a few:
+At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning. But this approach faces fundamental challenges, including:
 
 1. Rewards are inferred, not given.  
-2. What, exactly, is this scalar reward for complex behaviors in natural environments?  
-3. Not all active learning is reinforcement learning. 
+2. The scalar reward is ill-defined and/or insufficient for complex behaviors.
+3. Not all active learning is reinforcement learning.
 
-Below, we will explore these issues more in depth, motivating the need for an upgrade (or a replacement) of RL as our go-to theoretical framework for active learning. That's why we're launching the **RL Debate Series**, where where researchers defend competing views of how to model interactive learning and agency.
+These issues motivate the need to upgrade---or even replace---RL as our go-to framework for active learning. That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
 
-## First round: 3 views + 1 debate
+## The first round: 3 presentations + final debate/synthesis
 
 Meet our three contestants, each defending a particular view:
 
