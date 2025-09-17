@@ -40,7 +40,7 @@ Meet our three contenders, each ready to get in on the action and defend their f
   <img class="fluid-img"
        src="/assets/images/rl_debates_flyer.png" 
        alt="RL Debate Series Flyer"
-       style="--desktop-width: 90%;">
+       style="--desktop-width: 85%;">
 </figure>
 
 
