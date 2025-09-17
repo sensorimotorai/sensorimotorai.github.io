@@ -90,9 +90,9 @@ Tolman and Honzik (1930) trained three groups of rats in a maze:
 
 Performance was measured by error reduction, or how reliably the rats found the food by the end of each trial.
 
-The 'rewarded' group had a slow but steady improvement in their performace. The 'no reward' group improved slightly, just from the experience of navigating.
+The 'rewarded' group had a slow but steady improvement in their performance. The 'no reward' group improved slightly, just from the experience of navigating.
 
-The the 'delayed reward' group was the most interesting: when they suddenly started receiving food, their performance spiked. They quickly caught up to, and even outperformed, the consistently rewarded group.
+The 'delayed reward' group was the most interesting: when they suddenly started receiving food, their performance spiked. They quickly caught up to, and even outperformed, the consistently rewarded group.
 
 Tolman called this <a href="https://en.wikipedia.org/wiki/Latent_learning" target="_blank"><em>latent learning</em></a>: the rats had built an internal <a href="https://personal.utdallas.edu/~tres/spatial/tolman.pdf" target="_blank"><strong><em>cognitive map</em></strong></a> of the maze without explicit rewards.
 
@@ -111,11 +111,11 @@ This finding can be read in two ways:
     - But this interpretation leads to a critical logical inconsistency: if intrinsic motivation is truly "intrinsic," it must originate within the agent itself, not be delivered by the environment as the Sutton & Barto diagram suggests.
     - This breaks the fundamental assumption that rewards come from the environment.
 
-To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s - over six decades before Sutton & Barto wrote their book 🙂
+To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s---more than six decades before Sutton & Barto wrote their book 🙂
 
 ## Final remarks
 
-There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if we haven't solved agency, not because it's too hard, but because we've been using the wrong theoretical framework all along?
+There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... *what if we haven't solved agency, not because it's too hard, but because we've been using the wrong theoretical framework all along?*
 
-Join our *RL Debate Series*, and together we may find a way forward.
+Join our RL Debate Series, and together, we may find a way forward.
 
