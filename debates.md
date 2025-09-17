@@ -9,7 +9,7 @@ sidebar:
 
 Why do we have brains? Simple: to survive and reproduce. And neither is possible without ***some action***. Therefore, brains are for generating behavior.
 
-This puts action center stage in our quest to *understand* and *build* intelligence. But how do we formalize *active learning*?
+This puts action center stage in our quest toward intelligence. But how do we formalize *active learning*?
 
 The mainstream approach here is **reinforcement learning (RL)**, which posits: agents 'act' to maximize 'rewards'.
 
@@ -40,7 +40,7 @@ Meet our three contenders, each ready to get in on the action and defend their f
   <img class="fluid-img"
        src="/assets/images/rl_debates_flyer.png" 
        alt="RL Debate Series Flyer"
-       style="--desktop-width: 85%;">
+       style="--desktop-width: 90%;">
 </figure>
 
 
@@ -120,11 +120,11 @@ Crucially:
 This finding can be read in two ways:
 
 1. **Reward is _NOT_ enough**: We may need to upgrade or replace RL with a framework that isn't solely reward-based.
-2. **_Intrinsic_ motivation**: Maybe learning is driven by curiosity, exploration, or other intrinsic drives. What if exploration and curiosity are simply additional scalar rewards?
-    - But this interpretation leads to a critical logical inconsistency: if intrinsic motivation is truly "intrinsic," it must originate within the agent itself, not be delivered by the environment as the Sutton & Barto diagram suggests.
-    - This breaks the fundamental assumption that rewards come from the environment.
+2. **_Intrinsic_ motivation**: Maybe learning is driven by curiosity, exploration, or other intrinsic signals. What if exploration and curiosity are simply additional scalar rewards?
 
-To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s (almost six decades before Sutton & Barto wrote their book 🙂).
+This interpretation sounds like a convenient patch, but it leads to a critical logical inconsistency: if intrinsic motivation is truly "intrinsic," it must originate within the agent itself, not be delivered by the environment as the Sutton & Barto diagram suggests. Therefore, this attempt would break the fundamental assumption that rewards come from the environment.
+
+To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s (over six decades before Sutton & Barto wrote their book 🙂).
 
 ## Final remarks
 
