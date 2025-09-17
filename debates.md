@@ -8,7 +8,9 @@ Why do we have brains? Simple: to survive and reproduce. And neither is possible
 
 This puts action center stage in our quest to *understand* and *build* intelligence. But how do we formalize *active learning*?
 
-The mainstream approach here is **reinforcement learning (RL)**, which posits that agents 'act' to maximize 'rewards'. Consider this canonical figure from the Sutton & Barto textbook:
+The mainstream approach here is **reinforcement learning (RL)**, which posits that agents 'act' to maximize 'rewards'.
+
+Consider this canonical figure from the Sutton & Barto textbook:
 
 ![Sutton and Barto RL Diagram](/assets/images/sutton-barto.png)
 
@@ -22,7 +24,7 @@ But RL faces fundamental challenges. To name a few:
 
 These issues motivate the need to upgrade---or even replace---RL as our go-to framework for active learning. That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
 
-## The first round: 3 presentations + final debate/synthesis
+## The first round: three presentations + final debate
 
 Meet our three contenders, each ready to get in on the action and defend their favorite theory:
 
@@ -35,13 +37,13 @@ In this section, we substantiate the issues outlined above, reviewing conceptual
 
 ### (1) Rewards must be inferred, they are ultimately subjective
 
-Imagine you're a neuron, buried deep in the central nervous system of a human. From your perspective, there is no such thing as "outside world." All that exists are [*spikes*](https://en.wikipedia.org/wiki/Action_potential)---action potentials arriving at your synapses from other neurons.
+Imagine you're a neuron, buried deep in the central nervous system of a human. From your perspective, there is no such thing as "outside world." All that exists are [*spikes*](https://en.wikipedia.org/wiki/Action_potential), or action potentials, arriving at your synapses from other neurons.
 
 Everything else is *inferred*.
 
 It's the same with color: photons exist, color does not. Color is an inferred quantity, constructed by the brain from incoming sensory data.
 
-Rewards work the same way (frankly, just like literally everything else). They aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
+Rewards work the same way (frankly, just like literally everything else...). Rewards aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
 
 This is the first major problem with the Sutton & Barto view: the environment doesn't hand out rewards. It provides sensory evidence that may or may not be interpreted as rewarding, depending on the agent.
 
@@ -113,7 +115,7 @@ To summarize, Tolman's rats showed that animals can engage in sophisticated acti
 
 ## Final remarks
 
-There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if we haven't solved agency not because it's too hard, but because we've been using the wrong theoretical framework all along?
+There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... what if we haven't solved agency, not because it's too hard, but because we've been using the wrong theoretical framework all along?
 
 Join our *RL Debate Series*, and together we may find a way forward.
 
