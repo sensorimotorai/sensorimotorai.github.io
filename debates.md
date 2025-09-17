@@ -15,10 +15,11 @@ The mainstream approach here is **reinforcement learning (RL)**, which posits: a
 
 Consider this canonical figure from the Sutton & Barto textbook:
 
-<figure style="text-align: center; margin: 1em 0;">
-  <img src="/assets/images/sutton-barto.png" 
-       alt="Sutton and Barto RL Diagram" 
-       style="width: 70%; height: auto;">
+<figure style="text-align:center; margin: 1em 0;">
+  <img class="fluid-img"
+       src="/assets/images/sutton-barto.png"
+       alt="Sutton and Barto RL Diagram"
+       style="--desktop-width: 70%;">
 </figure>
 
 At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning.
@@ -36,9 +37,10 @@ These issues motivate the need to upgrade---or even replace---RL as our go-to fr
 Meet our three contenders, each ready to get in on the action and defend their favorite theory:
 
 <figure style="text-align: center; margin: 1em 0;">
-  <img src="/assets/images/rl_debates_flyer.png" 
-       alt="RL Debate Series Flyer" 
-       style="width: 80%; height: auto;">
+  <img class="fluid-img"
+       src="/assets/images/rl_debates_flyer.png" 
+       alt="RL Debate Series Flyer"
+       style="--desktop-width: 85%;">
 </figure>
 
 
@@ -130,3 +132,6 @@ There you have it, folks. Three glaring issues with the Sutton & Barto view. It 
 
 Join our RL Debate Series, and together, we may find a way forward.
 
+---
+
+Hadi *(on behalf of the Sensorimotor AI Journal Club)*

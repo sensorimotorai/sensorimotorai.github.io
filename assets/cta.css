@@ -79,3 +79,21 @@ body {
   background-color: #f9f6f5;
 }
 */
+
+/* Responsive image: 100% by default; desktop width is overridable per-image */
+.fluid-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Apply the optional desktop override at laptop/tablet landscape and up */
+@media (min-width: 1024px) {
+  .fluid-img {
+    width: var(--desktop-width, 100%);     /* e.g., 70% or 800px */
+    max-width: var(--desktop-max, none);   /* optional hard cap, e.g., 900px */
+  }
+}
+
+
