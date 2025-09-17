@@ -38,10 +38,12 @@ defaults:
       author_profile: false
       sidebar:
         nav: timeline
+      classes: wide
+
   - scope:
       path: ""
       type: pages
     values:
       sidebar:
         nav: timeline
-
+      classes: wide
