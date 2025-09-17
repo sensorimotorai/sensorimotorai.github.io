@@ -11,15 +11,13 @@ Why do we have brains? Simple: to survive and reproduce. And neither is possible
 
 This puts action center stage in our quest toward intelligence. But how do we formalize *active learning*?
 
-The mainstream approach here is **reinforcement learning (RL)**, which posits: agents 'act' to maximize 'rewards'.
-
-Consider this canonical figure from the Sutton & Barto textbook:
+The mainstream approach here is **reinforcement learning (RL)**, which posits: agents 'act' to maximize 'rewards'. Consider this canonical figure from the Sutton & Barto textbook:
 
 <figure style="text-align:center; margin: 1em 0;">
   <img class="fluid-img"
        src="/assets/images/sutton-barto.png"
        alt="Sutton and Barto RL Diagram"
-       style="--desktop-width: 70%;">
+       style="--desktop-width: 65%;">
 </figure>
 
 At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning.
@@ -30,11 +28,13 @@ But RL faces fundamental challenges. To name a few:
 2. The scalar reward is ill-defined for complex behaviors.
 3. Not all active learning is reinforcement learning.
 
-These issues motivate the need to upgrade---or even replace---RL as our go-to framework for active learning. That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
+These issues motivate the need to upgrade---or even replace---RL as our go-to framework for active learning.
+
+That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
 
 ## The first round: three presentations + final debate
 
-Meet our three contenders, each ready to get in on the action and defend their favorite theory:
+Meet our three brave contenders, each ready to get in on the action and defend their favorite theory:
 
 <figure style="text-align: center; margin: 1em 0;">
   <img class="fluid-img"
@@ -56,7 +56,7 @@ Everything else is *inferred*.
 
 It's the same with color: photons exist, color does not. Color is an inferred quantity, constructed by the brain from incoming sensory data.
 
-Rewards work the same way (frankly, just like literally everything else...). Rewards aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
+Rewards work the same way (frankly, just like literally everything else). Rewards aren't objective signals delivered by the environment. Rather, the brain must infer what is rewarding from sensory cues, filtered through its own subjective beliefs and preferences.
 
 This is the first major problem with the Sutton & Barto view: the environment doesn't hand out rewards. It provides sensory evidence that may or may not be interpreted as rewarding, depending on the agent.
 
@@ -75,21 +75,19 @@ So far, the most celebrated successes of RL have come from toy domains: most fam
 
 Even in neuroscience, the behaviors we study in the lab often rely on artificially simple rewards. Think of a rat pressing a lever for a drop of juice, or a mouse licking a spout for sugar water. These paradigms tell us something, but they don't capture the messy richness of natural behavior.
 
-Which brings us to the deeper question: is reward maximization really "<a href="https://www.sciencedirect.com/science/article/pii/S0004370221000862" target="_blank">enough</a>" to model complex, real-world behaviors?
+Which brings us to the deeper question: *is reward maximization really "<a href="https://www.sciencedirect.com/science/article/pii/S0004370221000862" target="_blank">enough</a>" to model complex, real-world behaviors?*
 
-Consider a monk sitting in meditation for hours, seeking nothing but inner peace and serenity. What scalar environmental reward, exactly, is being maximized? Or a child obsessively stacking blocks just to knock them down, over and over. What objective environmental reward is being dispensed here?
+Consider a monk sitting in meditation for hours, seeking nothing but inner peace and serenity. What scalar environmental reward, exactly, is being maximized here? Or a child obsessively stacking blocks just to knock them down, over and over. What objective environmental reward is being dispensed in this case?
 
-These cases highlight the problem: in complex environments, a single, externally defined reward signal may be ill-defined, insufficient, or even *misleading* as a basis for behavior.
+These cases highlight the problem: in complex environments, a single, externally defined reward signal may be ill-defined, insufficient, or even *misleading* as the basis of behavior.
 
 ### (3) Not all active learning is reinforcement learning: a tale of Tolman's rats
 
 Finally, let's revisit a classic experiment that showed not all active learning can be reduced to reinforcement learning.
 
-In the early 20th century, *behaviorism* was dominant. Behaviorists weren't interested in the brain (since they couldn't measure it anyway). Instead, they studied only what was observable: stimuli in, behavior out. The brain was treated as a black box that mapped inputs (stimuli) to outputs (behavior).
+In the early 20th century, *behaviorism* was dominant. Behaviorists weren't interested in the brain (since they couldn't measure it anyway). Instead, they studied only what was observable: stimuli in, behavior out. The brain was treated as a black box that mapped inputs (stimuli) to outputs (behavior). A famous example is Pavlov's dog: you ring a bell (input stimulus), the dog salivates (output behavior).
 
-A famous example is Pavlov's dog: you ring a bell (input stimulus), the dog salivates (output behavior).
-
-But some rebels, like Edward Tolman at UC Berkeley, weren't convinced. They argued that animals go beyond just stimulus-response reflexes, and build internal representations of the world that enables intelligent behavior. Tolman's maze experiments offered compelling early evidence for this view.
+But some rebels, like Edward Tolman at UC Berkeley, weren't convinced. They argued that animals go beyond just stimulus-response reflexes, and build internal representations of the world that enable intelligent behavior. Tolman's maze experiments offered compelling early evidence for this view.
 
 #### (3.1) Experiment setup
 
@@ -113,7 +111,7 @@ Crucially:
 
 - Rats demonstrated active learning without any well-defined reward from the environment.
 - Continuous external rewards actually interfered with this ability: the delayed group learned more efficiently once a reward appeared.
-- The delayed group was exploring freely, showing clear evidence for active learning, but it wasn’t reinforcement learning in the Sutton & Barto sense.
+- The delayed group was exploring freely, showing clear evidence for active learning. But importantly, it wasn’t reinforcement learning in the Sutton & Barto sense.
 
 #### (3.3) Two possible interpretations
 
