@@ -64,7 +64,7 @@ This is the first major problem with the Sutton & Barto view: the environment do
 
 Consider two hungry people: one omnivore and one vegetarian. Put a double cheeseburger (with bacon) and a salad in front of them. Is there an objective, observer-independent scalar reward attached to each food? No. The omnivore finds the burger rewarding, the vegetarian the salad. Their choices reveal their internal preferences.
 
-*(Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But that only highlights how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon. Incredible stuff!)*
+*(Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But that only shows how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon. Incredible!)*
 
 To sum up, rewards are not given by the environment. Each agent must infer its own rewards from sensory data, shaped by subjective priors and internal states.
 
@@ -128,7 +128,7 @@ To summarize, Tolman's rats showed that animals can engage in sophisticated acti
 
 ## Final remarks
 
-There you have it, folks. Three glaring issues with the Sutton & Barto view. It makes you wonder... *what if we haven't solved agency, not because it's too hard, but because we've been using the wrong theoretical framework all along?*
+There you have it, folks. Three glaring issues with the Sutton & Barto view of RL. It makes you wonder... *what if we haven't solved agency, not because it's too hard, but because we've been using the wrong theoretical framework all along?*
 
 Join our RL Debate Series, and together, we may find a way forward.
 
