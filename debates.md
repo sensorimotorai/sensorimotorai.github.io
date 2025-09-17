@@ -85,7 +85,7 @@ These cases highlight the problem: in complex environments, a single, externally
 
 Finally, let's revisit a classic experiment that showed not all active learning can be reduced to reinforcement learning.
 
-In the early 20th century, *behaviorism* was dominant. Behaviorists weren't interested in the brain (since they couldn't measure it anyway). Instead, they studied only what was observable: stimuli in, behavior out. The brain was treated as a black box that mapped inputs (stimuli) to outputs (behavior). A famous example is Pavlov's dog: you ring a bell (input stimulus), the dog salivates (output behavior).
+In the early 20th century, *behaviorism* was dominant. Behaviorists weren't interested in the brain, since they couldn't measure it anyway. Instead, they studied only what was observable: stimuli in, behavior out. The brain was treated as a black box that mapped inputs (stimuli) to outputs (behavior). A famous example is Pavlov's dog: you ring a bell (input stimulus), the dog salivates (output behavior).
 
 But some rebels, like Edward Tolman at UC Berkeley, weren't convinced. They argued that animals go beyond just stimulus-response reflexes, and build internal representations of the world that enable intelligent behavior. Tolman's maze experiments offered compelling early evidence for this view.
 
@@ -105,9 +105,7 @@ The 'rewarded' group had a slow but steady improvement in their performance. The
 
 The 'delayed reward' group was the most interesting: when they suddenly started receiving food, their performance spiked. They quickly caught up to, and even outperformed, the consistently rewarded group.
 
-Tolman called this <a href="https://en.wikipedia.org/wiki/Latent_learning" target="_blank"><em>latent learning</em></a>: the rats had built an internal <a href="https://personal.utdallas.edu/~tres/spatial/tolman.pdf" target="_blank"><strong><em>cognitive map</em></strong></a> of the maze without explicit rewards.
-
-Crucially:
+Tolman called this <a href="https://en.wikipedia.org/wiki/Latent_learning" target="_blank"><em>latent learning</em></a>: the rats had built an internal <a href="https://personal.utdallas.edu/~tres/spatial/tolman.pdf" target="_blank"><strong><em>cognitive map</em></strong></a> of the maze without explicit rewards. Crucially:
 
 - Rats demonstrated active learning without any well-defined reward from the environment.
 - Continuous external rewards actually interfered with this ability: the delayed group learned more efficiently once a reward appeared.
