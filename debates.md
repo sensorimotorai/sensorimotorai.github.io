@@ -37,7 +37,7 @@ In this section, we substantiate the issues outlined above, reviewing conceptual
 
 ### (1) Rewards must be inferred, they are ultimately subjective
 
-Imagine you're a neuron, buried deep in the central nervous system of a human. From your perspective, there is no such thing as "outside world." All that exists are [*spikes*](https://en.wikipedia.org/wiki/Action_potential), or action potentials, arriving at your synapses from other neurons.
+Imagine you're a neuron, buried deep in the central nervous system of a human. From your perspective, there is no such thing as "outside world." All that exists are <a href="https://en.wikipedia.org/wiki/Action_potential" target="_blank"><em>spikes</em></a>, or action potentials, arriving at your synapses from other neurons.
 
 Everything else is *inferred*.
 
@@ -51,20 +51,20 @@ This is the first major problem with the Sutton & Barto view: the environment do
 
 Consider two hungry people: one omnivore and one vegetarian. Put a double cheeseburger (with bacon) and a salad in front of them. Is there an objective, observer-independent scalar reward attached to each food? No. The omnivore finds the burger rewarding, the vegetarian the salad. Their choices reveal their internal preferences.
 
-*(P.S. Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But that only highlights how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon. Incredible stuff!)*
+*(Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But that only highlights how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon. Incredible stuff!)*
 
 To sum up, rewards are not given by the environment. Each agent must infer its own rewards from sensory data, shaped by subjective priors and internal states.
 
 
 ### (2) RL typically works in toy settings where the reward is known
 
-So far, the most celebrated successes of RL have come from toy domains---most famously Atari games, where the reward signal is dense, simple, and explicitly defined. But in the real world, we haven't yet seen an agent succeed from "pure" RL alone. In robotics, what actually works are still hand-engineered control systems, often carefully tuned by humans.
+So far, the most celebrated successes of RL have come from toy domains: most famously Atari games, where the reward signal is dense, simple, and explicitly defined. But in the real world, we haven't yet seen an agent succeed from "pure" RL alone. In robotics, for example, what actually works are still hand-engineered control systems, often carefully tuned by humans.
 
 Even in neuroscience, the behaviors we study in the lab often rely on artificially simple rewards. Think of a rat pressing a lever for a drop of juice, or a mouse licking a spout for sugar water. These paradigms tell us something, but they don't capture the messy richness of natural behavior.
 
-Which brings us to the deeper question: is reward maximization really "[enough](https://www.sciencedirect.com/science/article/pii/S0004370221000862)" to model complex, real-world behaviors?
+Which brings us to the deeper question: is reward maximization really "<a href="https://www.sciencedirect.com/science/article/pii/S0004370221000862" target="_blank">enough</a>" to model complex, real-world behaviors?
 
-Consider a monk sitting in meditation for hours, seeking nothing but inner stillness and serenity. What scalar environmental reward, exactly, is being maximized? Or a child obsessively stacking blocks just to knock them down, over and over. What objective environmental reward is being dispensed here?
+Consider a monk sitting in meditation for hours, seeking nothing but inner peace and serenity. What scalar environmental reward, exactly, is being maximized? Or a child obsessively stacking blocks just to knock them down, over and over. What objective environmental reward is being dispensed here?
 
 These cases highlight the problem: in complex environments, a single, externally defined reward signal may be ill-defined, insufficient, or even *misleading* as a basis for behavior.
 
@@ -94,7 +94,7 @@ The 'rewarded' group had a slow but steady improvement in their performace. The 
 
 The the 'delayed reward' group was the most interesting: when they suddenly started receiving food, their performance spiked. They quickly caught up to, and even outperformed, the consistently rewarded group.
 
-Tolman called this *latent learning*: the rats had built an internal ***[cognitive map](https://personal.utdallas.edu/~tres/spatial/tolman.pdf)*** of the maze without explicit rewards.
+Tolman called this <a href="https://en.wikipedia.org/wiki/Latent_learning" target="_blank"><em>latent learning</em></a>: the rats had built an internal <a href="https://personal.utdallas.edu/~tres/spatial/tolman.pdf" target="_blank"><strong><em>cognitive map</em></strong></a> of the maze without explicit rewards.
 
 Crucially:
 
