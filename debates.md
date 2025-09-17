@@ -111,7 +111,7 @@ This finding can be read in two ways:
     - But this interpretation leads to a critical logical inconsistency: if intrinsic motivation is truly "intrinsic," it must originate within the agent itself, not be delivered by the environment as the Sutton & Barto diagram suggests.
     - This breaks the fundamental assumption that rewards come from the environment.
 
-To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s---more than six decades before Sutton & Barto wrote their book 🙂
+To summarize, Tolman's rats showed that animals can engage in sophisticated active learning---and even learn more efficiently---in the complete absence of environmental reward signals. Therefore, the very notion of a *"reward provided by the environment"* for active learning has been empirically contradicted since at least the 1930s (over six decades before Sutton & Barto wrote their book 🙂).
 
 ## Final remarks
 
