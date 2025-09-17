@@ -2,6 +2,9 @@
 layout: single
 title: "RL Debate Series"
 permalink: /debates/
+classes: wide
+sidebar:
+  nav: timeline
 ---
 
 Why do we have brains? Simple: to survive and reproduce. And neither is possible without ***some action***. Therefore, brains are for generating behavior.
@@ -12,7 +15,11 @@ The mainstream approach here is **reinforcement learning (RL)**, which posits th
 
 Consider this canonical figure from the Sutton & Barto textbook:
 
-![Sutton and Barto RL Diagram](/assets/images/sutton-barto.png)
+<figure style="text-align: center; margin: 1em 0;">
+  <img src="/assets/images/sutton-barto.png" 
+       alt="Sutton and Barto RL Diagram" 
+       style="width: 75%; height: auto;">
+</figure>
 
 At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning.
 
@@ -28,7 +35,11 @@ These issues motivate the need to upgrade---or even replace---RL as our go-to fr
 
 Meet our three contenders, each ready to get in on the action and defend their favorite theory:
 
-![RL Debate Series Flyer](/assets/images/rl_debates_flyer.png)
+<figure style="text-align: center; margin: 1em 0;">
+  <img src="/assets/images/rl_debates_flyer.png" 
+       alt="RL Debate Series Flyer" 
+       style="width: 75%; height: auto;">
+</figure>
 
 
 ## Appendix: shortcomings of mainstream RL
