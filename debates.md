@@ -134,4 +134,5 @@ Join our RL Debate Series, and together, we may find a way forward.
 
 ---
 
+<br>
 Hadi *(on behalf of the Sensorimotor AI Journal Club)*
