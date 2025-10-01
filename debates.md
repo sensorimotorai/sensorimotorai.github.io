@@ -40,7 +40,7 @@ Meet our three brave contenders, each ready to get in on the action and defend t
   <img class="fluid-img"
        src="/assets/images/rl_debates_flyer.png" 
        alt="RL Debate Series Flyer"
-       style="--desktop-width: 85%;">
+  >
 </figure>
 
 
@@ -64,7 +64,7 @@ This is the first major problem with the Sutton & Barto view: the environment do
 
 Consider two hungry people: one omnivore and one vegetarian. Put a double cheeseburger (with bacon) and a salad in front of them. Is there an objective, observer-independent scalar reward attached to each food? No. The omnivore finds the burger rewarding, the vegetarian the salad. Their choices reveal their internal preferences.
 
-*(Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But that only shows how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon. Incredible!)*
+*(Okay, maybe this is not the best example, because we all know the burger is objectively more rewarding. But this only shows how remarkably adaptive the human brain is: somehow a nervous system can trick itself into preferring salad over bacon... Incredible!)*
 
 To sum up, rewards are not given by the environment. Each agent must infer its own rewards from sensory data, shaped by subjective priors and internal states.
 
