@@ -32,9 +32,9 @@ These issues motivate the need to upgrade---or even replace---RL as our go-to fr
 
 That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
 
-## The first round: three presentations + final debate
+## The first round: five presentations + final debate
 
-Meet our three brave contenders, each ready to get in on the action and defend their favorite theory:
+Meet our five brave contenders, each ready to get in on the action and defend their favorite theory:
 
 <figure style="text-align: center; margin: 1em 0;">
   <img class="fluid-img"
