@@ -87,3 +87,10 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Show CTAs everywhere on desktop; on mobile, only on Home */
+@media (max-width: 700px) {
+  body:not(.layout--home) .site-ctas {
+    display: none !important;
+  }
+}
