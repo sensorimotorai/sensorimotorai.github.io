@@ -1,5 +1,5 @@
 ---
-title: "RL Debate Series #1: Eli 'abolish the value function' Sennesh"
+title: 'RL Debates #1: Eli *"abolish the value function"* Sennesh'
 layout: single
 tags: [active-inference, value-function, optimal-control, allostasis]
 categories: [2025, October]
