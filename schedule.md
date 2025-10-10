@@ -9,7 +9,7 @@ sidebar:
 
 | Date       | Topic                      | Presenter | Links               |
 |------------|----------------------------|------------|----------------------|
-| 2026-01-22 | RL Debates Wrap Up: Final Debate/Synthesis | Moderator: Hadi Vafaii | slides · YouTube |
+| 2026-01-22 | RL Debates Wrap Up: Final Debate/Synthesis | Hadi Vafaii (moderator) | slides · YouTube |
 | 2025-12-11 | RL Debates 6: Thomas <em>"no reward for you"</em> Ringstrom | Thomas Ringstrom | paper · slides · YouTube |
 | 2025-11-13 | RL Debates 5: Anne <em>"not everything is RL"</em> Collins | Anne Collins | paper · slides · YouTube |
 | 2025-11-06 | RL Debates 4: Adam <em>"I literally measured value in the brain"</em> Lowet | Adam Lowet | paper · slides · YouTube |
