@@ -5,7 +5,7 @@ tags: [active-inference, value-function, optimal-control, allostasis]
 categories: [2025, October]
 ---
 
-In our third meeting (the first in the RL Debate Series), we kicked off a contentious discussion on the role of the value function in RL, and why Eli believes it should be abolished.
+In our 3rd meeting (the 1st in the [RL Debate Series]({{ "/debates/" | relative_url }})), we kicked off a contentious discussion on the role of the value function in RL, and why Eli believes it should be abolished.
 
 - Paper: [https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350](https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350){:target="_blank"}
 - Slides: [https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing](https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing){:target="_blank"}

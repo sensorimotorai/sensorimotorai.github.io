@@ -30,7 +30,7 @@ But RL faces fundamental challenges. To name a few:
 
 These issues motivate the need to upgrade---or even replace---RL as our go-to framework for active learning.
 
-That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency.
+That's why we're launching the ***RL Debate Series***, where researchers will defend and debate alternative theories of interactive learning and agency. See [introductory slides](https://drive.google.com/file/d/1-Foz5_Sa016s-UnS_vgpuzQGPYTGi-TP/view?usp=sharing){:target="_blank"}.
 
 ## The first round: five presentations + final debate
 
