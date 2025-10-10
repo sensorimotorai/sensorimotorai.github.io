@@ -96,58 +96,48 @@ body {
   }
 }
 
-/* Smooth label reveal */
-.site-ctas .cta {
-  overflow: hidden;
-  transition: width 160ms ease, padding 160ms ease, background-color 160ms ease;
-}
-.site-ctas .cta .text {
-  transition: opacity 140ms ease, margin-left 140ms ease;
-}
-
-/* Compact on small screens, expand on hover/focus */
-@media (max-width: 700px) {
+/* tiny dock on mobile/tablet */
+@media (max-width: 900px) {
   .site-ctas {
-    left: 12px; bottom: 12px;
+    position: fixed;
+    left: auto;
+    right: 12px;
+    bottom: 20%;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10000;
   }
+
   .site-ctas .cta {
-    /* start as round icon-only */
+    /* small circular icon buttons */
     width: 44px;
-    padding: 10px;              /* tighter padding */
+    height: 44px;
+    padding: 0;
     border-radius: 9999px;
     justify-content: center;
     gap: 0;
-  }
-  .site-ctas .cta .icon {
-    height: 20px; width: 20px;
-  }
-  .site-ctas .cta .text {
-    opacity: 0;
-    margin-left: 0;
-    pointer-events: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    transition: transform 120ms ease;
   }
 
-  /* On hover or keyboard focus, reveal label and become a pill */
-  .site-ctas .cta:hover,
-  .site-ctas .cta:focus-within {
-    width: auto;                /* grow to fit */
-    padding: 10px 12px;
-    gap: 8px;
-    border-radius: 12px;
-  }
-  .site-ctas .cta:hover .text,
-  .site-ctas .cta:focus-within .text {
-    opacity: 1;
-    margin-left: 2px;
-    pointer-events: auto;
+  .site-ctas .cta:active {
+    transform: scale(0.98);
   }
 
-  /* Respect reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .site-ctas .cta,
-    .site-ctas .cta .text {
-      transition: none;
-    }
+  .site-ctas .icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  /* hide labels on small screens */
+  .site-ctas .text {
+    display: none;
   }
 }
+
 
