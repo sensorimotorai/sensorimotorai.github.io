@@ -7,8 +7,8 @@ categories: [2025, October]
 
 TODO: one sentence summary
 
-- Paper: [https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350](https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350)
-- Slides:[https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing](https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing)
+- Paper: [https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350](https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350){:target="_blank"}
+- Slides: [https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing](https://drive.google.com/file/d/1wTbQW6BxwcsxuxtLvrinK_4XZYt8Xzti/view?usp=sharing){:target="_blank"}
 - Presenter: Eli Sennesh
 
 TODO: some more info
