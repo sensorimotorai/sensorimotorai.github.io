@@ -9,5 +9,5 @@ excerpt: Monthly journal club + the RL Debate Series
 </p>
 
 **Next session**: Friday, Oct 17, 2025<br>
-**Topic**: Exploration in the absence of external rewards<br>
+**Topic**: Exploration as maximizing predicted information gain (PIG)<br>
 **Presenters**: Fritz Sommer
