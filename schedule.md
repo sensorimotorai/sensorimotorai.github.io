@@ -11,7 +11,7 @@ sidebar:
 |------------|----------------------------|------------|----------------------|
 | 2026-01-22 | RL Debates Wrap Up: Final Debate/Synthesis | Hadi Vafaii (moderator) | slides · YouTube |
 | 2025-12-11 | RL Debates 6: Thomas <em>"no reward for you"</em> Ringstrom | Thomas Ringstrom | paper · slides · YouTube |
-| 2025-11-20 | The neuron as a direct data-driven controller | Thelonious Cooper | <a href="https://www.pnas.org/doi/10.1073/pnas.2311893121" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
+| 2025-11-20 | The neuron as a direct data-driven controller (Moore et al., 2024) | Thelonious Cooper | <a href="https://www.pnas.org/doi/10.1073/pnas.2311893121" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2025-11-13 | RL Debates 5: Anne <em>"not everything is RL"</em> Collins | Anne Collins | paper · slides · YouTube |
 | 2025-11-06 | RL Debates 4: Adam <em>"I literally measured value in the brain"</em> Lowet | Adam Lowet | paper · slides · YouTube |
 | 2025-10-23 | RL Debates 3: Niels <em>"you have 1000 brains in your brain"</em> Leadholm | Niels Leadholm | paper · slides · YouTube |
