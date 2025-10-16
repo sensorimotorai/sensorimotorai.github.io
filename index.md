@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Sensorimotor AI Journal Club
-excerpt: Monthly journal club + the RL Debate Series
+excerpt: Monthly journal club + RL Debate Series
 ---
 
 <p align="center">
