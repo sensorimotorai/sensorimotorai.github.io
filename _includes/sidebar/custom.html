@@ -1,17 +1,12 @@
-<!-- Dynamic month list: one post per month, formatted as [YYYY Mon] — Title -->
+<!-- Dynamic post list: each post shows with exact date [YYYY/Mon/DD] -->
 <ul class="timeline-list">
-  {% assign groups = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" %}
-  {% for g in groups %}
-    {% assign first = g.items | first %}
-    {% assign month = first.date | date: "%Y %b" %}
-    {% if first.timeline_title and first.timeline_title != "" %}
-      {% assign title = first.timeline_title %}
-    {% else %}
-      {% assign title = first.title %}
-    {% endif %}
+  {% assign posts = site.posts %}
+  {% for post in posts %}
+    {% assign date_str = post.date | date: "%Y/%b/%d" %}
+    {% assign label = post.timeline_title | default: post.title %}
     <li>
-      <a href="{{ first.url | relative_url }}">
-        <span class="t-month">[{{ month }}]</span>&mdash;<span class="t-title">{{ title }}</span>
+      <a href="{{ post.url | relative_url }}">
+        <span class="t-month">[{{ date_str }}]</span> - <span class="t-title">{{ label }}</span>
       </a>
     </li>
   {% endfor %}
