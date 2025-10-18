@@ -5,7 +5,7 @@ tags: [active-learning, information-theory, exploration, predicted-information-g
 categories: [2025, October]
 ---
 
-In our 4th meeting (the 2nd in the [RL Debate Series]({{ "/debates/" | relative_url }})), Fritz introduced an information-theoretic, first-principles approach to modeling exploration through the maximization of 'Predicted Information Gain' (PIG).
+In our 2nd [RL Debates]({{ "/debates/" | relative_url }}) presentation, Fritz introduced a first-principles, information-theoretic approach to modeling exploration through the maximization of 'Predicted Information Gain' (PIG).
 
 - Paper: [Learning and exploration in action-perception loops](https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2013.00037/full){:target="_blank"}
 - Presenter: Fritz Sommer
