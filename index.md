@@ -9,5 +9,5 @@ excerpt: Monthly journal club + RL Debate Series
 </p>
 
 **Next session**: Thursday, November 13, 2025<br>
-**Topic**: RL or not RL?<br>
+**Topic**: RL or not RL? Parsing the processes that support human reward-based learning<br>
 **Presenters**: Anne Collins
