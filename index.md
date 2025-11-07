@@ -8,6 +8,6 @@ excerpt: Monthly journal club + RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Thursday, November 6, 2025<br>
-**Topic**: Distributional RL in the brain<br>
-**Presenters**: Adam Lowet
+**Next session**: Thursday, November 13, 2025<br>
+**Topic**: RL or not RL?<br>
+**Presenters**: Anne Collins
