@@ -4,6 +4,7 @@ url: https://sensorimotorai.github.io
 logo: /assets/images/sensorimotor_square.png
 theme: null
 remote_theme: mmistakes/minimal-mistakes
+permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-remote-theme
