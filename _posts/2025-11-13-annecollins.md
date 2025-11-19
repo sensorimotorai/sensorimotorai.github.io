@@ -7,7 +7,7 @@ categories: [2025, November]
 
 In our 5th [RL Debates]({{ "/debates/" | relative_url }}) presentation, Anne argued that reward-based learning is not always driven by RL computations. Sometimes it's working memory combined with outcome-insensitive habit formation, mimicking RL without computing values.
 
-- Paper: [RL or not RL? Parsing the processes that support human reward-based learning](https://ccn.studentorg.berkeley.edu/pdfs/papers/RLorNotRL_Collins_R1.pdf){:target="_blank"}
+- Paper: [A habit and working memory model as an alternative account of human reward-based learning](https://www.nature.com/articles/s41562-025-02340-0){:target="_blank"}
 - Presenter: Anne Collins
 
 Anne's core argument is that RL, as traditionally modeled, fails to capture the actual cognitive processes underlying reward-based learning. She presented compelling evidence that human learning in instrumental tasks relies on two distinct, parallel systems: a fast, **capacity-limited working memory (WM)** system that integrates outcome valence, and a slower **outcome-insensitive associative system** that strengthens stimulus-action bonds regardless of whether outcomes are positive or negative. 
