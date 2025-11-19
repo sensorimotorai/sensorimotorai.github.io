@@ -87,6 +87,12 @@ body {
   display: block;
   margin: 0 auto;
 }
+/* Desktop override */
+@media (min-width: 1024px) {
+  .fluid-img {
+    width: var(--desktop-width, 100%);
+  }
+}
 
 /* Show CTAs everywhere on desktop; on mobile, only on Home */
 @media (max-width: 700px) {
