@@ -7,7 +7,7 @@ sidebar:
   nav: timeline
 ---
 
-| Date       | Topic                      | Presenter | Links               |
+| Date       | Topic                      | Presenter  | Links                |
 |------------|----------------------------|------------|----------------------|
 | 2026-01-22 | RL Debates Wrap Up: Final Debate/Synthesis | Hadi Vafaii (moderator) | slides · YouTube |
 | 2025-12-11 | RL Debates 6: Thomas <em>"no reward for you"</em> Ringstrom | Thomas Ringstrom | <a href="https://arxiv.org/abs/2506.09499" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
