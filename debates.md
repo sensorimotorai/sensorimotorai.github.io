@@ -17,7 +17,7 @@ The mainstream approach here is **reinforcement learning (RL)**, which posits th
   <img class="fluid-img"
        src="/assets/images/sutton-barto.png"
        alt="Sutton and Barto RL Diagram"
-       style="--desktop-width: 65%;">
+       style="--desktop-width: 70%;">
 </figure>
 
 At each time step *t*, the agent produces action *A<sub>t</sub>*, causing the environment's state to evolve from *S<sub>t</sub>* to *S<sub>t+1</sub>*. The environment, in return, provides the agent with a scalar reward *R<sub>t+1</sub>*. This summarizes the standard textbook view of active learning.
