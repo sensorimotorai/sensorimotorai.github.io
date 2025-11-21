@@ -8,6 +8,6 @@ excerpt: Monthly journal club + RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Thursday, November 20, 2025<br>
-**Topic**: The neuron as a direct data-driven controller (Moore et al., 2024)<br>
-**Presenters**: Thelonious Cooper
+**Next session**: Thursday, December 11, 2025<br>
+**Topic**: A Unified Theory of Compositionality, Modularity, and Interpretability in Markov Decision Processes<br>
+**Presenters**: Thomas J. Ringstrom
