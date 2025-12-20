@@ -8,7 +8,7 @@ categories: [2025, December]
 In our 6th and final [RL Debates]({{ "/debates/" | relative_url }}) presentation, Tom introduced a rigorous framework for compositional planning that replaces the standard scalar reward with predictive "option kernels" and intrinsic empowerment.
 
 - Paper: [A Unified Theory of Compositionality, Modularity, and Interpretability in MDPs](https://arxiv.org/abs/2506.09499){:target="_blank"}
-- Slides: [Drive link](https://drive.google.com/file/d/1H_cZFGEVdOQT1Ypl-sdfwefdffvv/view?usp=sharing){:target="_blank"}
+- Slides: [Drive link](https://drive.google.com/file/d/1A3Q7o5adEHjQH1uRecClbwCBI6CW37hO/view?usp=sharing){:target="_blank"}
 - Presenter: Tom Ringstrom
 
 We began with Tom describing his observation of flexible animal intelligence to realizing that standard RL principles are insufficient for high-dimensional planning [00:01:44]. He used the famous example of **[Stoffel the honey badger](https://www.youtube.com/watch?v=c36UNSoJenI){:target="_blank"}** to illustrate the need for agents that can reason about complex, sequential goals (like escaping an enclosure) without needing explicit external rewards for every step [00:09:35].
