@@ -10,4 +10,4 @@ excerpt: Monthly journal club + RL Debate Series
 
 **Next session**: Thursday, January 15, 2026<br>
 **Topic**: The Final Debate/Synthesis (concluding the first round of RL Debate Series)<br>
-**Presenters**: Eli Sennesh, Fritz Sommer, Niels Leadholm, Adam Lowet, Anne Collins, Thomas J. Ringstrom
+**Presenters**: Eli Sennesh, Fritz Sommer, Niels Leadholm, Adam Lowet, Anne Collins, Thomas J. Ringstrom (moderated by Hadi Vafaii)
