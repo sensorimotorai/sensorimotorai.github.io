@@ -11,6 +11,7 @@ sidebar:
 
 | Date       | Topic                      | Presenter  | Links                |
 |------------|----------------------------|------------|----------------------|
+| 2026-02-12 | Continuous Thought Machines | Luke Darlow | <a href="https://openreview.net/forum?id=y0wDflmpLk" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-02-26 | Nested Learning: The Illusion of Deep Learning Architectures | Ali Behrouz | <a href="https://arxiv.org/abs/2512.24695" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-03-05 | Three Dogmas of Reinforcement Learning | David Abel | <a href="https://arxiv.org/abs/2407.10583" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-03-12 | Illuminating the Three Dogmas of Reinforcement Learning under Evolutionary Light | Mani Hamidi | <a href="https://arxiv.org/abs/2507.11482" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
