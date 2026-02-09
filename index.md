@@ -8,6 +8,6 @@ excerpt: Monthly journal club + RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Thursday, January 08, 2026<br>
-**Topic**: The Final Debate/Synthesis (concluding the first round of RL Debate Series)<br>
-**Presenters**: Eli Sennesh, Fritz Sommer, Niels Leadholm, Adam Lowet, Anne Collins, Thomas J. Ringstrom (moderated by Hadi Vafaii)
+**Next session**: Thursday, February 19, 2026<br>
+**Topic**: Continuous Thought Machines (CTM)<br>
+**Presenters**: Luke Darlow

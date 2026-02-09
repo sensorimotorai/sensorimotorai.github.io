@@ -11,11 +11,12 @@ sidebar:
 
 | Date       | Topic                      | Presenter  | Links                |
 |------------|----------------------------|------------|----------------------|
-| 2026-02-12 | Continuous Thought Machines | Luke Darlow | <a href="https://openreview.net/forum?id=y0wDflmpLk" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
+| 2026-02-19 | Continuous Thought Machines | Luke Darlow | <a href="https://openreview.net/forum?id=y0wDflmpLk" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-02-26 | Nested Learning: The Illusion of Deep Learning Architectures | Ali Behrouz | <a href="https://arxiv.org/abs/2512.24695" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-03-05 | Three Dogmas of Reinforcement Learning | David Abel | <a href="https://arxiv.org/abs/2407.10583" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-03-12 | Illuminating the Three Dogmas of Reinforcement Learning under Evolutionary Light | Mani Hamidi | <a href="https://arxiv.org/abs/2507.11482" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-03-19 | Plasticity as the Mirror of Empowerment | David Abel | <a href="https://openreview.net/forum?id=eOZFqyE9Ok" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
+<!-- | 2026-03-12 | General duality between optimal control and estimation (Todorov, 2008) | Thelonious Cooper | <a href="https://ieeexplore.ieee.org/document/4739438" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube | -->
 | 2026-04-02 | What neuroscience can tell AI about learning in continuously changing environments | Daniel Durstewitz | <a href="https://www.nature.com/articles/s42256-025-01146-z" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-04-09 | Intrinsic Goals for Autonomous Agents: Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics | Reece Keller | <a href="https://openreview.net/forum?id=g2vViuEVDS" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-04-16 | World Modeling with Probabilistic Structure Integration | Dan Yamins | <a href="https://arxiv.org/abs/2509.09737" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
