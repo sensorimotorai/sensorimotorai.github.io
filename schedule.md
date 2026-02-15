@@ -7,12 +7,15 @@ sidebar:
   nav: timeline
 ---
 
-<div style="border: 1px solid #ccc; padding: 5px; border-radius: 10px; font-size: 0.8em;">
-
-- **When:** <b style="color: red;">Thursdays, 10:00 AM – 12:00 PM</b> Pacific Time
-  - (Eastern: 1:00–3:00 PM, UK: 6:00–8:00 PM, Central Europe: 7:00–9:00 PM)
-- **Where:** <b style="color: red;">Warren Hall, 205 A</b> (UC Berkeley), and <a href="https://forms.gle/o5DXD4WMdhTgHa4F9" target="_blank"><b style="color: red;">Zoom</b></a> (we share the link over <a href="https://forms.gle/o5DXD4WMdhTgHa4F9" target="_blank"><b style="color: blue;">email</b></a>, or in our <a href="https://join.slack.com/t/sensorimotorai/shared_invite/zt-39l98agsh-Y9U1nsk~DTw7WiPBsZtdAA" target="_blank"><b style="color: blue;">Slack</b></a>)
-
+<div style="border: 1px solid #ccc; padding: 5px 15px; border-radius: 10px; font-size: 0.75em;">
+<ul>
+  <li><b>When:</b> <b style="color: red;">Thursdays, 10:00 AM – 12:00 PM</b> Pacific Time
+    <ul>
+      <li>(Eastern: 1:00–3:00 PM, UK: 6:00–8:00 PM, Central Europe: 7:00–9:00 PM)</li>
+    </ul>
+  </li>
+  <li><b>Where:</b> <b style="color: red;">Warren Hall, 205 A</b> (UC Berkeley), and <a href="https://forms.gle/o5DXD4WMdhTgHa4F9" target="_blank"><b style="color: red;">Zoom</b></a> (we share the link over <a href="https://forms.gle/o5DXD4WMdhTgHa4F9" target="_blank"><b style="color: blue;">email</b></a>, or in our <a href="https://join.slack.com/t/sensorimotorai/shared_invite/zt-39l98agsh-Y9U1nsk~DTw7WiPBsZtdAA" target="_blank"><b style="color: blue;">Slack</b></a>)</li>
+</ul>
 </div>
 
 ## Spring 2026
