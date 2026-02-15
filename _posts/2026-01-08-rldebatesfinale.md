@@ -17,29 +17,31 @@ The discussion was organized around two goals: **Scientific Understanding** (can
 
 A striking consensus emerged: nearly every contender, *including* RL-proponent Adam Lowet, estimated that standard RL explains only **~10-20%** of biological behavior.
 
-Adam's reasoning was disarmingly concrete. The basal ganglia---the brain structure most associated with RL---occupies only 1.5% of human brain volume. Even scaling that up generously, huge swaths of what we do (perception, locomotion, language, reading) just aren't well-captured by reward maximization. As he put it: "I'm not always practicing my tennis serve. Sometimes I'm just walking."
+**Adam**'s reasoning was disarmingly concrete. The basal ganglia---the brain structure most associated with RL---occupies only 1.5% of human brain volume. Even scaling that up generously, huge swaths of what we do (perception, locomotion, language, reading) just aren't well-captured by reward maximization. As he put it: "I'm not always practicing my tennis serve. Sometimes I'm just walking."
 
-Tom placed it at 20-30%, but added that RL has a **0% chance** of explaining how someone decides to move to a new city to start a new career. That kind of goal invention, he argued, lives entirely outside RL's reach.
+**Eli Sennesh** and **Fritz Sommer** both agreed on 10%. **Tom Ringstrom** placed it at 20-30%, but added that RL has a **0% chance** of explaining how someone decides to move to a new city to start a new career. That kind of goal invention, he argued, lives entirely outside RL's reach.
 
-Anne gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
+**Anne Collins** gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
 
-Niels Leadholm didn't give an explicit percentage but made clear that RL is a small part of the picture. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
+**Niels Leadholm** didn't give an explicit percentage but made clear that RL is a small part of the picture. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
 
 ### The engineering side: a sharp divide
 
 On the question of building agents, the room split:
 
-* **The Optimists:** Adam Lowet put it at 90%, arguing that in any domain with verifiable rewards---such as coding, math, and formal reasoning---RL + pre-training is sufficient for superhuman performance, provided the base model can solve the task at least occasionally (pass at some finite k). RL then amplifies that capability to arbitrarily good performance. Eli Sennesh landed at 80%, but only after Hadi pushed him to count KL-controlled fine-tuning of LLMs as RL, which Eli noted is really just shaping a trajectory distribution, not solving nested Bellman equations. Under his own narrower definition, the number would be much lower.
+**The Optimists**: **Adam** argued that pre-training alone gets you to 50%, and RL takes you from 50 to 90%---in any domain with verifiable rewards (coding, math) and where the base model can solve the task at least occasionally (pass at some finite k). RL then amplifies that capability to arbitrarily good performance. **Eli** landed at 80%, but only after Hadi pushed him to count KL-controlled fine-tuning of LLMs as RL, which Eli noted is really just shaping a trajectory distribution, not solving nested Bellman equations. Under his own narrower definition, the number would be much lower.
 
-* **The Skeptics:** Anne Collins estimated ~30%, noting that every successful RL application she's seen depends on engineers adding massive structure on top. Niels Leadholm argued that deep learning's fundamental brittleness (e.g., adversarial examples, unreliable generalization) makes it unsuitable for open-ended, non-stationary worlds, no matter how much you scale it.
+**The Skeptics**: **Anne** estimated ~30%, noting that every successful RL application she's seen depends on engineers adding massive structure on top. **Niels** argued that deep learning's fundamental brittleness (e.g., adversarial examples, unreliable generalization) makes it unsuitable for open-ended, non-stationary worlds, no matter how much you scale it.
 
-Fritz declined to give a precise number ("Higher than 10%, I don't care"), but made a subtle point: RL's engineering numbers look inflated because we define narrow tasks with clean reward functions. That's not the robot reproducing natural behavior. That's us making the problem easy enough for RL to solve.
+**Tom** split the difference: ~80% for robotics, where RL works fine as a hammer with enough compute, but closer to 10% for anything resembling AGI, which he argued requires inventing context-sensitive value, something RL can't do.
+
+**Fritz** declined to give a precise number ("Higher than 10%, I don't care"), but made a subtle point: RL's engineering numbers look inflated because we define narrow tasks with clean reward functions. That's not the robot reproducing natural behavior. That's us making the problem easy enough for RL to solve.
 
 ## Part 2: The big arguments
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1380s" target="_blank">[00:23:00] "Abolish the Value Function"</a>
 
-The sharpest philosophical exchange was between Eli Sennesh and Adam Lowet. Eli argued that treating biological life as "maximizing reward" is an ontological error. The "reward function" in standard RL is what he called a ***Deus Ex Machina***: a non-constructive existence proof from von Neumann-Morgenstern utility theory. It says: *if* an agent acts coherently, *then* there exists some function describing that behavior. But it doesn't tell you how to find it, how to construct it, or how the brain implements it.
+The sharpest philosophical exchange was between Eli and Adam. Eli argued that treating biological life as "maximizing reward" is an ontological error. The "reward function" in standard RL is what he called a ***Deus Ex Machina***: a non-constructive existence proof from von Neumann-Morgenstern utility theory. It says: *if* an agent acts coherently, *then* there exists some function describing that behavior. But it doesn't tell you how to find it, how to construct it, or how the brain implements it.
 
 Adam pushed back: the **engineering success of *actually instantiating* value functions** (actor-critic methods, TD learning) is astonishing regardless of philosophical purity. The thing didn't *need* to be constructible, but it turns out that by constructing it, you can explain not only choice but also learning.
 
@@ -57,7 +59,7 @@ Eli's answer was directed at theorists: we need to step up and provide **models 
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
 
-Niels Leadholm mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
+Niels mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
 
 His broader point: deep learning creates "alien" systems. They work brilliantly within their training distribution, but their failure modes are inhuman and unpredictable. Vibe coding has the reputation it has for a reason. If we're building something for open-ended, non-stationary worlds (actual AGI) we can't paper over this with more data.
 
@@ -65,7 +67,7 @@ Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](h
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=3095s" target="_blank">[00:51:35] Curiosity vs. Empowerment</a>
 
-Fritz Sommer and Tom Ringstrom had a revealing exchange about what drives exploration. Fritz defined curiosity strictly as **optimal experimental design**: you face something novel, you need to understand how it works, so you design actions that maximally reduce your uncertainty about specific hypotheses. Tom defined **empowerment** as maximizing the mutual information between your actions and sensory outcomes: a measure of how much control you have over your world.
+Fritz and Tom had a revealing exchange about what drives exploration. Fritz defined curiosity strictly as **optimal experimental design**: you face something novel, you need to understand how it works, so you design actions that maximally reduce your uncertainty about specific hypotheses. Tom defined **empowerment** as maximizing the mutual information between your actions and sensory outcomes: a measure of how much control you have over your world.
 
 Fritz argued empowerment is sometimes useful but **"too compulsive"** as a general principle. In pole balancing, for instance, he noted that the mutual information between actions and sensory input is low (you want the pendulum to stay boring and still). So maximizing empowerment doesn't describe what you're actually doing.
 
@@ -104,7 +106,7 @@ Since top-down synthesis failed, we tried bottom-up. The thought experiment: you
 * **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
 * *(**Fritz** had to depart early and did not participate in this exercise)*
 
-Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under resource constraints force it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
+Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under resource constraints forces it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
 
 ## The Takeaway
 
