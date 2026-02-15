@@ -1,5 +1,5 @@
 ---
-title: "RL Debates Finale: Synthesis and the Gap"
+title: "RL Debates: Finale and Synthesis"
 layout: single
 tags: [RL, synthesis, agency, architecture, debate]
 categories: [2026, January]
@@ -33,8 +33,6 @@ On the question of building agents, the room split:
 
 Fritz declined to give a precise number ("Higher than 10%, I don't care"), but made a subtle point: RL's engineering numbers look inflated because we define narrow tasks with clean reward functions. That's not the robot reproducing natural behavior. That's us making the problem easy enough for RL to solve.
 
----
-
 ## Part 2: The big arguments
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1380s" target="_blank">[00:23:00] "Abolish the Value Function"</a>
@@ -63,7 +61,7 @@ Hadi (moderator) pushed back with a recent paper from Geirhos et al. (late 2025)
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=3095s" target="_blank">[00:51:35] Curiosity vs. Empowerment</a>
 
-Fritz Sommer and Tom Ringstrom had a revealing exchange about what drives exploration. Fritz defined curiosity strictly as **optimal experimental design**: you face something novel, you need to understand how it works, so you design actions that maximally reduce your uncertainty about specific hypotheses. Tom defined empowerment as maximizing the mutual information between your actions and sensory outcomes: a measure of how much control you have over your world.
+Fritz Sommer and Tom Ringstrom had a revealing exchange about what drives exploration. Fritz defined curiosity strictly as **optimal experimental design**: you face something novel, you need to understand how it works, so you design actions that maximally reduce your uncertainty about specific hypotheses. Tom defined **empowerment** as maximizing the mutual information between your actions and sensory outcomes: a measure of how much control you have over your world.
 
 Fritz argued empowerment is sometimes useful but "too compulsive" as a general principle. Pole balancing, for instance, requires *reducing* the mutual information between your actions and sensory input. You want the pendulum to stay boring and still. Tom countered that empowerment is the only framework he knows that scales to high dimensions and can explain how things become *valuable in context*, that is, how you do credit assignment for functional significance. Without it, you end up with Pareto frontiers of competing values and no principled way to weight them.
 
@@ -75,8 +73,6 @@ Eli offered a pragmatic engineering picture that cut through some of the RL-vs-n
 
 Adam partially agreed but noted that recent advances in sim-to-real transfer---better NVIDIA simulation environments, simple algorithms like PPO scaling with compute---are why bipedal robots can now walk over uneven terrain where Boston Dynamics couldn't for years.
 
----
-
 ## Part 3: Hadi's attempt at a failed synthesis (and what emerged from it)
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5530s" target="_blank">[01:32:10] Prediction Error Minimization as Unifying Theme?</a>
@@ -85,9 +81,9 @@ Hadi tried to propose **prediction error minimization** as a unifying framework:
 
 It fell flat. Eli called it a "deepity": superficially profound, actually vacuous. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
 
-Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the principle of stationary action" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictons.
+Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the **principle of stationary action**" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictons.
 
-Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have explanatory power, interpretability (mapping computational processes to neural circuits), and predictive power.
+Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have **explanatory power**, **interpretability** (mapping computational processes to neural circuits), and **predictive power**.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5990s" target="_blank">[01:39:50] The Mars Rover: Build a Survivor</a>
 
@@ -101,13 +97,11 @@ Since top-down synthesis failed, we tried bottom-up. The thought experiment: you
 
 Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under rerouce constraints force it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
 
----
-
 ## The Takeaway
 
 The RL Debate Series started with a simple question---*what drives behavior?*---and ended with something more honest than a clean answer.
 
-RL explains a modest slice of biological behavior (10-30% by most estimates). It's more useful in engineering, especially for well-defined tasks with verifiable rewards, but everyone acknowledged it's insufficient for open-ended intelligence. The hardest unsolved problems---goal selection, context-sensitive value, lifelong learning, the fusion of perception with control---live outside RL's current reach.
+RL explains a modest slice of biological behavior (10-30% by most estimates). It's more useful in engineering, especially for well-defined tasks with verifiable rewards, but everyone acknowledged it's insufficient for open-ended intelligence. The hardest unsolved problems (goal selection, context-sensitive value, lifelong learning, the fusion of perception with control) live outside RL's current reach.
 
 A deep tension emerged, but it wasn't between RL and its alternatives. It was between the desire for grand unifying theories and the messy reality that brains are evolved systems full of local optima, resource constraints, and historical accidents. Whether that messiness conceals an elegant principle or simply *is* the principle remains the open question.
 
