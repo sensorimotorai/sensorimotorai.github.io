@@ -140,6 +140,8 @@ Until theorists provide that, the *dark matter of behavior* will stay dark.
 
 ---
 
+Download the slides: [Drive link](https://drive.google.com/file/d/1jeBdwAPLC3prfdCNVSqwkk0vXcX6k6_v/view?usp=sharing){:target="_blank"}
+
 Watch the full finale and the resulting synthesis below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GKSPT8-yyBk?si=l3K-awJlHVvGXK8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
