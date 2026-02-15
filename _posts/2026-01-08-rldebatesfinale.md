@@ -89,11 +89,11 @@ Adam partially agreed but noted that recent advances in sim-to-real transfer---b
 
 Hadi tried to propose **prediction error minimization** as a unifying framework: each camp just defines a different prediction and a different error. Adam predicts reward. Eli predicts sensory states relative to set points. Fritz predicts information gain. Tom predicts option termination and empowerment. Niels predicts sensorimotor mismatch.
 
-It fell flat. Eli called it a "**deepity**" [a term coined by philosopher Dan Dennett that means superficially profound, but actually vacuous]. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
+It fell flat. Eli called it a "**deepity**" [*a term coined by philosopher Dan Dennett that means superficially profound, but actually vacuous*]. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
 
 Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the **principle of stationary action**" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictions.
 
-Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have **explanatory power**, **interpretability** (mapping computational processes to neural circuits), and **predictive power**.
+Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have **explanatory power**, **interpretability** (e.g., mapping computational processes to neural circuits), and **predictive power**.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5990s" target="_blank">[01:39:50] The Mars Rover: Build a Survivor</a>
 
@@ -102,11 +102,15 @@ Since top-down synthesis failed, we tried bottom-up. The thought experiment: you
 * **Niels** chose **Empowerment** (from Tom's camp) --- the ability to evaluate which actions keep the most future options open.
 * **Anne** chose **Resource Constraints** --- bottlenecks that force the system to organize information efficiently, possibly explaining why we have a working memory capacity of ~4 items despite billions of neurons. Maybe it's a feature: constraints that promote generalization.
 * **Eli** chose **Interoception** --- temperature sensors, battery level monitors, all feeding directly into the learning system. Whatever objective function the agent optimizes, it needs to know that if it doesn't get its solar panels into the light, it dies.
-* **Tom** chose **Temporal Distributions** --- the ability to represent and reason about time as a variable, so the agent can ask: "Will I run out of battery *before I reach the base*?"
-* **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
+* **Tom** chose **Temporal Distributions** --- the ability to represent and reason about time as a variable, so the agent can ask: "*Will I run out of battery before I reach the base*?"
+* **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans, too, would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
 * *(**Fritz** had to depart early and did not participate in this exercise)*
 
-Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under resource constraints forces it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
+Something interesting emerged in the overlap:
+
+Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning enable *planing* around resource depletion over time.
+
+Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
 
 ## The Takeaway
 
