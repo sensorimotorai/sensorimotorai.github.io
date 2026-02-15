@@ -9,6 +9,8 @@ For the final session of the **[RL Debate Series]({{ "/debates/" | relative_url 
 
 The discussion was organized around two goals: **Scientific Understanding** (can RL explain biological agency?) and **Engineering Utility** (can RL build artificial agents that work?). We asked each presenter to put a number on it. The numbers told a somewhat unexpected story.
 
+
+
 ## Part 1: How much can RL explain?
 
 ### The scientific side: a surprising consensus
@@ -35,6 +37,8 @@ On the question of building agents, the room split:
 
 **Fritz** declined to give a precise number ("Higher than 10%, I don't care"), but made a subtle point: RL's engineering numbers look inflated because we define narrow tasks with clean reward functions. That's not the robot reproducing natural behavior. That's us making the problem easy enough for RL to solve.
 
+
+
 ## Part 2: The big arguments
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1380s" target="_blank">[00:23:00] "Abolish the Value Function"</a>
@@ -47,6 +51,7 @@ Eli's counter: that's fine for engineering, but if our goals are scientific, we 
 
 But Eli wasn't only critiquing, he also offered a constructive alternative. In foraging, for instance, the basal ganglia estimates a global capture rate: net energy acquired per unit time. This functions like a value signal---and when Hadi pointed out that this sounds suspiciously like the value function he had just abolished, Eli cheerfully accepted the **charge of hypocrisy**. His point was never that you *can't have a critic*. Rather, the critic needs to compute something with real units and physical meaning, not an abstract quantity handed down from mathematical Platonism. Once you have a physically identifiable task---like a thermostat minimizing squared error in degrees Fahrenheit---you can use RL algorithms just fine. The problem is pretending the abstract version is doing scientific work.
 
+
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1815s" target="_blank">[00:30:15] The Dark Matter of Behavior</a>
 
 This led to what might be the most important critique of the entire series. Eli pointed out that **neuroscience systematically screens off the hardest (and most interesting) questions**. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
@@ -55,13 +60,6 @@ Adam, wearing his experimentalist hat, acknowledged the problem but highlighted 
 
 Eli's answer was directed at theorists: we need to step up and provide **models with identifiable variables** so that experimentalists know what to measure. Until theorists do that work, the experimental impasse will continue.
 
-### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
-
-Niels mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
-
-His broader point: deep learning creates "alien" systems. They work brilliantly within their training distribution, but their failure modes are inhuman and unpredictable. Vibe coding has the reputation it has for a reason. If we're building something for open-ended, non-stationary worlds (actual AGI) we can't paper over this with more data.
-
-Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](https://video-zero-shot.github.io/){:target="_blank"} showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=3095s" target="_blank">[00:51:35] Curiosity vs. Empowerment</a>
 
@@ -75,11 +73,23 @@ Fritz partially conceded, acknowledging that empowerment can be important in cer
 
 Fritz also stressed a point that deserves more attention: you can't understand **algorithms divorced from the hardware** they run on. Metabolic efficiency, energy constraints, and neuromorphic computing aren't implementation details. They are fundamental considerations that shape what algorithms are possible in the first place.
 
+
+### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
+
+Niels mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
+
+His broader point: deep learning creates "alien" systems. They work brilliantly within their training distribution, but their failure modes are inhuman and unpredictable. Vibe coding has the reputation it has for a reason. If we're building something for open-ended, non-stationary worlds (actual AGI) we can't paper over this with more data.
+
+Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](https://video-zero-shot.github.io/){:target="_blank"} showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
+
+
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4920s" target="_blank">[01:22:00] Layered Control in Real Robotics</a>
 
 Eli offered a pragmatic engineering picture that cut through some of the RL-vs-not-RL framing. In real working robots, control is layered: **RL or logical reasoning at the top** (task selection), **model predictive control in the middle** (planning), and **classical control at the bottom** (stabilizing individual actuators). The frontier isn't about any single algorithm. It's getting these layers to communicate. Perception researchers and control researchers sit in different labs, and fusing their representations remains more of a "people problem" than a mathematical barrier.
 
 Adam partially agreed but noted that recent advances in sim-to-real transfer---better NVIDIA simulation environments, simple algorithms like PPO scaling with compute---are why bipedal robots can now walk over uneven terrain where Boston Dynamics couldn't for years.
+
+
 
 ## Part 3: Hadi's failed attempt at a synthesis (and what emerged from it)
 
@@ -109,6 +119,8 @@ Something interesting emerged in the overlap:
 Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning would enable *planning* around resource depletion over time.
 
 Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
+
+
 
 ## The Takeaway
 
