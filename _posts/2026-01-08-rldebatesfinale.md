@@ -53,11 +53,11 @@ Eli's answer was directed at theorists: we need to step up and provide models wi
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
 
-Niels Leadholm mounted the strongest case against the "scale is all you need" position. He cited Gilmer et al. (2018), a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
+Niels Leadholm mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
 
 His broader point: deep learning creates "alien" systems. They work brilliantly within their training distribution, but their failure modes are inhuman and unpredictable. Vibe coding has the reputation it has for a reason. If we're building something for open-ended, non-stationary worlds (actual AGI) we can't paper over this with more data.
 
-Hadi (moderator) pushed back with a recent paper from Geirhos et al. (late 2025) showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
+Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](https://video-zero-shot.github.io/){:target="_blank"} showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=3095s" target="_blank">[00:51:35] Curiosity vs. Empowerment</a>
 
@@ -65,7 +65,7 @@ Fritz Sommer and Tom Ringstrom had a revealing exchange about what drives explor
 
 Fritz argued empowerment is sometimes useful but "too compulsive" as a general principle. Pole balancing, for instance, requires *reducing* the mutual information between your actions and sensory input. You want the pendulum to stay boring and still. Tom countered that empowerment is the only framework he knows that scales to high dimensions and can explain how things become *valuable in context*, that is, how you do credit assignment for functional significance. Without it, you end up with Pareto frontiers of competing values and no principled way to weight them.
 
-Fritz also stressed a point that deserves more attention: you can't understand algorithms divorced from the hardware they run on. Metabolic efficiency, energy constraints, and neuromorphic computing aren't implementation details. They are fundamental considerations that shape what algorithms are possible in the first place.
+Fritz also stressed a point that deserves more attention: you can't understand **algorithms divorced from the hardware** they run on. Metabolic efficiency, energy constraints, and neuromorphic computing aren't implementation details. They are fundamental considerations that shape what algorithms are possible in the first place.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1570s" target="_blank">[00:26:10] Layered Control in Real Robotics</a>
 
@@ -79,7 +79,7 @@ Adam partially agreed but noted that recent advances in sim-to-real transfer---b
 
 Hadi tried to propose **prediction error minimization** as a unifying framework: each camp just defines a different prediction and a different error. Adam predicts reward. Eli predicts sensory states relative to set points. Fritz predicts information gain. Tom predicts option termination and empowerment. Niels predicts sensorimotor mismatch.
 
-It fell flat. Eli called it a "deepity": superficially profound, actually vacuous. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
+It fell flat. Eli called it a "**deepity**": a term coined by philosopher Dan Dennett that means superficially profound, but actually vacuous. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
 
 Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the **principle of stationary action**" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictons.
 
