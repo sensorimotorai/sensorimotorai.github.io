@@ -7,7 +7,7 @@ sidebar:
   nav: timeline
 ---
 
-<div style="border: 1px solid #ccc; padding: 5px 15px; border-radius: 10px; font-size: 0.75em; display: inline-block;">
+<div style="border: 1px solid #ccc; padding: 5px 10px; border-radius: 10px; font-size: 0.7em; display: inline-block;">
 <ul>
   <li><b>When:</b> <b style="color: red;">Thursdays, 10:00 AM – 12:00 PM</b> Pacific Time
     <ul>

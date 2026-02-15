@@ -120,7 +120,7 @@ Eli's interoception would give the agent *awareness* of its resource state. Anne
 
 Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization. Notably, our Mars rover survives, but it doesn't yet know *what to do*.
 
-The problem of goal-directed behavior---the dark matter of the series---remained unaddressed.
+The problem of goal-directed behavior remained unaddressed.
 
 
 
