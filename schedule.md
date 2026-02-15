@@ -31,7 +31,7 @@ sidebar:
 | 2026-04-09 | Intrinsic Goals for Autonomous Agents: Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics | Reece Keller | <a href="https://openreview.net/forum?id=g2vViuEVDS" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-04-16 | World Modeling with Probabilistic Structure Integration | Dan Yamins | <a href="https://arxiv.org/abs/2509.09737" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-MM-DD | What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models | Keyon Vafa | <a href="https://arxiv.org/abs/2507.06952" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
-| 2026-MM-DD | AI in a vat: Fundamental limits of efficient world modelling for agent sandboxing and interpretability | Fernando Rosas | <a href="https://arxiv.org/abs/2504.04608" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
+| 2026-04-30 | AI in a vat: Fundamental limits of efficient world modelling for agent sandboxing and interpretability | Fernando Rosas | <a href="https://arxiv.org/abs/2504.04608" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 | 2026-05-07 | Subjective functions | Samuel Gershman | <a href="https://arxiv.org/abs/2512.15948" target="_blank" rel="noopener noreferrer">paper</a> · slides · YouTube |
 
 
