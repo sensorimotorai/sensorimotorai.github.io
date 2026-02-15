@@ -15,21 +15,23 @@ The discussion was organized around two goals: **Scientific Understanding** (can
 
 ### The scientific side: a surprising consensus
 
-A striking consensus emerged: nearly every contender, *including* RL-proponent Adam Lowet, estimated that standard RL explains only **~10–20%** of biological behavior.
+A striking consensus emerged: nearly every contender, *including* RL-proponent Adam Lowet, estimated that standard RL explains only **~10-20%** of biological behavior.
 
 Adam's reasoning was disarmingly concrete. The basal ganglia---the brain structure most associated with RL---occupies only 1.5% of human brain volume. Even scaling that up generously, huge swaths of what we do (perception, locomotion, language, reading) just aren't well-captured by reward maximization. As he put it: "I'm not always practicing my tennis serve. Sometimes I'm just walking."
 
 Tom placed it at 20-30%, but added that RL has a **0% chance** of explaining how someone decides to move to a new city to start a new career. That kind of goal invention, he argued, lives entirely outside RL's reach.
 
-Anne Collins gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
+Anne gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
+
+Niels Leadholm didn't give an explicit percentage but made clear that RL is a small part of the picture. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
 
 ### The engineering side: a sharp divide
 
 On the question of building agents, the room split:
 
-* **The optimists:** Adam Lowet argued that in any domain with verifiable rewards---such as coding, math, and formal reasoning---RL + pre-training is sufficient for superhuman performance. He put engineering at 90%. Eli Sennesh went to 80%, *but only if* you count KL-controlled fine-tuning of LLMs as RL (which is really just shaping a trajectory distribution, not solving nested Bellman equations).
+* **The Optimists:** Adam Lowet put it at 90%, arguing that in any domain with verifiable rewards---such as coding, math, and formal reasoning---RL + pre-training is sufficient for superhuman performance, provided the base model can solve the task at least occasionally (pass at some finite k). RL then amplifies that capability to arbitrarily good performance. Eli Sennesh landed at 80%, but only after Hadi pushed him to count KL-controlled fine-tuning of LLMs as RL, which Eli noted is really just shaping a trajectory distribution, not solving nested Bellman equations. Under his own narrower definition, the number would be much lower.
 
-* **The skeptics:** Anne Collins estimated ~30%, noting that every successful RL application she's seen depends on engineers adding massive structure on top. Niels Leadholm argued that deep learning's fundamental brittleness (e.g., adversarial examples, unreliable generalization) makes it unsuitable for open-ended, non-stationary worlds, no matter how much you scale it.
+* **The Skeptics:** Anne Collins estimated ~30%, noting that every successful RL application she's seen depends on engineers adding massive structure on top. Niels Leadholm argued that deep learning's fundamental brittleness (e.g., adversarial examples, unreliable generalization) makes it unsuitable for open-ended, non-stationary worlds, no matter how much you scale it.
 
 Fritz declined to give a precise number ("Higher than 10%, I don't care"), but made a subtle point: RL's engineering numbers look inflated because we define narrow tasks with clean reward functions. That's not the robot reproducing natural behavior. That's us making the problem easy enough for RL to solve.
 
@@ -37,19 +39,21 @@ Fritz declined to give a precise number ("Higher than 10%, I don't care"), but m
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1380s" target="_blank">[00:23:00] "Abolish the Value Function"</a>
 
-The sharpest philosophical exchange was between Eli Sennesh and Adam Lowet. Eli argued that treating biological life as "maximizing reward" is an ontological error. The "reward function" in standard RL is what he called a *Deus Ex Machina*: a non-constructive existence proof from von Neumann-Morgenstern utility theory. It says: *if* an agent acts coherently, *then* there exists some function describing that behavior. But it doesn't tell you how to find it, how to construct it, or how the brain implements it.
+The sharpest philosophical exchange was between Eli Sennesh and Adam Lowet. Eli argued that treating biological life as "maximizing reward" is an ontological error. The "reward function" in standard RL is what he called a ***Deus Ex Machina***: a non-constructive existence proof from von Neumann-Morgenstern utility theory. It says: *if* an agent acts coherently, *then* there exists some function describing that behavior. But it doesn't tell you how to find it, how to construct it, or how the brain implements it.
 
-Adam pushed back: the engineering success of *actually instantiating* value functions (actor-critic methods, TD learning) is astonishing regardless of philosophical purity. The thing didn't *need* to be constructible, but it turns out that by constructing it, you can explain not only choice but also learning.
+Adam pushed back: the **engineering success of *actually instantiating* value functions** (actor-critic methods, TD learning) is astonishing regardless of philosophical purity. The thing didn't *need* to be constructible, but it turns out that by constructing it, you can explain not only choice but also learning.
 
-Eli's counter: that's fine for engineering, but if our goals are scientific, we need *identifiable* quantities---variables with real physical units, one-to-one mappings between data and parameters. A reward function whose only mathematical property is "it's more when behavior is better" gives an experimentalist nothing to work with.
+Eli's counter: that's fine for engineering, but if our goals are scientific, we need **identifiable** quantities---variables with real physical units, one-to-one mappings between data and parameters. A reward function whose only mathematical property is "it's more when behavior is better" gives an experimentalist nothing to work with.
+
+But Eli wasn't only critiquing, he also offered a constructive alternative. In foraging, for instance, the basal ganglia estimates a global capture rate: net energy acquired per unit time. This functions like a value signal---and when Hadi pointed out that this sounds suspiciously like the value function he had just abolished, Eli cheerfully accepted the **charge of hypocrisy**. His point was never that you *can't have a critic*. Rather, the critic needs to compute something with real units and physical meaning, not an abstract quantity handed down from mathematical Platonism. Once you have a physically identifiable task---like a thermostat minimizing squared error in degrees Fahrenheit---you can use RL algorithms just fine. The problem is pretending the abstract version is doing scientific work.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1770s" target="_blank">[00:29:30] The Dark Matter of Behavior</a>
 
-This led to what might be the most important critique of the entire series. Eli pointed out that neuroscience systematically screens off the hardest questions. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
+This led to what might be the most important critique of the entire series. Eli pointed out that **neuroscience systematically screens off the hardest (and most interesting) questions**. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
 
 Adam, wearing his experimentalist hat, acknowledged the problem but highlighted the practical bind: "No one has yet come up with an experiment that would really allow you to ask in animals the questions that Eli is posing." The challenge is real, but it's not that people are ignoring the dark matter. It's that nobody knows how to illuminate it.
 
-Eli's answer was directed at theorists: we need to step up and provide models with identifiable variables so that experimentalists know what to measure. Until theorists do that work, the experimental impasse will continue.
+Eli's answer was directed at theorists: we need to step up and provide **models with identifiable variables** so that experimentalists know what to measure. Until theorists do that work, the experimental impasse will continue.
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
 
@@ -63,7 +67,11 @@ Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](h
 
 Fritz Sommer and Tom Ringstrom had a revealing exchange about what drives exploration. Fritz defined curiosity strictly as **optimal experimental design**: you face something novel, you need to understand how it works, so you design actions that maximally reduce your uncertainty about specific hypotheses. Tom defined **empowerment** as maximizing the mutual information between your actions and sensory outcomes: a measure of how much control you have over your world.
 
-Fritz argued empowerment is sometimes useful but "too compulsive" as a general principle. Pole balancing, for instance, requires *reducing* the mutual information between your actions and sensory input. You want the pendulum to stay boring and still. Tom countered that empowerment is the only framework he knows that scales to high dimensions and can explain how things become *valuable in context*, that is, how you do credit assignment for functional significance. Without it, you end up with Pareto frontiers of competing values and no principled way to weight them.
+Fritz argued empowerment is sometimes useful but **"too compulsive"** as a general principle. In pole balancing, for instance, he noted that the mutual information between actions and sensory input is low (you want the pendulum to stay boring and still). So maximizing empowerment doesn't describe what you're actually doing.
+
+Tom countered that empowerment is not only useful, but it's also necessary. He argued it's the only information-theoretic measure he knows that can explain how things become valuable in context: how you do credit assignment for functional significance to an agent. He called this a **"hard constraint on theories of intelligence."** Without something like empowerment, you end up with Pareto frontiers of competing values and no principled way to weight them.
+
+Fritz partially conceded, acknowledging that empowerment can be important in certain contexts, but maintained that it isn't a universal principle.
 
 Fritz also stressed a point that deserves more attention: you can't understand **algorithms divorced from the hardware** they run on. Metabolic efficiency, energy constraints, and neuromorphic computing aren't implementation details. They are fundamental considerations that shape what algorithms are possible in the first place.
 
@@ -73,15 +81,15 @@ Eli offered a pragmatic engineering picture that cut through some of the RL-vs-n
 
 Adam partially agreed but noted that recent advances in sim-to-real transfer---better NVIDIA simulation environments, simple algorithms like PPO scaling with compute---are why bipedal robots can now walk over uneven terrain where Boston Dynamics couldn't for years.
 
-## Part 3: Hadi's attempt at a failed synthesis (and what emerged from it)
+## Part 3: Hadi's failed attempt at a synthesis (and what emerged from it)
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5530s" target="_blank">[01:32:10] Prediction Error Minimization as Unifying Theme?</a>
 
 Hadi tried to propose **prediction error minimization** as a unifying framework: each camp just defines a different prediction and a different error. Adam predicts reward. Eli predicts sensory states relative to set points. Fritz predicts information gain. Tom predicts option termination and empowerment. Niels predicts sensorimotor mismatch.
 
-It fell flat. Eli called it a "**deepity**": a term coined by philosopher Dan Dennett that means superficially profound, but actually vacuous. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
+It fell flat. Eli called it a "**deepity**" [a term coined by philosopher Dan Dennett that means superficially profound, but actually vacuous]. Any stable dynamical system can be written as a gradient flow on some Lyapunov function. That's a theorem, not an insight. The hard work is identifying *which* function, *which* gradient, and *which* implementation.
 
-Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the **principle of stationary action**" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictons.
+Hadi, agreeing with Eli, responded with an analogy to physics: saying "everything is gradient descent" is like saying "everything obeys the **principle of stationary action**" in physics. It is true, but the Nobel Prizes went to people who found the specific Lagrangians that explain something about the physical reality, with testable predictions.
 
 Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have **explanatory power**, **interpretability** (mapping computational processes to neural circuits), and **predictive power**.
 
@@ -94,8 +102,9 @@ Since top-down synthesis failed, we tried bottom-up. The thought experiment: you
 * **Eli** chose **Interoception** --- temperature sensors, battery level monitors, all feeding directly into the learning system. Whatever objective function the agent optimizes, it needs to know that if it doesn't get its solar panels into the light, it dies.
 * **Tom** chose **Temporal Distributions** --- the ability to represent and reason about time as a variable, so the agent can ask: "Will I run out of battery *before I reach the base*?"
 * **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
+* *(**Fritz** had to depart early and did not participate in this exercise)*
 
-Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under rerouce constraints force it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
+Something interesting emerged in the overlap. Eli's interoception gives the agent *awareness* of its resource state. Anne's computation under resource constraints force it to be *efficient* with those resources. Tom's temporal reasoning lets it *plan* around resource depletion over time. Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
 
 ## The Takeaway
 
