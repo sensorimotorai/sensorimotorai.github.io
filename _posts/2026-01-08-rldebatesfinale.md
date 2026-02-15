@@ -23,7 +23,7 @@ A striking consensus emerged: nearly every contender, *including* RL-proponent A
 
 **Anne Collins** gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of the problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
 
-**Niels Leadholm** didn't give an explicit percentage but made clear that RL is a small part of the picture. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
+**Niels Leadholm** gave it 20%. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
 
 ### The engineering side: a sharp divide
 
