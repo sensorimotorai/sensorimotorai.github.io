@@ -118,7 +118,9 @@ Something interesting emerged in the overlap:
 
 Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning would enable *planning* around resource depletion over time.
 
-Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
+Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization. Notably, our Mars rover survives, but it doesn't yet know *what to do*.
+
+The problem of goal-directed behavior---the dark matter of the series---remained unaddressed.
 
 
 
@@ -126,7 +128,9 @@ Without anyone trying to unify their frameworks, the Mars rover naturally conver
 
 The RL Debate Series started with a simple question---*what drives behavior?*---and ended with something more honest than a clean answer.
 
-RL explains a modest slice of biological behavior (10-30% by most estimates). It's more useful in engineering, especially for well-defined tasks with verifiable rewards, but everyone acknowledged it's insufficient for open-ended intelligence. The hardest unsolved problems (goal selection, context-sensitive value, lifelong learning, the fusion of perception with control) live outside RL's current reach.
+RL explains a modest slice of biological behavior (10-30% by most estimates). It's more useful in engineering, especially for well-defined tasks with verifiable rewards, but everyone acknowledged it's insufficient for open-ended intelligence.
+
+The hardest unsolved problems (goal selection, context-sensitive value, lifelong learning, the fusion of perception with control) live outside RL's current reach.
 
 A deep tension emerged, but it wasn't between RL and its alternatives. It was between the desire for grand unifying theories and the messy reality that brains are evolved systems full of local optima, resource constraints, and historical accidents. Whether that messiness conceals an elegant principle or simply *is* the principle remains the open question.
 
