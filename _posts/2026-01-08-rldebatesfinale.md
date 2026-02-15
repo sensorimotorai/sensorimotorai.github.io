@@ -9,8 +9,6 @@ For the final session of the **[RL Debate Series]({{ "/debates/" | relative_url 
 
 The discussion was organized around two goals: **Scientific Understanding** (can RL explain biological agency?) and **Engineering Utility** (can RL build artificial agents that work?). We asked each presenter to put a number on it. The numbers told a somewhat unexpected story.
 
----
-
 ## Part 1: How much can RL explain?
 
 ### The scientific side: a surprising consensus
@@ -21,7 +19,7 @@ A striking consensus emerged: nearly every contender, *including* RL-proponent A
 
 **Eli Sennesh** and **Fritz Sommer** both agreed on 10%. **Tom Ringstrom** placed it at 20-30%, but added that RL has a **0% chance** of explaining how someone decides to move to a new city to start a new career. That kind of goal invention, he argued, lives entirely outside RL's reach.
 
-**Anne Collins** gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
+**Anne Collins** gave 10-20% with a crucial caveat: the umbrella word "RL" itself is part of the problem. The engineering sense, the behavioral sense, and the neuroscientific sense of "RL" are somewhat different things, and collapsing them into one term contributes to people talking past each other.
 
 **Niels Leadholm** didn't give an explicit percentage but made clear that RL is a small part of the picture. For him, the missing ingredients are more fundamental: structured representations (reference frames), unsupervised sensorimotor learning, and modular model-building units connected hierarchically. These, not reward maximization, are what he considers the basis of mammalian behavior.
 
@@ -49,7 +47,7 @@ Eli's counter: that's fine for engineering, but if our goals are scientific, we 
 
 But Eli wasn't only critiquing, he also offered a constructive alternative. In foraging, for instance, the basal ganglia estimates a global capture rate: net energy acquired per unit time. This functions like a value signal---and when Hadi pointed out that this sounds suspiciously like the value function he had just abolished, Eli cheerfully accepted the **charge of hypocrisy**. His point was never that you *can't have a critic*. Rather, the critic needs to compute something with real units and physical meaning, not an abstract quantity handed down from mathematical Platonism. Once you have a physically identifiable task---like a thermostat minimizing squared error in degrees Fahrenheit---you can use RL algorithms just fine. The problem is pretending the abstract version is doing scientific work.
 
-### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1770s" target="_blank">[00:29:30] The Dark Matter of Behavior</a>
+### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1815s" target="_blank">[00:30:15] The Dark Matter of Behavior</a>
 
 This led to what might be the most important critique of the entire series. Eli pointed out that **neuroscience systematically screens off the hardest (and most interesting) questions**. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
 
@@ -77,7 +75,7 @@ Fritz partially conceded, acknowledging that empowerment can be important in cer
 
 Fritz also stressed a point that deserves more attention: you can't understand **algorithms divorced from the hardware** they run on. Metabolic efficiency, energy constraints, and neuromorphic computing aren't implementation details. They are fundamental considerations that shape what algorithms are possible in the first place.
 
-### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1570s" target="_blank">[00:26:10] Layered Control in Real Robotics</a>
+### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4920s" target="_blank">[01:22:00] Layered Control in Real Robotics</a>
 
 Eli offered a pragmatic engineering picture that cut through some of the RL-vs-not-RL framing. In real working robots, control is layered: **RL or logical reasoning at the top** (task selection), **model predictive control in the middle** (planning), and **classical control at the bottom** (stabilizing individual actuators). The frontier isn't about any single algorithm. It's getting these layers to communicate. Perception researchers and control researchers sit in different labs, and fusing their representations remains more of a "people problem" than a mathematical barrier.
 
@@ -85,7 +83,7 @@ Adam partially agreed but noted that recent advances in sim-to-real transfer---b
 
 ## Part 3: Hadi's failed attempt at a synthesis (and what emerged from it)
 
-### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5530s" target="_blank">[01:32:10] Prediction Error Minimization as Unifying Theme?</a>
+### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=6130s" target="_blank">[01:42:10] Prediction Error Minimization as Unifying Theme?</a>
 
 Hadi tried to propose **prediction error minimization** as a unifying framework: each camp just defines a different prediction and a different error. Adam predicts reward. Eli predicts sensory states relative to set points. Fritz predicts information gain. Tom predicts option termination and empowerment. Niels predicts sensorimotor mismatch.
 
@@ -95,20 +93,20 @@ Hadi, agreeing with Eli, responded with an analogy to physics: saying "everythin
 
 Anne's objection was even more fundamental: she doesn't think unification is necessary or likely. The brain developed through evolution---a messy, path-dependent, locally-optimal, resource-constrained process. Nothing guarantees a single elegant principle underneath. If someone found one, great, but she'd need it to have **explanatory power**, **interpretability** (e.g., mapping computational processes to neural circuits), and **predictive power**.
 
-### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=5990s" target="_blank">[01:39:50] The Mars Rover: Build a Survivor</a>
+### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=6590s" target="_blank">[01:49:50] The Mars Rover: Build a Survivor</a>
 
 Since top-down synthesis failed, we tried bottom-up. The thought experiment: you're building a Frankenstein agent to survive on Mars. Each presenter adds one component (and you're encouraged to pick from *someone else's* camp).
 
-* **Niels** chose **Empowerment** (from Tom's camp) --- the ability to evaluate which actions keep the most future options open.
-* **Anne** chose **Resource Constraints** --- bottlenecks that force the system to organize information efficiently, possibly explaining why we have a working memory capacity of ~4 items despite billions of neurons. Maybe it's a feature: constraints that promote generalization.
-* **Eli** chose **Interoception** --- temperature sensors, battery level monitors, all feeding directly into the learning system. Whatever objective function the agent optimizes, it needs to know that if it doesn't get its solar panels into the light, it dies.
-* **Tom** chose **Temporal Distributions** --- the ability to represent and reason about time as a variable, so the agent can ask: "*Will I run out of battery before I reach the base*?"
-* **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans, too, would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
-* *(**Fritz** had to depart early and did not participate in this exercise)*
+- **Niels** chose **Empowerment** (from Tom's camp) --- the ability to evaluate which actions keep the most future options open.
+- **Anne** chose **Resource Constraints** --- bottlenecks that force the system to organize information efficiently, possibly explaining why we have a working memory capacity of ~4 items despite billions of neurons. Maybe it's a feature: constraints that promote generalization.
+- **Eli** chose **Interoception** --- temperature sensors, battery level monitors, all feeding directly into the learning system. Whatever objective function the agent optimizes, it needs to know that if it doesn't get its solar panels into the light, it dies.
+- **Tom** chose **Temporal Distributions** --- the ability to represent and reason about time as a variable, so the agent can ask: "*Will I run out of battery before I reach the base*?"
+- **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans, too, would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
+- *(**Fritz** had to depart early and did not participate in this exercise)*
 
 Something interesting emerged in the overlap:
 
-Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning enable *planing* around resource depletion over time.
+Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning would enable *planning* around resource depletion over time.
 
 Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization.
 
