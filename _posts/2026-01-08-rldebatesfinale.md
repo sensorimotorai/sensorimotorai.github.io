@@ -17,7 +17,7 @@ The discussion was organized around two goals: **Scientific Understanding** (can
 
 A striking consensus emerged: nearly every contender, *including* RL-proponent Adam Lowet, estimated that standard RL explains only **~10-20%** of biological behavior.
 
-**Adam**'s reasoning was disarmingly concrete. The basal ganglia---the brain structure most associated with RL---occupies only 1.5% of human brain volume. Even scaling that up generously, huge swaths of what we do (perception, locomotion, language, reading) just aren't well-captured by reward maximization. As he put it: "I'm not always practicing my tennis serve. Sometimes I'm just walking."
+**Adam**'s reasoning was concrete. The basal ganglia---the brain structure most associated with RL---occupies only 1.5% of human brain volume. Even scaling that up generously, huge swaths of what we do (perception, locomotion, language, reading) just aren't well-captured by reward maximization. As he put it: "I'm not always practicing my tennis serve. Sometimes I'm just walking."
 
 **Eli Sennesh** and **Fritz Sommer** both agreed on 10%. **Tom Ringstrom** placed it at 20-30%, but added that RL has a **0% chance** of explaining how someone decides to move to a new city to start a new career. That kind of goal invention, he argued, lives entirely outside RL's reach.
 
