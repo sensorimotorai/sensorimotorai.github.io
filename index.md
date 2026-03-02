@@ -9,5 +9,5 @@ excerpt: Monthly journal club + RL Debate Series
 </p>
 
 **Next session**: Thursday, March 5, 2026<br>
-**Topic**: Three Dogmas of RL<br>
+**Topic**: Three Dogmas of Reinforcement Learning<br>
 **Presenters**: David Abel
