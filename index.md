@@ -8,6 +8,6 @@ excerpt: Monthly journal club + RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Thursday, February 26, 2026<br>
+**Next session**: Thursday, March 5, 2026<br>
 **Topic**: Nested Learning<br>
-**Presenters**: Ali Behrouz
+**Presenters**: David Abel
