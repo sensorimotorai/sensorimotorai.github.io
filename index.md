@@ -9,5 +9,5 @@ excerpt: Monthly journal club + RL Debate Series
 </p>
 
 **Next session**: Thursday, March 5, 2026<br>
-**Topic**: Nested Learning<br>
+**Topic**: Three Dogmas of RL<br>
 **Presenters**: David Abel
