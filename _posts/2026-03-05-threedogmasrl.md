@@ -5,16 +5,18 @@ tags: [RL, agency, reward-hypothesis, continual-learning, philosophy-of-science,
 categories: [2026, March]
 ---
 
-Before Newton, "motion" was a vague, fuzzy English word. Providing a crisp mathematical definition unlocked centuries of progress in mechanics. Before Carnot, "heat engine" was a similarly fuzzy term. Formalizing it launched thermodynamics. Turing did it for "computation," Shannon for "information." Each time, the act of *defining* the central concept of a field with mathematical precision is what turned a loose collection of intuitions into a real science.
+Newton gave "force, inertia, and motion" precise mathematical definitions: this unlocked centuries of progress in mechanics. Carnot formalized "heat engines" as ideal reversible cycles: this launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
 
-We are now at a similar crossroads. We want to build a science of intelligence, of agency, of learning---but we lack first-principles definitions of these terms. Which is exactly why David Abel's work is so important, and why we were thrilled to host him today.
+Today, "agency" is where "computation" was before Turing: everybody uses the word, nobody can define it precisely, and the field is stuck because of it.
+
+This was David Abel's opening argument when he spoke at our journal club today. Read on for a summary of one of our liveliest sessions yet.
 
 - Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank"}
 - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank"}
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
 - Slides: slides TODO
 
-This was one of our liveliest sessions yet. Dave's background in both philosophy and computer science made for a presentation that was as conceptually rich as it was technically precise, and the audience showed up with matching energy. We had contributions from **Alison Gopnik** (on representation, paradigm change, multi-agent coordination, and the developmental perspective), **Michael DeWeese** (defending a pragmatist account of agents and reward), **Eli Sennesh** (proposing learning as extension of dynamical timescales of control), **Mani Hamidi** (on incommensurability, risk sensitivity, and the origin of rewards---a preview of his talk next week!), **Thomas Ringstrom** (arguing empowerment is primary, preferences secondary), **Zachary Laborde** (on the relationship to enactivism), **Henley Smith** (on representation and a sharp bibliographic correction), and me, **Hadi** (on adaptation, statistics of the environment, and connecting all these frameworks). **Mark Ho**, Dave's co-author, also chimed in to sharpen the anti-behaviorist thrust of the first dogma.
+Dave's background in both philosophy and computer science made for a presentation that was as conceptually rich as it was technically precise, and the audience showed up with matching energy. We had contributions from **Alison Gopnik** (on representation, paradigm change, multi-agent coordination, and the developmental perspective), **Michael DeWeese** (defending a pragmatist account of agents and reward), **Eli Sennesh** (proposing learning as extension of dynamical timescales of control), **Mani Hamidi** (on incommensurability, risk sensitivity, and the origin of rewards---a preview of his talk next week!), **Thomas Ringstrom** (arguing empowerment is primary, preferences secondary), **Zachary Laborde** (on the relationship to enactivism), **Henley Smith** (on representation and a sharp bibliographic correction), and me, **Hadi** (on adaptation, statistics of the environment, and connecting all these frameworks). **Mark Ho**, Dave's co-author, also chimed in to sharpen the anti-behaviorist thrust of the first dogma.
 
 ## Table of Contents
 
