@@ -50,7 +50,8 @@ Dave claims there isn't one. We talk about agents constantly, but we haven't don
 
 And Quine:
 
-> *"The less a science is advanced, the more its terminology rests on an uncritical assumption of mutual understanding."*
+> *"The less a science has advanced, the more its terminology tends to rest on an uncritical assumption of mutual understanding."*
+> --- Truth by Convention [(Quine, 1936)](https://www.hist-analytic.com/QuineTruthbyConvention.pdf){:target="_blank" rel="noopener"}
 
 This prompted a rich exchange. **Zachary Laborde** asked whether this connects to the enactivist program. Dave said the proposal is broader, and there are many ways to re-center the agent, but that what's missing is the *formal apparatus* to do so.
 
@@ -58,7 +59,9 @@ This prompted a rich exchange. **Zachary Laborde** asked whether this connects t
 
 **Mark Ho** reinforced this point, noting that MDPs give us a general space to reason about trade-offs across environments. Can we build an analogous space for agents?
 
-Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions. I noted this connects directly to Anne Collins' work that she presented as part of the [RL Debate Series]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"}, which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank" rel="noopener"}).
+Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions.
+
+I noted this connects directly to Anne Collins' work that she presented as part of the [RL Debate Series]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"}, which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank" rel="noopener"}).
 
 **Alison** pushed further: representation is exactly what lets you compress an arbitrarily long history into a manageable state space. A theory, a causal graph, a world model. These are all mechanisms for doing that compression. She also advocated for developmental and comparative approaches to studying agency, arguing that adult human introspection is probably not the best window into what agency fundamentally *is*.
 
