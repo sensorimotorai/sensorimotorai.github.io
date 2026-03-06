@@ -5,7 +5,7 @@ tags: [RL, agency, reward-hypothesis, continual-learning, philosophy-of-science,
 categories: [2026, March]
 ---
 
-Newton gave "force, inertia, and motion" precise mathematical definitions: this unlocked centuries of progress in mechanics. Carnot formalized "heat engines" as ideal reversible cycles: this launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
+Newton gave "force, inertia, and motion" precise mathematical definitions. This unlocked centuries of progress in mechanics. Carnot formalized "heat engines" as ideal reversible cycles. This launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
 
 Today, "agency" is where "computation" was before Turing: everybody uses the word, nobody can define it precisely, and the field is stuck because of it.
 
@@ -23,7 +23,7 @@ Dave's background in both philosophy and computer science made for a presentatio
 - [Background: paradigms and why they matter](#background-paradigms-and-why-they-matter)
 - [Dogma 1: The Environment Spotlight](#dogma-1-the-environment-spotlight)
 - [Dogma 2: Learning as finding a solution](#dogma-2-learning-as-finding-a-solution)
-- [The adaptation thread](#the-adaptation-thread)
+- [Interlude: The adaptation thread](#interlude-the-adaptation-thread)
 - [Dogma 3: The Reward Hypothesis](#dogma-3-the-reward-hypothesis)
 - [Wrapping up: the pragmatist counterpoint](#wrapping-up-the-pragmatist-counterpoint)
 - [Where rewards come from, and where this is all heading](#where-rewards-come-from-and-where-this-is-all-heading)
@@ -59,9 +59,9 @@ The alternative: learning as *adaptation*, as playing an *infinite game*. Dave c
 
 He noted that even Sutton and Barto gesture toward this view. In an early draft, they wrote that the point of maximizing reward is not that the quantity is ever maximized, but that the agent is always *trying* to increase it. **Henley Smith** pointed out that this quote appears in the 2015 draft but was removed from the published 2018 edition. Dave found this fascinating and somewhat puzzling.
 
-## The adaptation thread
+## Interlude: The adaptation thread
 
-This is where one of the session's most interesting threads developed [*editorial note: of course I feel this way, because I asked this question haha!*]. **Hadi** asked Dave to *define* adaptation, noting that definitions are famously difficult here but that they matter enormously.
+This is where one of the session's most interesting threads developed [*editorial note: of course I feel this way, because I asked this question haha!*]. **Hadi** asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
 
 It turns out this was Dave's next slide. He offered four candidate views of learning/adaptation: (1) **mechanistic** (the presence of a special learning mechanism, like gradient computation), (2) **behaviorist** (meaningful behavior change due to experience), (3) **uncertainty/knowledge** (reduction of uncertainty or acquisition of knowledge over time), and (4) **performance-based** (improvement on a task, the classic Mitchell definition).
 
@@ -79,7 +79,8 @@ Dave summarized the [Settling the Reward Hypothesis](https://proceedings.mlr.pre
 
 The reward hypothesis states:
 
-> *"All of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward)."* --- Sutton (2004)
+> *"All of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward)."*
+> --- [Sutton (2004)](http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html){:target="_blank"}
 
 The first interpretive door: **"goals and purposes"** are understood as **preference relations** over outcomes (distributions over histories of experience). **Hadi** asked whether this is consensus or proposal. Dave said it's not consensus. Philosopher Ruth Chang has argued against it on grounds of incommensurability. But preferences are general enough that he finds them hard to reject as at least a starting point.
 
