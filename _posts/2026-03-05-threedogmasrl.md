@@ -16,7 +16,7 @@ This was David Abel's opening argument when he spoke at our journal club today. 
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
 - Slides: TODO
 
-Dave's background in both philosophy and computer science made for a presentation that was as conceptually rich as it was technically precise. We also had lots of lively discussions. **Alison Gopnik**, **Michael DeWeese**, **Mani Hamidi**, **Eli Sennesh**, **Thomas Ringstrom**, **Zachary Laborde**, **Henley Smith**, and others helped turn the session into a wide-ranging conversation about representation, reward (and its origins), development, empowerment, adaptation, and the nature of agency. I (**Hadi**, the organizer) also participated, mostly on adaptation and the statistics of the environment. **Mark Ho**, Dave's co-author, emphasized the anti-behaviorist implications of the first dogma.
+Dave's talk was both conceptually rich and technically precise, reflecting his background in both philosophy and computer science. The discussion was just as lively: **Alison Gopnik**, **Michael DeWeese**, **Mani Hamidi**, **Eli Sennesh**, **Thomas Ringstrom**, **Zachary Laborde**, **Henley Smith**, and others helped turn the session into a wide-ranging conversation about representation, reward (and its origins), development, empowerment, adaptation, and the nature of agency. I (**Hadi**, the organizer) also participated, mostly on adaptation and the statistics of the environment. **Mark Ho**, Dave's co-author, emphasized the anti-behaviorist implications of the first dogma.
 
 ## Table of Contents
 
