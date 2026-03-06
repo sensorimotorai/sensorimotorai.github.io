@@ -12,7 +12,8 @@ Today, "agency" is where "computation" was before Turing: everybody uses the wor
 This was David Abel's opening argument when he spoke at our journal club today. Read on for a summary of one of our liveliest sessions yet.
 
 - Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank" rel="noopener"}
-    - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank" rel="noopener"}
+    - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"}
+    - And: [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank" rel="noopener"}
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
 
 Dave's talk was both conceptually rich and technically precise, reflecting his background in both philosophy and computer science. The discussion was just as lively: **Alison Gopnik**, **Michael DeWeese**, **Mani Hamidi**, **Eli Sennesh**, **Thomas Ringstrom**, **Zachary Laborde**, **Henley Smith**, and others helped turn the session into a wide-ranging conversation about representation, reward (and its origins), development, empowerment, adaptation, and the nature of agency. I (**Hadi**, the organizer) also participated, mostly on adaptation and the statistics of the environment. **Mark Ho**, Dave's co-author, emphasized the anti-behaviorist implications of the first dogma.
