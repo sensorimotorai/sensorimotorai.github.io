@@ -72,7 +72,7 @@ He noted that even Sutton and Barto gesture toward this view. In an early draft,
 
 ## Interlude: The adaptation thread
 
-This is where one of the session's most interesting threads developed [*editorial note: of course I feel this way, because I asked this question haha!*]. I asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
+This is where one of the session's most interesting threads developed [*full disclosure: I asked this question!*]. I asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
 
 It turns out this was Dave's next slide. He offered four candidate views of learning/adaptation:
 
@@ -110,9 +110,13 @@ The phrase **"well thought of"** means preferences can be *conveyed* through rew
 
 ### The five formal axioms
 
-These are essentially the **von Neumann-Morgenstern axioms** (completeness, transitivity, independence, continuity) plus a new fifth axiom called **temporal gamma-indifference** (discounting is consistent through time, needed specifically for Markov rewards). The main result: a preference relation satisfies these five axioms *if and only if* there exists a Markov reward-discount pair that captures it.
+These are essentially the familiar **[von Neumann-Morgenstern axioms](https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem){:target="_blank" rel="noopener"}**: completeness, transitivity, independence, and continuity, plus a fifth condition [Bowling et al., (2023)](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"} called **temporal gamma-indifference**, which says discounting must remain consistent through time for Markov rewards.
 
-The **"if and only if"** is the key: writing down a reward function *implicitly commits you* to all five axioms. Violating any axiom means no reward function can capture your preferences. And as Dave noted, there's ample evidence that humans regularly violate basically all of these axioms. **Mani** asked how this squares with *distributional RL* and risk-sensitive methods like *Conditional Value at Risk* (CVaR). Dave explained that risk sensitivity violates the independence axiom, and that dropping individual axioms opens up a rich landscape of alternative decision-making theories (partial orders, lexicographic orders, multi-criteria RL).
+Here's the main result: a preference relation can be captured by a Markov reward-discount pair **if and only if** it satisfies these five axioms.
+
+That bidirectional **if and only if** is the key point. Writing down a reward function is not a neutral modeling move. It implicitly commits you to all five axioms. If even one fails, then no scalar reward function can fully capture the underlying preferences.
+
+As Dave noted, humans seem to violate many of these axioms in practice. **Mani** asked how this relates to *distributional RL* and risk-sensitive methods like *Conditional Value at Risk* (CVaR). Dave's answer was that risk sensitivity breaks the independence axiom, and that once you relax individual axioms, you open the door to a much broader space of decision theories, including partial orders, lexicographic orders, and multi-criteria RL.
 
 ## Wrapping up: the pragmatist counterpoint
 
@@ -130,13 +134,13 @@ I closed by asking Dave about the connection between the reward hypothesis and a
 
 Here is why I think Dave’s line of work is interesting and important.
 
-Fields mature when their central concepts become precise enough to analyze systematically. Newton did this for motion, Turing for computation, Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
+Fields mature when their central concepts become precise enough to analyze systematically. As mentioned earlier, Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
 
 That is what makes Three Dogmas valuable. It does not offer a new benchmark result or a better algorithm. It asks whether some of RL’s most familiar concepts, like agent, learning, and reward, are actually as clear and well grounded as we pretend they are. In that sense, the paper is doing real foundational work: surfacing hidden assumptions and showing how they shape what the field can easily think about.
 
 At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today’s discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
 
-This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets a more thorough treatment it deserves.
+This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets the more thorough treatment it deserves.
 
 Can't wait!
 
