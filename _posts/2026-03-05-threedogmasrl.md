@@ -7,7 +7,7 @@ categories: [2026, March]
 
 Newton gave force, inertia, and motion precise mathematical definitions. This unlocked centuries of progress in mechanics. Carnot formalized heat engines as ideal reversible cycles. This launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
 
-Today, "agency" is where "computation" was before Turing: everybody uses the word, nobody can define it precisely, and the field is stuck because of it.
+Today, "agency" is where "computation" was before Turing: everybody uses the word, but we still lack a precise definition for it. And the field is stuck because of this.
 
 This was David Abel's opening argument when he spoke at our journal club today. Read on for a summary of one of our liveliest sessions yet.
 
