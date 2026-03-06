@@ -5,7 +5,7 @@ tags: [empowerment, compositionality, option-kernels, intrinsic-motivation]
 categories: [2025, December]
 ---
 
-In our 6th and final [RL Debates]({{ "/debates/" | relative_url }}) presentation, Tom introduced a rigorous framework for compositional planning that replaces the standard scalar reward with predictive "option kernels" and intrinsic empowerment.
+In our 6th and final [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Tom introduced a rigorous framework for compositional planning that replaces the standard scalar reward with predictive "option kernels" and intrinsic empowerment.
 
 - Paper: [A Unified Theory of Compositionality, Modularity, and Interpretability in MDPs](https://arxiv.org/abs/2506.09499){:target="_blank"}
 - Slides: [Drive link](https://drive.google.com/file/d/1A3Q7o5adEHjQH1uRecClbwCBI6CW37hO/view?usp=sharing){:target="_blank"}

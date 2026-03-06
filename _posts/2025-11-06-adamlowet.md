@@ -5,7 +5,7 @@ tags: [value, RL, distributional, actor-critic]
 categories: [2025, November]
 ---
 
-In our 4th [RL Debates]({{ "/debates/" | relative_url }}) presentation, Adam presented broad topics on RL and the brain, including his distributional RL paper.
+In our 4th [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Adam presented broad topics on RL and the brain, including his distributional RL paper.
 
 - Paper: [An opponent striatal circuit for distributional reinforcement learning](https://www.nature.com/articles/s41586-024-08488-5){:target="_blank"}
 - Slides: [Drive link](https://drive.google.com/file/d/1cu5Q4bDczRlMfXK2XVqyVw4rGe8TLfpb/view?usp=sharing){:target="_blank"}

@@ -5,7 +5,7 @@ tags: [RL, behavior, working-memory, habit, cognitive-science]
 categories: [2025, November]
 ---
 
-In our 5th [RL Debates]({{ "/debates/" | relative_url }}) presentation, Anne argued that reward-based learning is not always driven by RL computations. Sometimes it's working memory combined with outcome-insensitive habit formation, mimicking RL without computing values.
+In our 5th [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Anne argued that reward-based learning is not always driven by RL computations. Sometimes it's working memory combined with outcome-insensitive habit formation, mimicking RL without computing values.
 
 - Paper: [A habit and working memory model as an alternative account of human reward-based learning](https://www.nature.com/articles/s41562-025-02340-0){:target="_blank"}
 - Presenter: Anne Collins

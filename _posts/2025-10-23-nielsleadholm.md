@@ -5,7 +5,7 @@ tags: [active-learning, sensorimotor, thousand-brains, monty]
 categories: [2025, October]
 ---
 
-In our 3rd [RL Debates]({{ "/debates/" | relative_url }}) presentation, Niels from the [Thousand Brains Project](https://thousandbrains.org/){:target="_blank"} shared how their team is reverse-engineering the cortex to build sensorimotor systems that learn and infer like the brain. 
+In our 3rd [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Niels from the [Thousand Brains Project](https://thousandbrains.org/){:target="_blank"} shared how their team is reverse-engineering the cortex to build sensorimotor systems that learn and infer like the brain. 
 
 - Paper: [Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference](https://arxiv.org/abs/2507.04494){:target="_blank"}
 - Slides: [Drive link](https://drive.google.com/file/d/124LvxLSBkzkFMB-exDgM5dSCq3k-2uTq/view?usp=sharing){:target="_blank"}
