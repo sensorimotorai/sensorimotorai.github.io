@@ -11,8 +11,8 @@ Today, "agency" is where "computation" was before Turing: everybody uses the wor
 
 This was David Abel's opening argument when he spoke at our journal club today. Read on for a summary of one of our liveliest sessions yet.
 
-- Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank"}
-    - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank"}
+- Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank" rel="noopener"}
+    - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank" rel="noopener"}
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
 - Slides: TODO
 
@@ -46,7 +46,7 @@ The first dogma is our tendency to model environments explicitly while leaving a
 Dave claims there isn't one. We talk about agents constantly, but we haven't done the careful conceptual analysis and formal modeling of agents that we've done for environments. He quoted Michael Tomasello:
 
 > *"Agency is the organizational framework within which both behavioral and mental processes operate."*
-> --- The evolution of agency: Behavioral organization from lizards to humans [(Tomasello, 2022)](https://mitpress.mit.edu/9780262047005/the-evolution-of-agency/){:target="_blank"}
+> --- The evolution of agency: Behavioral organization from lizards to humans [(Tomasello, 2022)](https://mitpress.mit.edu/9780262047005/the-evolution-of-agency/){:target="_blank" rel="noopener"}
 
 And Quine:
 
@@ -58,7 +58,7 @@ This prompted a rich exchange. **Zachary Laborde** asked whether this connects t
 
 **Mark Ho** reinforced this point, noting that MDPs give us a general space to reason about trade-offs across environments. Can we build an analogous space for agents?
 
-Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions. **Hadi** noted this connects directly to Anne Collins' work that she presented as part of the [RL Debates]({{ "/debates/" | relative_url }}{:target="_blank"}), which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank"}).
+Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions. **Hadi** noted this connects directly to Anne Collins' work that she presented as part of the [RL Debate Series]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"}, which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank" rel="noopener"}).
 
 **Alison** pushed further: representation is exactly what lets you compress an arbitrarily long history into a manageable state space. A theory, a causal graph, a world model. These are all mechanisms for doing that compression. She also advocated for developmental and comparative approaches to studying agency, arguing that adult human introspection is probably not the best window into what agency fundamentally *is*.
 
@@ -86,12 +86,12 @@ I (**Hadi**) then proposed a specific notion of adaptation rooted in theoretical
 
 The final and most technical segment tackled the Reward Hypothesis directly: Sutton's claim that all goals and purposes can be well thought of as maximization of expected cumulative scalar reward.
 
-Dave summarized the [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank"} paper (led by Michael Bowling and John Martin), which translates this natural-language statement into a formal conjecture and identifies the exact conditions under which it's true. The framework uses "seven doors": two interpretive choices that turn the hypothesis into a conjecture, and five axioms that determine when the conjecture holds.
+Dave summarized the [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"} paper (led by Michael Bowling and John Martin), which translates this natural-language statement into a formal conjecture and identifies the exact conditions under which it's true. The framework uses "seven doors": two interpretive choices that turn the hypothesis into a conjecture, and five axioms that determine when the conjecture holds.
 
 The reward hypothesis states:
 
 > *"All of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward)."*
-> --- [Sutton (2004)](http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html){:target="_blank"}
+> --- [Sutton (2004)](http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html){:target="_blank" rel="noopener"}
 
 The first interpretive door: **"goals and purposes"** are understood as **preference relations** over outcomes (distributions over histories of experience). **Hadi** asked whether this is consensus or proposal. Dave said it's not consensus. Philosopher Ruth Chang has argued against it on grounds of incommensurability. But preferences are general enough that he finds them hard to reject as at least a starting point.
 
