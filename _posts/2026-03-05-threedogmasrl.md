@@ -12,9 +12,9 @@ Today, "agency" is where "computation" was before Turing: everybody uses the wor
 This was David Abel's opening argument when he spoke at our journal club today. Read on for a summary of one of our liveliest sessions yet.
 
 - Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank"}
-- See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank"}
+    - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank"}
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
-- Slides: slides TODO
+- Slides: TODO
 
 Dave's background in both philosophy and computer science made for a presentation that was as conceptually rich as it was technically precise, and the audience showed up with matching energy. We had contributions from **Alison Gopnik** (on representation, paradigm change, multi-agent coordination, and the developmental perspective), **Michael DeWeese** (defending a pragmatist account of agents and reward), **Eli Sennesh** (proposing learning as extension of dynamical timescales of control), **Mani Hamidi** (on incommensurability, risk sensitivity, and the origin of rewards---a preview of his talk next week!), **Thomas Ringstrom** (arguing empowerment is primary, preferences secondary), **Zachary Laborde** (on the relationship to enactivism), **Henley Smith** (on representation and a sharp bibliographic correction), and me, **Hadi** (on adaptation, statistics of the environment, and connecting all these frameworks). **Mark Ho**, Dave's co-author, also chimed in to sharpen the anti-behaviorist thrust of the first dogma.
 
@@ -33,21 +33,32 @@ Dave's background in both philosophy and computer science made for a presentatio
 
 ## Background: paradigms and why they matter
 
-Dave opened with a philosophical framing. Drawing on Popper, Kuhn, and the Duhem-Quine thesis, he argued that the *paradigm* we work within shapes not just what answers we find, but what questions we're *capable of asking*. He illustrated this with the anecdote of Cremonini refusing to look through Galileo's telescope, arguing the instrument itself must be introducing artifacts. The preconception about what counts as evidence was already doing the work before any observation took place.
+Dave opened with a philosophical framing. Drawing on Popper, Kuhn, and the Duhem-Quine thesis, he argued that the *paradigm* we work within shapes not just what answers we find, but what questions we're *capable of asking*. He illustrated this with the anecdote of Cremonini refusing to look through Galileo's telescope, arguing the instrument itself must be introducing artifacts. The preconception of what counted as evidence was already shaping the conclusion before anyone looked.
 
 The core question: has reinforcement learning finalized its paradigm? Or are there assumptions baked into the standard framework---assumptions so familiar they've become invisible---that are limiting what we can conceive of?
 
-Dave and his co-authors Mark Ho and Anna Harutyunyan identified three such assumptions, which they call *dogmas* (an homage to Quine's "Two Dogmas of Empiricism"). The paper argues these dogmas are constraining the surface area that RL's theory and definitions can have with the grand phenomena of agents, intelligence, and learning.
+Dave and his co-authors Mark Ho and Anna Harutyunyan identified three such assumptions, which they call *dogmas* (an homage to Quine's "Two Dogmas of Empiricism"). The paper argues that these dogmas constrain the kinds of theories and definitions RL can develop about agents, intelligence, and learning.
 
 ## Dogma 1: The Environment Spotlight
 
 The first dogma is our tendency to model environments explicitly while leaving agents as an afterthought. We do have a "standard model" of the environment---the MDP, with its five-tuple, its Bellman equations, its rich taxonomy of variants (POMDPs, bandits, contextual bandits). But what about the agent? What's the standard model of an *agent*?
 
-Dave's claim: there isn't one. We talk about agents constantly, but we haven't done the careful conceptual analysis and formal modeling of agents that we've done for environments. He quoted Michael Tomasello: agency is the organizational framework within which both behavioral and mental processes operate. And Quine: the less a science is advanced, the more its terminology rests on an uncritical assumption of mutual understanding.
+Dave claims there isn't one. We talk about agents constantly, but we haven't done the careful conceptual analysis and formal modeling of agents that we've done for environments. He quoted Michael Tomasello:
 
-This prompted a rich exchange. **Zachary Laborde** asked whether this connects to the enactivist program. Dave said the proposal is broader, and there are many ways to re-center the agent, but that what's missing is the *formal apparatus* to do so. **Alison Gopnik** chimed in here, stating that the enactivist program has historically been anti-representational, which is a liability. You could have an agent-centric program *with* representations, and that might be the best of both worlds. **Mark Ho** reinforced this point, noting that MDPs give us a general space to reason about trade-offs across environments. Can we build an analogous space for agents?
+> *"Agency is the organizational framework within which both behavioral and mental processes operate."*
+> --- The evolution of agency: Behavioral organization from lizards to humans [(Tomasello, 2022)](https://mitpress.mit.edu/9780262047005/the-evolution-of-agency/){:target="_blank"}
 
-Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions. **Hadi** noted this connects directly to Anne Collins' work that she presented as part of the [RL Debates]({{ "/debates/" | relative_url }}), which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank"}).
+And Quine:
+
+> *"The less a science is advanced, the more its terminology rests on an uncritical assumption of mutual understanding."*
+
+This prompted a rich exchange. **Zachary Laborde** asked whether this connects to the enactivist program. Dave said the proposal is broader, and there are many ways to re-center the agent, but that what's missing is the *formal apparatus* to do so.
+
+**Alison Gopnik** chimed in here, stating that the enactivist program has historically been anti-representational, which is a liability. You could have an agent-centric program *with* representations, and that might be the best of both worlds.
+
+**Mark Ho** reinforced this point, noting that MDPs give us a general space to reason about trade-offs across environments. Can we build an analogous space for agents?
+
+Dave then showed a backup slide on **bounded agents**: a finite-state-machine formalization where the agent has a finite internal state space (capturing something like a memory or capacity constraint), a state-update function, and a policy that maps internal states to actions. **Hadi** noted this connects directly to Anne Collins' work that she presented as part of the [RL Debates]({{ "/debates/" | relative_url }}{:target="_blank"}), which showed that human deviations from RL predictions arise from finite working memory (see [RL Debates 5: Anne <em>"not everything is RL"</em> Collins]({% post_url 2025-11-13-annecollins %}){:target="_blank"}).
 
 **Alison** pushed further: representation is exactly what lets you compress an arbitrarily long history into a manageable state space. A theory, a causal graph, a world model. These are all mechanisms for doing that compression. She also advocated for developmental and comparative approaches to studying agency, arguing that adult human introspection is probably not the best window into what agency fundamentally *is*.
 
@@ -61,15 +72,15 @@ He noted that even Sutton and Barto gesture toward this view. In an early draft,
 
 ## Interlude: The adaptation thread
 
-This is where one of the session's most interesting threads developed [*editorial note: of course I feel this way, because I asked this question haha!*]. **Hadi** asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
+This is where one of the session's most interesting threads developed [*editorial note: of course I feel this way, because I asked this question haha!*]. I (**Hadi**) asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
 
 It turns out this was Dave's next slide. He offered four candidate views of learning/adaptation: (1) **mechanistic** (the presence of a special learning mechanism, like gradient computation), (2) **behaviorist** (meaningful behavior change due to experience), (3) **uncertainty/knowledge** (reduction of uncertainty or acquisition of knowledge over time), and (4) **performance-based** (improvement on a task, the classic Mitchell definition).
 
-**Hadi** then proposed a specific notion of adaptation rooted in theoretical neuroscience: adapting to the *statistics of the environment* across timescales. He gave the example of the visual cortex containing more neurons selective for cardinal orientations (vertical, horizontal) than oblique ones, mirroring the statistical prevalence of these orientations in natural scenes. This kind of adaptation spans evolutionary to moment-to-moment timescales (e.g., gain modulation), and if you formalize it, it starts to look like a cross-entropy or generative modeling objective.
+I (**Hadi**) then proposed a specific notion of adaptation rooted in theoretical neuroscience: adapting to the *statistics of the environment* across timescales. He gave the example of the visual cortex containing more neurons selective for cardinal orientations (vertical, horizontal) than oblique ones, mirroring the statistical prevalence of these orientations in natural scenes. This kind of adaptation spans evolutionary to moment-to-moment timescales (e.g., gain modulation), and if you formalize it, it starts to look like a cross-entropy or generative modeling objective.
 
 **Eli Sennesh** pushed back on the evolutionary timescale version, calling it tautological: "Fish aren't found out of water because they'd be dead." But Hadi's point was about the *representational imprint*---the structure of the organism's internal model reflecting the statistics of its environment. Dave categorized this as the mechanistic view, since the claim is about internal representations rather than behavior per se. He also teased that his upcoming talk on **plasticity and empowerment** (in two weeks) would formalize adaptation in terms of *influence*: can the data the organism receives influence either the content of the agent's mind or its behavior?
 
-**Alison Gopnik** added another dimension: the inverse-problem view from vision science and philosophy of science. The environment has structure; the agent receives samples generated by that structure; the problem is recovering the structure from the samples. She noted this doesn't reduce to uncertainty---paradigm shifts, for instance, aren't about updating probabilities but about restructuring the framework itself. And this isn't just about fancy scientific learning: 3- and 4-year-olds go through something like paradigm shifts too.
+**Alison** added another dimension: the inverse-problem view from vision science and philosophy of science. The environment has structure; the agent receives samples generated by that structure; the problem is recovering the structure from the samples. She noted this doesn't reduce to uncertainty---paradigm shifts, for instance, aren't about updating probabilities but about restructuring the framework itself. And this isn't just about fancy scientific learning: 3- and 4-year-olds go through something like paradigm shifts too.
 
 ## Dogma 3: The Reward Hypothesis
 
@@ -114,7 +125,7 @@ We are trying to build a science of intelligence. We talk constantly about "agen
 
 This kind of foundational, conceptual work is undervalued in a field obsessed with benchmarks and scaling laws. It's much harder to publish a paper that says "here's a better way to *think*" than one that says "here's a better number on a benchmark." But historically, the conceptual advances are the ones that last. I believe the Three Dogmas is that kind of work, and I'm glad Dave and his collaborators are pursuing this kind of work with such rigor and care.
 
-And this is just the beginning! See the [schedule page]({{ "/schedule/" | relative_url }}) for what's coming next: **Mani Hamidi** presents next week (**March 12**) with an evolutionary response to these very dogmas, and **Dave returns on March 19** to present *Plasticity as the Mirror of Empowerment*, which promises to formalize adaptation and show that plasticity and empowerment are fundamentally in tension.
+And this is just the beginning! See the [schedule page]({{ "/schedule/" | relative_url }}) for what's coming next: **Mani Hamidi** presents next week (**March 12**) with an evolutionary response to these very dogmas, and **Dave** returns on **March 19** to present *Plasticity as the Mirror of Empowerment*, which promises to formalize adaptation and show that plasticity and empowerment are fundamentally in tension.
 
 Can't wait!
 
