@@ -14,7 +14,6 @@ This was David Abel's opening argument when he spoke at our journal club today. 
 - Paper: [Three Dogmas of Reinforcement Learning](https://arxiv.org/abs/2407.10583){:target="_blank" rel="noopener"}
     - See also: [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"}, [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN){:target="_blank" rel="noopener"}
 - Presenter: David Abel (Google DeepMind), with co-author Mark Ho (NYU) joining for discussion
-- Slides: TODO
 
 Dave's talk was both conceptually rich and technically precise, reflecting his background in both philosophy and computer science. The discussion was just as lively: **Alison Gopnik**, **Michael DeWeese**, **Mani Hamidi**, **Eli Sennesh**, **Thomas Ringstrom**, **Zachary Laborde**, **Henley Smith**, and others helped turn the session into a wide-ranging conversation about representation, reward (and its origins), development, empowerment, adaptation, and the nature of agency. I (**Hadi**, the organizer) also participated, mostly on adaptation and the statistics of the environment. **Mark Ho**, Dave's co-author, emphasized the anti-behaviorist implications of the first dogma.
 
@@ -100,7 +99,7 @@ The reward hypothesis states:
 
 ### The first interpretive door:
 
-Here, **"goals and purposes"** is understood as **preference relations** over outcomes (distributions over histories of experience). I asked whether this is consensus or proposal. Dave said it's not consensus. Philosopher Ruth Chang has argued against it on grounds of incommensurability. But preferences are general enough that he finds them hard to reject as at least a starting point.
+Here, **"goals and purposes"** is interpreted in terms of **preference relations** over outcomes (distributions over histories of experience). I asked whether this is consensus or proposal. Dave said it's not consensus. Philosopher Ruth Chang has argued against it on grounds of incommensurability. But preferences are general enough that he finds them hard to reject as at least a starting point.
 
 This sparked a rich exchange. **Mani Hamidi** brought up Chang's incommensurability argument. **Alison Gopnik** connected it to Isaiah Berlin's picture of tragic value pluralism (illustrated by Bernard Williams's Gauguin example: you can't put your obligation to your family and your artistic drive on a single preference scale). **Thomas Ringstrom** offered the empowerment perspective: preferences might be *secondary* to empowerment, which can *induce* a preference relation. In this view, there has to be a *reason* for preferences, and empowerment provides it. Dave found this thread fascinating and noted that in earlier work, he and his co-authors had struggled with the order in which objects are introduced---does the environment come first, then preferences, then rewards? Or do preferences come first?
 
@@ -134,13 +133,13 @@ I closed by asking Dave about the connection between the reward hypothesis and a
 
 Here is why I think Dave’s line of work is interesting and important.
 
-Fields mature when their central concepts become precise enough to analyze systematically. As mentioned earlier, Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
+Fields mature when their central concepts become precise enough to analyze systematically. Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
 
 That is what makes Three Dogmas valuable. It does not offer a new benchmark result or a better algorithm. It asks whether some of RL’s most familiar concepts, like agent, learning, and reward, are actually as clear and well grounded as we pretend they are. In that sense, the paper is doing real foundational work: surfacing hidden assumptions and showing how they shape what the field can easily think about.
 
 At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today’s discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
 
-This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets the more thorough treatment it deserves.
+This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets a more thorough treatment it deserves.
 
 Can't wait!
 
