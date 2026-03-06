@@ -136,7 +136,7 @@ That is what makes Three Dogmas valuable. It does not offer a new benchmark resu
 
 At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today’s discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
 
-This sets up the next discussion nicely. **Mani Hamidi** presents next week (**March 12**) with an evolutionary response to these very dogmas, and **Dave** returns on **March 19** to present Plasticity as the Mirror of Empowerment, which may be where the adaptation question gets a more thorough treatment it deserves.
+This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets a more thorough treatment it deserves.
 
 Can't wait!
 

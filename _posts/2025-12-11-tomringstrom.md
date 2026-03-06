@@ -7,11 +7,11 @@ categories: [2025, December]
 
 In our 6th and final [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Tom introduced a rigorous framework for compositional planning that replaces the standard scalar reward with predictive "option kernels" and intrinsic empowerment.
 
-- Paper: [A Unified Theory of Compositionality, Modularity, and Interpretability in MDPs](https://arxiv.org/abs/2506.09499){:target="_blank"}
-- Slides: [Drive link](https://drive.google.com/file/d/1A3Q7o5adEHjQH1uRecClbwCBI6CW37hO/view?usp=sharing){:target="_blank"}
+- Paper: [A Unified Theory of Compositionality, Modularity, and Interpretability in MDPs](https://arxiv.org/abs/2506.09499){:target="_blank" rel="noopener"}
+- Slides: [Drive link](https://drive.google.com/file/d/1A3Q7o5adEHjQH1uRecClbwCBI6CW37hO/view?usp=sharing){:target="_blank" rel="noopener"}
 - Presenter: Tom Ringstrom
 
-We began with Tom describing his observation of flexible animal intelligence to realizing that standard RL principles are insufficient for high-dimensional planning [00:01:44]. He used the famous example of **[Stoffel the honey badger](https://www.youtube.com/watch?v=c36UNSoJenI){:target="_blank"}** to illustrate the need for agents that can reason about complex, sequential goals (like escaping an enclosure) without needing explicit external rewards for every step [00:09:35].
+We began with Tom describing his observation of flexible animal intelligence to realizing that standard RL principles are insufficient for high-dimensional planning [00:01:44]. He used the famous example of **[Stoffel the honey badger](https://www.youtube.com/watch?v=c36UNSoJenI){:target="_blank" rel="noopener"}** to illustrate the need for agents that can reason about complex, sequential goals (like escaping an enclosure) without needing explicit external rewards for every step [00:09:35].
 
 Tom argued that standard value functions act merely as "scorecards," compressing rich spatiotemporal information into a single number and failing to factorize in high dimensions [00:15:38]. He proposed a new formalism based on **Option Kernel Bellman Equations (OKBEs)**, which learn **State-Time Option Kernels (STOKs)**, defined as predictive representations of *when* and *where* an agent will end up [00:23:47]. Unlike Successor Representations, STOKs are sequentially compositional, allowing agents to chain skills together to solve complex tasks [00:38:24]. He further showed how this framework enables **Empowerment** (a measure of controllability) to be computed in high dimensions, serving as the primary driver for **goal selection** [01:01:31]. In this view, **"valence"** is formally defined as **relative empowerment**---the specific gain or loss in future control that a state affords the agent.
 

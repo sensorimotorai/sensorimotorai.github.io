@@ -7,7 +7,7 @@ categories: [2025, October]
 
 In our 2nd [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Fritz introduced a first-principles, information-theoretic approach to modeling exploration through the maximization of 'Predicted Information Gain' (PIG).
 
-- Paper: [Learning and exploration in action-perception loops](https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2013.00037/full){:target="_blank"}
+- Paper: [Learning and exploration in action-perception loops](https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2013.00037/full){:target="_blank" rel="noopener"}
 - Presenter: Fritz Sommer
 
 Fritz framed exploration not as a search for rewards, but as a drive to reduce "missing information" about an agent's world model. He argued that an agent should choose actions that maximize the *predicted information gain* (PIG). This casts the agent in the role of a scientist, actively performing experiments (actions) to learn about its environment as efficiently as possible, a concept closely related to Bayesian experimental design.

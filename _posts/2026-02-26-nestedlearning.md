@@ -7,9 +7,9 @@ categories: [2026, February]
 
 Ali Behrouz, PhD student at Cornell and student researcher at Google, presented a sweeping unification of deep learning architectures and optimization algorithms under a single principle: **both are associative memories, just applied in different contexts**.
 
-- Paper: [Nested Learning: The Illusion of Deep Learning Architecture](https://arxiv.org/abs/2512.24695){:target="_blank"}
-    - See also: [Miras framework](https://arxiv.org/abs/2504.13173){:target="_blank"}, [Titans architecture](https://arxiv.org/abs/2501.00663){:target="_blank"}
-    - Blog posts: [Nested Learning blog](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/){:target="_blank"}, [Miras blog](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/){:target="_blank"}
+- Paper: [Nested Learning: The Illusion of Deep Learning Architecture](https://arxiv.org/abs/2512.24695){:target="_blank" rel="noopener"}
+    - See also: [Miras framework](https://arxiv.org/abs/2504.13173){:target="_blank" rel="noopener"}, [Titans architecture](https://arxiv.org/abs/2501.00663){:target="_blank" rel="noopener"}
+    - Blog posts: [Nested Learning blog](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/){:target="_blank" rel="noopener"}, [Miras blog](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/){:target="_blank" rel="noopener"}
 - Presenter: Ali Behrouz
 
 The reason I was so excited to host this talk is that Ali's work operationalizes something I've believed for quite a while now: **Architecture = Objective + Optimization**. That is, once you pick an objective (*what* are you optimizing?) and an optimizer (*how* do you achieve it?), the architecture *falls out*. Ali showed this goes beyond just a nice philosophy: it's actually a recoverable, generative framework for novel architectures and optimizers. Every modern sequence model, from linear attention to Transformers to state-space models, can be derived as a specific choice within this design space. And crucially, large regions of this space remain completely unexplored.

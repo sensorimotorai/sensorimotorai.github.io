@@ -76,11 +76,11 @@ Fritz also stressed a point that deserves more attention: you can't understand *
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4260s" target="_blank">[01:11:00] Structure vs. Scale: The Brittleness Problem</a>
 
-Niels mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
+Niels mounted the strongest case against the "scale is all you need" position. He cited [Gilmer et al. (2018)](https://arxiv.org/abs/1801.02774){:target="_blank" rel="noopener"}, a deceptively simple result: take two data clouds in 500 dimensions, train a classifier with hundreds of millions of samples, get 99.9999% accuracy, and the decision boundary is still riddled with errors in regions you'd never naturally sample from. Adversarial attacks exploit exactly these gaps.
 
 His broader point: deep learning creates "alien" systems. They work brilliantly within their training distribution, but their failure modes are inhuman and unpredictable. Vibe coding has the reputation it has for a reason. If we're building something for open-ended, non-stationary worlds (actual AGI) we can't paper over this with more data.
 
-Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](https://video-zero-shot.github.io/){:target="_blank"} showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
+Hadi (moderator) pushed back with a recent paper from [Wiedemer et al. (2025)](https://video-zero-shot.github.io/){:target="_blank" rel="noopener"} showing that video models exhibit zero-shot generalization and even respond to perceptual illusions in human-like ways. Every six months, the models solve problems we thought were fundamental limitations. Niels held his ground: as long as performance scales with data rather than with architectural insight, the system remains fundamentally data-bottlenecked and brittle at the edges.
 
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=4920s" target="_blank">[01:22:00] Layered Control in Real Robotics</a>
@@ -144,7 +144,7 @@ Until theorists provide that, the *dark matter of behavior* will stay dark.
 
 ---
 
-Download the slides: [Drive link](https://drive.google.com/file/d/1jeBdwAPLC3prfdCNVSqwkk0vXcX6k6_v/view?usp=sharing){:target="_blank"}
+Download the slides: [Drive link](https://drive.google.com/file/d/1jeBdwAPLC3prfdCNVSqwkk0vXcX6k6_v/view?usp=sharing){:target="_blank" rel="noopener"}
 
 Watch the full finale and the resulting synthesis below:
 

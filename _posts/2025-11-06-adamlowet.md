@@ -7,8 +7,8 @@ categories: [2025, November]
 
 In our 4th [RL Debates]({{ "/debates/" | relative_url }}){:target="_blank" rel="noopener"} presentation, Adam presented broad topics on RL and the brain, including his distributional RL paper.
 
-- Paper: [An opponent striatal circuit for distributional reinforcement learning](https://www.nature.com/articles/s41586-024-08488-5){:target="_blank"}
-- Slides: [Drive link](https://drive.google.com/file/d/1cu5Q4bDczRlMfXK2XVqyVw4rGe8TLfpb/view?usp=sharing){:target="_blank"}
+- Paper: [An opponent striatal circuit for distributional reinforcement learning](https://www.nature.com/articles/s41586-024-08488-5){:target="_blank" rel="noopener"}
+- Slides: [Drive link](https://drive.google.com/file/d/1cu5Q4bDczRlMfXK2XVqyVw4rGe8TLfpb/view?usp=sharing){:target="_blank" rel="noopener"}
 - Presenter: Adam Lowet
 
 Adam's talk covered a lot of ground. He presented his recent work on **distributional RL**, which provides causal evidence that the brain computes a full probability distribution of value rather than a single number. He showed evidence for an **opponent circuit in the striatum** that could perform this function. He then placed this finding within a broader discussion of the open challenges in linking RL theory to complex, real-world brain function and behavior.
