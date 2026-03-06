@@ -5,7 +5,7 @@ tags: [RL, agency, reward-hypothesis, continual-learning, philosophy-of-science,
 categories: [2026, March]
 ---
 
-Newton gave "force, inertia, and motion" precise mathematical definitions. This unlocked centuries of progress in mechanics. Carnot formalized "heat engines" as ideal reversible cycles. This launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
+Newton gave force, inertia, and motion precise mathematical definitions. This unlocked centuries of progress in mechanics. Carnot formalized heat engines as ideal reversible cycles. This launched decades of progress in thermodynamics. Turing made "computation" precise. Shannon did it for "information." In each case, the act of giving a field's central concept a rigorous mathematical definition is what turned a loose collection of intuitions into a real science.
 
 Today, "agency" is where "computation" was before Turing: everybody uses the word, nobody can define it precisely, and the field is stuck because of it.
 
@@ -108,13 +108,13 @@ The "if and only if" is the key: writing down a reward function *implicitly comm
 
 Here's why I think Dave's line of work is not just interesting but *essential*.
 
-Every mature science has gone through a moment where someone took a vague, pre-theoretic concept and gave it mathematical teeth. Newton did it for motion. Carnot did it for heat engines. Turing did it for computation. Shannon did it for information. In each case, the formalization not only clarified the concept, but once could say, it even *created the science*. Before the definition, there were clever people with good intuitions. After the definition, there was a field with theorems, predictions, and systematic progress.
+Every mature science has gone through a moment where someone took a vague, pre-theoretic concept and gave it mathematical teeth. Newton did it for motion. Carnot did it for heat engines. Turing did it for computation. Shannon did it for information. In each case, the formalization not only clarified the concept, but one could say, it even *created the science*. Before the definition, there were clever people with good intuitions. After the definition, there was a field with theorems, predictions, and systematic progress.
 
-We are trying to build a science of intelligence. We talk constantly about "agents", "learning", "adaptation", "goals", "rewards". But as Dave showed today, we lack the kind of first-principles clarity about these terms that Newton had about force, or Shannon had about information. The Three Dogmas paper point out this gap, and also makes progress toward closing it, by surfacing the hidden assumptions in our paradigm and showing exactly where they constrain what we can conceive.
+We are trying to build a science of intelligence. We talk constantly about "agents", "learning", "adaptation", "goals", "preferences", and "rewards". But as Dave showed today, we lack the kind of first-principles clarity about these terms that Newton had about force, or Shannon had about information. The Three Dogmas paper point out this gap, and also makes progress toward closing it, by surfacing the hidden assumptions in our paradigm and showing exactly where they constrain what we can conceive.
 
-This kind of foundational, conceptual work is undervalued in a field obsessed with benchmarks and scaling laws. It's much harder to publish a paper that says "here's a better way to *think*" than one that says "here's a better number on a benchmark." But historically, the conceptual advances are the ones that last. I believe the Three Dogmas is that kind of work, and I'm glad Dave and his collaborators are pursuing it with such rigor and care.
+This kind of foundational, conceptual work is undervalued in a field obsessed with benchmarks and scaling laws. It's much harder to publish a paper that says "here's a better way to *think*" than one that says "here's a better number on a benchmark." But historically, the conceptual advances are the ones that last. I believe the Three Dogmas is that kind of work, and I'm glad Dave and his collaborators are pursuing this kind of work with such rigor and care.
 
-And this is just the beginning! See the [schedule page]({{ "/schedule/" | relative_url }}) for what's coming next: **Mani Hamidi** presents *next week* (March 12) with an evolutionary response to these very dogmas, and **Dave returns on March 19** to present *Plasticity as the Mirror of Empowerment*, which promises to formalize adaptation and show that plasticity and empowerment are in fundamental tension.
+And this is just the beginning! See the [schedule page]({{ "/schedule/" | relative_url }}) for what's coming next: **Mani Hamidi** presents next week (**March 12**) with an evolutionary response to these very dogmas, and **Dave returns on March 19** to present *Plasticity as the Mirror of Empowerment*, which promises to formalize adaptation and show that plasticity and empowerment are fundamentally in tension.
 
 Can't wait!
 
@@ -122,4 +122,4 @@ Can't wait!
 
 Watch the full meeting here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P8nm8fR9gK8?si=gZfEnxuP6IG_Fh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
