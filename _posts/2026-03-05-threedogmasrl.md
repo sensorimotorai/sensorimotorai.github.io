@@ -137,13 +137,13 @@ I closed by asking Dave about the connection between the reward hypothesis and a
 
 ## Broader implications: why this work matters
 
-Here is why I think Dave's line of work is interesting and important.
+Here is why I think this line of work is interesting and important.
 
-Fields mature when their central concepts become precise enough to analyze systematically. Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
+Fields mature when their central concepts become precise enough to analyze systematically. Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, refute, and build on.
 
 That is what makes Three Dogmas valuable. It does not offer a new benchmark result or a better algorithm. It asks whether some of RL's most familiar concepts, like agent, learning, and reward, are actually as clear and well grounded as we pretend they are. In that sense, the paper is doing real foundational work: surfacing hidden assumptions and showing how they shape what the field can easily think about.
 
-At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today's discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
+At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today's discussion, was **adaptation**. The critique of "learning as finding a solution" is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a comprehensive and more formal treatment.
 
 This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets a more thorough treatment it deserves.
 
