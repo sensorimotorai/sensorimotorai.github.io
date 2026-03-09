@@ -94,9 +94,9 @@ I then proposed a specific notion of adaptation rooted in theoretical neuroscien
 
 The final and most technical segment tackled the Reward Hypothesis directly: Sutton's claim that all goals and purposes can be well thought of as maximization of expected cumulative scalar reward.
 
-Dave summarized the [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"} paper (led by Michael Bowling and John Martin), which translates this natural-language statement into a formal conjecture and identifies the exact conditions under which it's true. The framework uses "seven doors": two interpretive choices that turn the hypothesis into a conjecture, and five axioms that determine when the conjecture holds.
+Dave summarized the [Settling the Reward Hypothesis](https://proceedings.mlr.press/v202/bowling23a.html){:target="_blank" rel="noopener"} paper (led by Michael Bowling and John Martin), which translates this natural-language statement into a formal conjecture and identifies the exact conditions under which it's true. The framework uses "**seven doors**": **two interpretive choices** that turn the hypothesis into a conjecture, and **five axioms** that determine when the conjecture holds.
 
-The reward hypothesis states:
+We start from a verbatim statement of *The Reward Hypothesis*:
 
 > *"All of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward)."*
 > --- [Sutton (2004)](http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html){:target="_blank" rel="noopener"}
@@ -105,7 +105,9 @@ The reward hypothesis states:
 
 Here, **"goals and purposes"** is interpreted in terms of **preference relations** over outcomes (distributions over histories of experience). I asked whether this is consensus or proposal. Dave said it's not consensus. Philosopher Ruth Chang has argued against it on grounds of incommensurability. But preferences are general enough that he finds them hard to reject as at least a starting point.
 
-This sparked a rich exchange. **Mani Hamidi** brought up Chang's incommensurability argument. **Alison Gopnik** connected it to Isaiah Berlin's picture of tragic value pluralism (illustrated by Bernard Williams's Gauguin example: you can't put your obligation to your family and your artistic drive on a single preference scale). **Thomas Ringstrom** offered the empowerment perspective: preferences might be *secondary* to empowerment, which can *induce* a preference relation. In this view, there has to be a *reason* for preferences, and empowerment provides it. Dave found this thread fascinating and noted that in earlier work, he and his co-authors had struggled with the order in which objects are introduced---does the environment come first, then preferences, then rewards? Or do preferences come first?
+This sparked a rich exchange. **Mani Hamidi** also brought up Chang's incommensurability argument and we discussed it further. **Alison Gopnik** connected it to Isaiah Berlin's picture of tragic value pluralism (illustrated by Bernard Williams's Gauguin example: you can't put your obligation to your family and your artistic drive on a single preference scale).
+
+**Thomas Ringstrom** offered the empowerment perspective: preferences might be *secondary* to empowerment, which can *induce* a preference relation. In this view, there has to be a *reason* for preferences, and empowerment provides it. Dave found this thread fascinating and noted that in earlier work, he and his co-authors had struggled with the order in which objects are introduced---does the environment come first, then preferences, then rewards? Or do preferences come first?
 
 ### The second interpretive door
 
@@ -131,17 +133,17 @@ As Dave noted, humans seem to violate many of these axioms in practice. **Mani**
 
 **Eli Sennesh** proposed a different framing of learning altogether: learning as the extension of dynamical timescales of control. Using the mountain car example, he argued that the actual challenge isn't specifying the cost function (just minimize distance to the flag) but discovering that the system can be controlled on a *longer timescale* by accepting short-term costs. Dave tentatively categorized this as a behavioral view of learning and noted its resonance with Tom Ringstrom's framework.
 
-I closed by asking Dave about the connection between the reward hypothesis and alternative information-theoretic frameworks like empowerment, divergence minimization, and free energy. Dave's response was characteristically careful: reward takes on meaning only once it enters an optimization process, and any scalar signal can be accumulated and optimized. Multi-objective RL, where you have multiple "channels" of reward (the "RGB channels of reward," as Dave put it), might be where the different perspectives unify. That is, once you start relaxing the axioms that enforce collapsing everything to a single expected scalar.
+I closed by asking Dave about the connection between the reward hypothesis and alternative information-theoretic frameworks like empowerment, divergence minimization, and free energy. Dave responded by connecting objectives to optimization: reward takes on meaning only once it enters an optimization process, and any scalar signal can be accumulated and optimized. Multi-objective RL, where you have multiple "channels" of reward (the "RGB channels of reward," as Dave put it), might be where the different perspectives unify. That is, once you start relaxing the axioms that enforce collapsing everything to a single expected scalar.
 
 ## Broader implications: why this work matters
 
-Here is why I think Dave’s line of work is interesting and important.
+Here is why I think Dave's line of work is interesting and important.
 
 Fields mature when their central concepts become precise enough to analyze systematically. Newton did this for motion, Turing for computation, and Shannon for information. Formalization does not solve everything, but it changes the game. It turns vague intuitions into mathematical objects you can compare, test, and build on.
 
-That is what makes Three Dogmas valuable. It does not offer a new benchmark result or a better algorithm. It asks whether some of RL’s most familiar concepts, like agent, learning, and reward, are actually as clear and well grounded as we pretend they are. In that sense, the paper is doing real foundational work: surfacing hidden assumptions and showing how they shape what the field can easily think about.
+That is what makes Three Dogmas valuable. It does not offer a new benchmark result or a better algorithm. It asks whether some of RL's most familiar concepts, like agent, learning, and reward, are actually as clear and well grounded as we pretend they are. In that sense, the paper is doing real foundational work: surfacing hidden assumptions and showing how they shape what the field can easily think about.
 
-At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today’s discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
+At the same time, I do not think the project is complete. For me, the thinnest point, both in the paper and in today's discussion, was **adaptation**. The critique of “learning as finding a solution” is compelling, but the alternative still needs much more development. Adaptation to what, exactly? Over what timescales? In behavior, internal representations, or both? If adaptation is going to play a central role, it needs a sharper and more formal treatment.
 
 This sets up the next discussions nicely. **Mani Hamidi** presents next week (**March 12**) with an *evolutionary response* to these very dogmas, and **Dave** returns on **March 19** to present *plasticity as the mirror of empowerment*, which may be where the adaptation question gets a more thorough treatment it deserves.
 
