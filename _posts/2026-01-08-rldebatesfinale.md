@@ -54,7 +54,7 @@ But Eli wasn't only critiquing, he also offered a constructive alternative. In f
 
 ### <a href="https://www.youtube.com/watch?v=GKSPT8-yyBk&t=1815s" target="_blank">[00:30:15] The Dark Matter of Behavior</a>
 
-This led to what might be the most important critique of the entire series. Eli pointed out that **neuroscience systematically screens off the hardest (and most interesting) questions**. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
+This led to a critique that ran through the rest of the series. Eli pointed out that **neuroscience systematically screens off the hardest (and most interesting) questions**. When experimentalists train a monkey to do two-alternative forced choice---saccade left or saccade right---they're *causally eliminating* the decision of why the animal acts the way it does. The animal's own goal selection, context sensitivity, and behavioral switching get dismissed as "misbehavior."
 
 Adam, wearing his experimentalist hat, acknowledged the problem but highlighted the practical bind: "No one has yet come up with an experiment that would really allow you to ask in animals the questions that Eli is posing." The challenge is real, but it's not that people are ignoring the dark matter. It's that nobody knows how to illuminate it.
 
@@ -114,14 +114,13 @@ Since top-down synthesis failed, we tried bottom-up. The thought experiment: you
 - **Adam** chose **A Good Simulation** --- the equivalent of evolutionary pre-adaptation, or the specific training needed to survive Mars. Humans, too, would do poorly if dropped on Mars without preparation. A deep learning system needs sufficient simulated experience before deployment.
 - *(**Fritz** had to depart early and did not participate in this exercise)*
 
-Something interesting emerged in the overlap:
+The overlap is concrete:
 
 Eli's interoception would give the agent *awareness* of its resource state. Anne's computation under resource constraints would encourage it to be *efficient* with those resources. Tom's temporal reasoning would enable *planning* around resource depletion over time.
 
-Without anyone trying to unify their frameworks, the Mars rover naturally converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization. Notably, our Mars rover survives, but it doesn't yet know *what to do*.
+Without anyone trying to unify their frameworks, our Mars rover converged on a system that regulates internal resources under constraints with temporal foresight---a picture closer to allostatic regulation than to reward maximization. Notably, our Mars rover survives, but it doesn't yet know *what to do*.
 
 The problem of goal-directed behavior remained unaddressed.
-
 
 
 ## The Takeaway
@@ -132,7 +131,7 @@ RL explains a modest slice of biological behavior (10-30% by most estimates). It
 
 The hardest unsolved problems (goal selection, context-sensitive value, lifelong learning, the fusion of perception with control) live outside RL's current reach.
 
-A deep tension emerged, but it wasn't between RL and its alternatives. It was between the desire for grand unifying theories and the messy reality that brains are evolved systems full of local optima, resource constraints, and historical accidents. Whether that messiness conceals an elegant principle or simply *is* the principle remains the open question.
+The deepest tension cut across the RL-vs-alternatives framing: the desire for grand unifying theories running up against the reality that brains are evolved systems full of local optima, resource constraints, and historical accidents.
 
 The field's biggest bottleneck may be theoretical: we lack identifiable, physically grounded computational theories of natural behavior. The kind that could tell an experimentalist exactly what to measure and tell an engineer exactly what to build.
 
