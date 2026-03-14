@@ -75,7 +75,7 @@ He noted that even Sutton and Barto gesture toward this view. In an early draft,
 
 ## Interlude: The adaptation thread
 
-This is where one of the session's most interesting threads developed [*full disclosure: I asked this question!*]. I asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
+I asked Dave to define adaptation, alluding to the talk's own argument that precise definitions are what unlock real progress.
 
 It turns out this was Dave's next slide. He offered four candidate views of learning/adaptation:
 
@@ -135,7 +135,7 @@ As Dave noted, humans seem to violate many of these axioms in practice. **Mani**
 
 I closed by asking Dave about the connection between the reward hypothesis and alternative information-theoretic frameworks like empowerment, divergence minimization, and free energy. Dave responded by connecting objectives to optimization: reward takes on meaning only once it enters an optimization process, and any scalar signal can be accumulated and optimized. Multi-objective RL, where you have multiple "channels" of reward (the "RGB channels of reward," as Dave put it), might be where the different perspectives unify. That is, once you start relaxing the axioms that enforce collapsing everything to a single expected scalar.
 
-## Broader implications: why this work matters
+## Broader implications: formalization is necessary for progress
 
 Here is why I think this line of work is interesting and important.
 
