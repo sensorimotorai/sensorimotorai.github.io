@@ -12,7 +12,7 @@ Ali Behrouz, PhD student at Cornell and student researcher at Google, presented 
     - Blog posts: [Nested Learning blog](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/){:target="_blank" rel="noopener"}, [Miras blog](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/){:target="_blank" rel="noopener"}
 - Presenter: Ali Behrouz
 
-The reason I was so excited to host this talk is that Ali's work operationalizes something I've believed for quite a while now: **Architecture = Objective + Optimization**. That is, once you pick an objective (*what* are you optimizing?) and an optimizer (*how* do you achieve it?), the architecture *falls out*. Ali showed this goes beyond just a nice philosophy: it's actually a recoverable, generative framework for novel architectures and optimizers. Every modern sequence model, from linear attention to Transformers to state-space models, can be derived as a specific choice within this design space. And crucially, large regions of this space remain completely unexplored.
+I wanted to host this talk because Ali's work operationalizes something I've believed for a while: **Architecture = Objective + Optimization**. Once you pick an objective (*what* are you optimizing?) and an optimizer (*how* do you achieve it?), the architecture *falls out*. Ali showed this goes beyond philosophy: it's a recoverable, generative framework for novel architectures and optimizers. Every modern sequence model, from linear attention to Transformers to state-space models, can be derived as a specific choice within this design space. Large regions of this space remain completely unexplored.
 
 ## Brain inspiration at the right level of abstraction
 
@@ -34,13 +34,13 @@ During the meeting, Tyler Bonnen asked: all the formulations shown so far seem g
 
 Ali motivated his **continuum memory system** with a striking analogy to the twin paradox in special relativity. One twin travels near speed of light and experiences only minutes; the other stays home and lives through eighty years. The twin who experienced minutes remembers every detail of their shared ice cream; the one who aged has long forgotten. In the same way, a high-frequency memory module that updates every token experiences rapid "time"---and may forget quickly---while a low-frequency module that updates every hundred thousand tokens barely ages at all, preserving information across vast stretches of context.
 
-This motivates the **Hope architecture**: a stack of MLP blocks updated at different frequencies, ranging from fast (every token) to slow (every hundred thousand tokens). Ali demonstrated that this design enables near-perfect needle-in-a-haystack retrieval at **ten million tokens** and, more impressively, enables continual in-context learning of two unseen languages simultaneously, a task where standard in-context learning collapses, but Hope with three frequency levels nearly recovers single-language performance.
+This motivates the **Hope architecture**: a stack of MLP blocks updated at different frequencies, ranging from fast (every token) to slow (every hundred thousand tokens). Ali demonstrated that this design enables near-perfect needle-in-a-haystack retrieval at **ten million tokens** and enables continual in-context learning of two unseen languages simultaneously, a task where standard in-context learning collapses, but Hope with three frequency levels nearly recovers single-language performance.
 
 ## Why discrete frequencies, not just different learning rates?
 
 Hadi (me, the organizer) pushed on this design choice: why use discrete update frequencies rather than simply assigning different learning rates to different modules? Ali answered: a smaller learning rate still processes every token, just with a gentler update. This means the model *never pauses*. But with discrete frequencies, the model can fully process one chunk, stop, and then approach the next chunk with full capacity. He gave the example of a long mathematical context where ten critical tokens contain the actual answer. With a small learning rate, those tokens get the same diminished update as everything else. With discrete frequency, the model can hit those tokens with a full-strength learning rate while the low-frequency modules preserve the broader context.
 
-Ali also mentioend there is **empirical evidence** for this: in the M3 optimizer, having multiple momentum terms with different *frequencies* outperforms having multiple momentum terms with different *learning rates*.
+Ali also mentioned there is **empirical evidence** for this: in the M3 optimizer, having multiple momentum terms with different *frequencies* outperforms having multiple momentum terms with different *learning rates*.
 
 Hadi noted that while the twin paradox analogy is beautiful, it may break in one respect: in general relativity, *proper time* is continuous (the time experienced by each observer that depends on their local spacetime geometry). Ali acknowledged the analogy isn't perfect, and added an important caveat: the discreteness in his framework is partly an artifact of discrete tokens. If the input data were continuous, the update frequency could in principle be continuous too. He also noted that individual neurons could eventually have their own update frequencies, pushing toward a truly continuous spectrum.
 
@@ -50,13 +50,13 @@ One novel implication Ali highlighted is **delta gradient descent**: replacing t
 
 Hadi asked whether the outer product of gradients in this formulation could be interpreted as approximating second-order curvature information. Ali noted there's a debate in the optimization community about calling any first-order method a second-order approximation, but agreed the formulation captures more about the loss landscape geometry than standard momentum.
 
-Hadi pushed the interpretation further: the delta term doesn't approximate the Hessian so much as redirect momentum into the *orthogonal subspace* of the gradient. This can be interpreted as a "solenoidal" motion through parameter space that feels deeply interesting but hard to articulate.
+Hadi pushed the interpretation further: the delta term doesn't approximate the Hessian so much as redirect momentum into the *orthogonal subspace* of the gradient. This can be interpreted as a "solenoidal" motion through parameter space---the implications aren't fully clear yet.
 
 ## Broader implications
 
-When I (Hadi) first encountered Ali's work at his NeurIPS poster, I thouight to myself: this Nested Learning stuff is "**test of time**" material. And his presentation just reinforced that view. The reason is simple: this isn't just another architecture paper. It's a *lens*. A conceptual advance, a "way of thinking." Once you see architectures and optimizers as the same thing---associative memories differing only in their context, objective, and update rule---you can't unsee it. And the practical consequence is immediate: instead of proposing architectures based on heuristics and intuition, we now have a principled design space where you choose your objective, choose your optimizer, and the architecture writes itself.
+When I (Hadi) first encountered Ali's work at his NeurIPS poster, my immediate reaction was that this is *test of time* material. His presentation reinforced that view. The framework provides a unified lens on architectures and optimizers as associative memories differing only in their context, objective, and update rule. The practical payoff is that instead of proposing architectures based on heuristics and intuition, you choose your objective, choose your optimizer, and the architecture writes itself.
 
-The vast majority of this space is unexplored. If the field takes this framework seriously---and given the reception during the presentation, I think it will---we should expect a wave of **systematically motivated architectural innovations** rather than the usual pattern of heuristic tinkering followed by post-hoc rationalization.
+The vast majority of this design space is unexplored. If the field takes this framework seriously---and given the reception during the presentation, I think it will---we should expect a wave of systematically motivated architectural innovations.
 
 ---
 
