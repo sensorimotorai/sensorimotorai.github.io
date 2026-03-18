@@ -54,6 +54,7 @@ Mani's central thesis is that there are two fundamentally different models of le
 This brings us to Herbert Simon's famous quote, which Mani returned to multiple times throughout the talk:
 
 > organisms adapt well enough to *"satisfice"*; they do not, in general, *"optimize"*.
+> --- [Herbert Simon (1956)](https://pages.ucsd.edu/~mckenzie/Simon1956PsychReview.pdf){:target="_blank" rel="noopener"}, Rational choice and the structure of the environment
 
 For living organisms, satisficing (satisfying enough to suffice) is the operating principle, not maximization.
 
