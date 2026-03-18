@@ -17,7 +17,7 @@ Regarding the conceptual overlap in their work, Mani said: Dave's three dogmas p
 ## Table of Contents
 
 - [Background: Mani's path to this paper](#background-manis-path-to-this-paper)
-- [The core distinction: selectionist vs. instructional learning](#the-core-distinction-selectionist-vs-instructional-learning)
+- [The key distinction: selectionist vs. instructional learning](#the-key-distinction-selectionist-vs-instructional-learning)
 - [Dogma 2: Adaptation through open-ended novelty search](#dogma-2-adaptation-through-open-ended-novelty-search)
 - [Dogma 3: Multi-objective goals and the origins of reward](#dogma-3-multi-objective-goals-and-the-origins-of-reward)
 - [Dogma 1: Toward a theory of agency via thermodynamics](#dogma-1-toward-a-theory-of-agency-via-thermodynamics)
@@ -35,27 +35,33 @@ Deacon's book *Incomplete Nature* was formative. Mani described it as tackling t
 
 When Mani saw Dave Abel's Three Dogmas paper, everything clicked: the three dogmas provided the organizational structure he'd been searching for to package a set of disparate evolutionary ideas he'd been developing for years. He wrote the paper in about 2--3 weeks before a workshop deadline, and, to his amazement, noticed that the word "evolution" appeared *nowhere* in Dave's original paper, despite adaptation being its central alternative to terminal search.
 
-I (Hadi) flagged one theme from Mani's background that I think deserves more attention: the coupling of metabolism and information processing in biological systems, and its decoupling in AI. A transformer processes every token with equal computational cost, with no sense of energetic value attached to computation. This felt like one of the biggest missing pieces in today's AI, and it came up repeatedly throughout the session.
+I (Hadi) flagged one theme from Mani's background that I think deserves more attention: the coupling of metabolism and information processing in biological systems, and its decoupling in AI. A transformer processes every token with equal computational cost, with no sense of energetic value attached to computation. This is one of the biggest missing pieces in today's AI, and it came up repeatedly throughout the session.
 
-## The core distinction: selectionist vs. instructional learning
+## The key distinction: selectionist vs. instructional learning
 
 Mani's central thesis is that there are two fundamentally different models of learning. Drawing on a distinction from evolutionary biology:
 
 **The instructional model** is what we typically think of as learning: supervised, RL, even most unsupervised methods. There's a target, there's an error signal, and the system molds itself toward the objective, like a smart mattress conforming to the sleeper. The key feature: a signal (gradient, reward) propagates back to the learner, instructing it how to change.
 
-**The selectionist model** is evolution's approach. A population of variants is generated, some happen to exhibit *fittedness* (a property that lets them persist and proliferate), and those are selected. The critical difference: the generation of variants is *not* directed by the selection criterion. It's non-teleological. You don't need to know what's good in advance; you just need to produce enough diversity that something good shows up.
+**The selectionist model** is evolution's approach. A population of variants is generated, some happen to exhibit *fittedness* (a property that lets them persist and proliferate), which are then selected. Importantly, the generation of variants is *not* directed by the selection criterion. It's non-teleological. You don't need to know what's good in advance; you just need to produce enough diversity that something good shows up.
 
 **Eli Sennesh** immediately asked whether the selectionist model could be understood as constrained maximum entropy: randomly varying in all dimensions that still pass the selection test. Mani agreed this captures something essential, and noted it foreshadows the open-endedness ideas he'd develop next.
 
-**Keir Havel** raised whether GANs, where the criterion itself evolves, sit closer to the selectionist model. Mani argued that GANs still fall under the instructional regime: both discriminator and generator optimize explicit objectives via backpropagation. The coevolutionary flavor is real, but the open-endedness is missing. [*Keir also shared in the chat a paper by Kolchinsky on the dynamics of interacting agents whose "optimization-like" individual behavior produces non-optimization-like collective dynamics ([Balduzzi et al., 2018](https://arxiv.org/abs/1802.05642){:target="_blank" rel="noopener"}), noting that the lead author was originally involved in formulating the IIT consciousness theory before switching gears.*]
+**Keir Havel** raised whether GANs, where the criterion itself evolves, sit closer to the selectionist model. Mani argued that GANs still fall under the instructional regime: both discriminator and generator optimize explicit objectives via gradient updates. The coevolutionary flavor is real, but the open-endedness is missing. [*Keir also shared a paper in the chat on the dynamics of interacting agents whose "optimization-like" individual behavior produces non-optimization-like collective dynamics ([Balduzzi et al., 2018](https://arxiv.org/abs/1802.05642){:target="_blank" rel="noopener"}), noting that the lead author was originally involved in formulating the IIT consciousness theory before switching gears.*]
 
-**Zachary Laborde** asked whether the key distinction is simply that the target is static in the selectionist model versus dynamic and responsive in the instructional one. Mani clarified that the dynamic target is part of the story (captured by coevolution), but the deeper distinction is about the *non-objective* nature of variation generation: evolution doesn't hill-climb toward anything. It satisfices.
+**Zachary Laborde** asked whether the key distinction is simply that the target is static in the selectionist model versus dynamic and responsive in the instructional one. Mani clarified that the dynamic target is part of the story (captured by coevolution), but the deeper distinction is about the *non-objective* nature of variation generation: evolution doesn't hill-climb toward anything. It *satisfices*.
 
-This brings us to Herbert Simon's famous quote, which Mani returned to multiple times throughout the talk: organisms adapt well enough to *"satisfice"*; they do not, in general, *"optimize"*. Satisficing (satisfying enough to suffice) is the operating principle, not maximization.
+This brings us to Herbert Simon's famous quote, which Mani returned to multiple times throughout the talk:
+
+> organisms adapt well enough to *"satisfice"*; they do not, in general, *"optimize"*.
+
+For living organisms, satisficing (satisfying enough to suffice) is the operating principle, not maximization.
 
 ## Dogma 2: Adaptation through open-ended novelty search
 
-Mani started with the second dogma (learning as terminal search) because it's where evolution has the most to say. Dave's paper proposed *adaptation* as the alternative to terminal search, but left the concept underdeveloped. Mani's answer: the body of work on **open-ended novelty search** by Ken Stanley, Joel Lehman, Jeff Clune, and colleagues, spanning roughly two decades, gives adaptation concrete algorithmic form.
+Mani started with the second dogma (learning as terminal search) because it's where evolution has the most to say. Dave's paper proposed *adaptation* as the alternative to terminal search, but left the concept underdeveloped.
+
+Mani approaches adaptation by drawing from the body of work on **open-ended novelty search** by Ken Stanley, Joel Lehman, Jeff Clune, and others, spanning roughly two decades. This gives adaptation concrete algorithmic form.
 
 Mani distilled three mechanisms from this literature that together make an evolutionary process open-ended:
 
@@ -67,9 +73,9 @@ Algorithmically, this means organizing solutions across a grid of behavioral or 
 
 Mani visualized this as a contrast between **convergent** and **divergent** dynamics. Standard optimization is convergent: a potential function, gradient descent, stable steady states. Open-ended evolution is divergent: the gradients point *away* from any given point. The system is constantly generating new possibilities.
 
-I asked Mani how this squares with the replicator equation from evolutionary game theory, which *can* be represented as gradient descent on a KL divergence and has a convergent attractor (the evolutionary stable strategy). Mani's answer: both perspectives coexist. Fitness optimization within a niche is real and gradient-like. The contribution of open-ended novelty search is acknowledging the *other* engine, the divergent, diversity-generating one, that our optimization-centric lens tends to overshadow. The **quality-diversity** algorithms (like MAP-Elites) capture both: quality (fitness within a niche) and diversity (expansion across niches).
+I asked Mani how this squares with the **replicator equation** from evolutionary game theory, which *can* be represented as gradient descent on a KL divergence and has a convergent attractor (the evolutionary stable strategy). Mani's answer: both perspectives coexist. Fitness optimization within a niche is real and gradient-like. The contribution of open-ended novelty search is acknowledging the *other* engine, the divergent, diversity-generating one, that our optimization-centric lens tends to overshadow. The **quality-diversity** algorithms (like MAP-Elites) capture both: quality (fitness within a niche) and diversity (expansion across niches).
 
-[*MAP-Elites is the algorithm underlying Google DeepMind's [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/){:target="_blank" rel="noopener"}, and [Sakana AI](https://sakana.ai/){:target="_blank" rel="noopener"} has built its research program around taking evolutionary algorithms seriously for AI development, a sign that these ideas are gaining real traction in industry.*]
+[*MAP-Elites is the algorithm underlying Google DeepMind's [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/){:target="_blank" rel="noopener"}; additionally, [Sakana AI](https://sakana.ai/){:target="_blank" rel="noopener"} has built its research program around taking evolutionary algorithms seriously for AI development. This shows that search-based ideas are gaining real traction in industry.*]
 
 ### 2. Coevolution
 
