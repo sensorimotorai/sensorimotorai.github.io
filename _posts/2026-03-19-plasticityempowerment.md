@@ -12,7 +12,7 @@ Today, Dave returned with a concrete proposal: **plasticity** and **empowerment*
 - Paper: [Plasticity as the Mirror of Empowerment](https://openreview.net/forum?id=eOZFqyE9Ok){:target="_blank" rel="noopener"}
 - Presenter: David Abel (Google DeepMind)
 
-The discussion today was wide-ranging, as it has been for the past few meetings. **Alison Gopnik** connected the formalism to developmental biology, caregiving, and the explore-exploit trade-off. **Michael DeWeese** dug into the information-theoretic foundations and their history in satellite communication. **Eli Sennesh** pushed on the relationship between plasticity and homeostasis. **Mahsa Bastankhah** probed the definition of directed information. **Mandana Samiei** asked whether the asymmetry between plasticity and empowerment could reveal causal direction. **Alec Segal** raised the connection to epiplexity and fixed policies. **Catherine Ji** expressed excitement about the cycles of plasticity and empowerment. I (**Hadi**, the organizer) focused on the big missing piece I see in the framework: the role of internal models, the cognitive component that lets an agent *simulate*, *predict*, and *plan*, rather than merely react.
+The discussion today was wide-ranging, as it has been for the past few meetings. **Alison Gopnik** connected the formalism to developmental biology, caregiving, and the explore-exploit trade-off. **Michael DeWeese** dug into the information-theoretic foundations and their history in satellite communication. **Eli Sennesh** pushed on the relationship between plasticity and homeostasis. **Mahsa Bastankhah** probed the definition of directed information. **Mandana Samiei** asked whether the asymmetry between plasticity and empowerment could reveal causal direction. **Alec Segal** asked about connections to epiplexity and fixed policies. **Catherine Ji** expressed excitement about the cycles of plasticity and empowerment. I (**Hadi**, the organizer) focused on the big missing piece I see in the framework: the role of internal models, the cognitive component that lets an agent *simulate*, *predict*, and *plan*, rather than merely react.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ The discussion today was wide-ranging, as it has been for the past few meetings.
 - [The main result: the plasticity-empowerment dilemma](#the-main-result-the-plasticity-empowerment-dilemma)
 - [Discussion I: Development, caregiving, and exploration](#discussion-i-development-caregiving-and-exploration)
 - [Discussion II: Causal direction and fixed policies](#discussion-ii-causal-direction-and-fixed-policies)
-- [Discussion III: World models and the cognitive gap](#discussion-iii-world-models-and-the-cognitive-gap)
+- [Discussion III: World models and the missing cognitive component](#discussion-iii-world-models-and-the-missing-cognitive-component)
 - [Discussion IV: Goals, rewards, and the inside-out view](#discussion-iv-goals-rewards-and-the-inside-out-view)
 - [Broader implications: from behaviorist grounding to cognitive integration](#broader-implications-from-behaviorist-grounding-to-cognitive-integration)
 
@@ -31,11 +31,11 @@ The discussion today was wide-ranging, as it has been for the past few meetings.
 
 ## The setup: what are the elemental properties of agents?
 
-Dave opened with a question by analogy. In a free body diagram, we know what the relevant properties are: mass, friction, the height of the ramp, the force due to gravity. These are the elemental quantities that factor into predictions. When it comes to agents, organisms, or any animate system, we don't have the same clarity. What are the analogs of mass and energy for a caterpillar?
+Dave opened with a question by analogy. Recall those free body diagrams from highschool physics. To solve those, we know what the relevant properties are: mass, friction, the height of the ramp, the force due to gravity. These are the elemental quantities that factor into predictions. When it comes to agents, organisms, or any animate system, we don't have the same clarity. What are the analogs of mass and energy for a caterpillar?
 
-One common approach in RL is to define agents indirectly through the environments they solve. The Arcade Learning Environment, the B-Suite, Montezuma's Revenge: these benchmarks reveal *symptoms* of agent capabilities (exploration, credit assignment, memory), but the underlying properties of the agent remain implicit. Dave proposed we should make them explicit. Start defining the agent in terms of quantities that are intrinsic to the agent-environment interaction, not derived from benchmark performance.
+One common approach in RL is to define agents indirectly through the environments they solve. The Arcade Learning Environment, the B-Suite, Montezuma's Revenge: these benchmarks reveal *symptoms* of agent capabilities (exploration, credit assignment, memory), but the underlying properties of the agent remain implicit. Dave proposed we should make them explicit. Start defining the agent in terms of quantities that are **intrinsic to the agent-environment interaction**, not derived from benchmark performance.
 
-His candidates: **empowerment** (how much the agent's actions influence its future observations) and **plasticity** (how much the agent's observations influence its future actions).
+His candidates: ***empowerment*** (how much the agent's actions influence its future observations) and ***plasticity*** (how much the agent's observations influence its future actions).
 
 ## Empowerment and plasticity, informally
 
@@ -60,7 +60,7 @@ In the 1970s, Marko extended this to a **bidirectional** channel: Alice sends a 
 
 The idea here is to treat the agent-environment interaction as exactly this kind of bidirectional communication. The agent sends actions (like Alice's messages), the environment sends observations back (like Bob's responses), and the exchange continues indefinitely. Empowerment is the directed information from actions to observations. Plasticity is the directed information from observations to actions. The conservation law means their sum is bounded by the total information exchanged.
 
-**Michael DeWeese** engaged deeply with the information-theoretic foundations. He asked whether the noise in the two directions needs to be symmetric. Dave replied probably not for the main result, but there may be subtleties. Mike then connected the bidirectional channel idea to work on satellite communication, recalling a researcher (David MacKay, as Mike later identified in the chat) who had applied similar ideas to improve baud rates via feedback.
+**Michael DeWeese** engaged with the information-theoretic foundations. He asked whether the noise in the two directions needs to be symmetric. Dave replied probably not for the main result, but there may be subtleties. Mike then connected the bidirectional channel idea to work on satellite communication, recalling a researcher (David MacKay, as Mike later identified in the chat) who had applied similar ideas to improve baud rates via feedback.
 
 **Eli Sennesh** caught the two different arrow symbols in the conservation law diagram and asked why. Dave explained it's a fencepost issue: one signal has to go first, creating an off-by-one asymmetry in the conditioning.
 
@@ -116,7 +116,7 @@ Dave added that the GDI framework can address this by asking about the *timescal
 
 Dave worked through the question carefully. In settings where the action and observation spaces are comparable, the asymmetry might reveal something about the relative capacity or "size" of the two systems, which is doing more of the pushing. But he was cautious about equating this with causality in the interventionist sense. The GDI is fundamentally information-theoretic, and there are subtleties, paradoxes of causality that arise when you condition on the past, where the information picture and the causal picture come apart. His colleague Jonathan Richens has been thinking about a more explicitly causal version of the plasticity-empowerment tension.
 
-## Discussion III: World models and the cognitive gap
+## Discussion III: World models and the missing cognitive component
 
 This was the thread I (Hadi) kept returning to throughout the session, and where I think the framework has its most promising direction for growth.
 
