@@ -48,15 +48,15 @@ Hadi (me, the organizer) pushed on this design choice: why use discrete update f
 
 Ali also mentioned there is **empirical evidence** for this: in the M3 optimizer, having multiple momentum terms with different *frequencies* outperforms having multiple momentum terms with different *learning rates*.
 
-Hadi noted that while the twin paradox analogy is beautiful, it may break in one respect: in general relativity, *proper time* is continuous (the time experienced by each observer that depends on their local spacetime geometry). Ali acknowledged the analogy isn't perfect, and added an important caveat: the discreteness in his framework is partly an artifact of discrete tokens. If the input data were continuous, the update frequency could in principle be continuous too. He also noted that individual neurons could eventually have their own update frequencies, pushing toward a truly continuous spectrum.
+I noted that while the twin paradox analogy is beautiful, it may break in one respect: in general relativity, *proper time* is continuous (the time experienced by each observer that depends on their local spacetime geometry). Ali acknowledged the analogy isn't perfect, and added an important caveat: the discreteness in his framework is partly an artifact of discrete tokens. If the input data were continuous, the update frequency could in principle be continuous too. He also noted that individual neurons could eventually have their own update frequencies, pushing toward a truly continuous spectrum.
 
 ## Delta gradient descent and beyond
 
 One novel implication Ali highlighted is **delta gradient descent**: replacing the dot-product similarity in the associative-memory formulation of gradient descent with L2 regression loss. This introduces an *input-dependent adaptive weight decay* that lets momentum drift when the loss landscape demands it. A toy example showed delta momentum finding the global minimum where standard momentum sails right past it.
 
-Hadi asked whether the outer product of gradients in this formulation could be interpreted as approximating second-order curvature information. Ali noted there's a debate in the optimization community about calling any first-order method a second-order approximation, but agreed the formulation captures more about the loss landscape geometry than standard momentum.
+I asked whether the outer product of gradients in this formulation could be interpreted as approximating second-order curvature information. Ali noted there's a debate in the optimization community about calling any first-order method a second-order approximation, but agreed the formulation captures more about the loss landscape geometry than standard momentum.
 
-Hadi pushed the interpretation further: the delta term doesn't approximate the Hessian so much as redirect momentum into the *orthogonal subspace* of the gradient. This can be interpreted as a "solenoidal" motion through parameter space---the implications aren't fully clear yet.
+I pushed the interpretation further: the delta term doesn't approximate the Hessian so much as redirect momentum into the *orthogonal subspace* of the gradient. This can be interpreted as introducing a divergence-free, "**solenoidal**" component to the flow through parameter space. But the implications aren’t fully clear yet.
 
 ## Broader implications
 
