@@ -11,4 +11,4 @@ excerpt: Monthly journal club + RL Debate Series
 **Next session**: Thursday, April 9, 2026<br>
 **Topic**: Intrinsic Goals for Autonomous Agents: Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics<br>
 **Presenter**: Reece Keller<br>
-**Paper**: <a href="https://openreview.net/forum?id=g2vViuEVDS" target="_blank" rel="noopener noreferrer">Keller et al., OpenReview</a>
+**Paper**: <a href="https://openreview.net/forum?id=g2vViuEVDS" target="_blank" rel="noopener noreferrer">Keller et al., NeurIPS 2025</a>
