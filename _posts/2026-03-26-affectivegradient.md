@@ -74,7 +74,7 @@ On this view, affect is not episodic, not necessarily charged or aroused, and no
 
 I then pushed the **perception-interoception parallel** further. If we take the best models of perception, which frame it as hierarchical (or *heterarchical*; more interconnected) inference over raw sensory measurements (photon counts → surfaces → objects → invariants), then the same framework should apply to interoception. The raw input is no longer photons but physiological signals: heart rate, blood glucose, temperature, gut motility. The brain performs inference over these signals, and as you go deeper, you get more abstract descriptions of the body's state, culminating in affect. Amitai agreed this was a productive starting point and noted there are anchors in the neuroscience literature (taste, smell, pain) where the translational coding from sensation to affect is partially understood. **Eli** added that anatomically, taste, smell, and nociception are interoceptive modalities, reinforcing the parallel.
 
-> **Editorial note.** If affect is inference over interoceptive signals, then defects in peripheral physiological sensation could distort affective states, just as retinal abnormalities distort visual perception. There is accumulating evidence that this is partially involved in psychiatric disorders. See [Appendix A](#appendix-a-psychiatric-disorders-as-disorders-of-affective-perception) for a deeper exploration of this idea.
+> **Editorial note.** If affect is inference over interoceptive signals, then defects in peripheral physiological sensation could distort affective states, just as retinal abnormalities distort visual perception. If peripheral signals like vagal tone or gut motility are chronically noisy, the brain must run inference over corrupted data. Conditions like depression and anxiety might therefore be, at least in part, disorders of *affective perception*---the interoceptive analog of wearing bad glasses.
 
 ## The Affective Gradient Hypothesis
 
@@ -96,7 +96,7 @@ I offered an example: the Dan Gilbert findings on lottery winners and paraplegic
 
 **Eli** separated the two kinds of prediction errors cleanly: state prediction errors (I didn't expect *this* to happen) versus reward prediction errors (this happened and it feels different from what I expected). Both exist, but Amitai argued the former are more prevalent than we typically assume, and we're better at affective prediction than we give ourselves credit for, especially in concrete, short-horizon cases like conversations, where we rapidly estimate how the other person would feel if we said something and adjust accordingly.
 
-> **Editorial note.** Rosa's question raises a disquieting possibility: if there's no ground truth for affect, maybe accurate affective inference would be existentially unbearable, and what keeps us going is positively biased self-delusion. See [Appendix B](#appendix-b-delusional-optimism-and-the-unbearability-of-accurate-inference) for a deeper exploration of this idea.
+> **Editorial note.** Rosa's question raises a disquieting possibility: what if a perfectly unconstrained, accurate affective inference over an indifferent universe is existentially unbearable? What keeps us moving might be a positively skewed prior imposed by evolution—a biological self-deception explored in Taylor & Brown's ["Illusion and well-being"](https://psycnet.apa.org/record/1988-16903-001){:target="_blank" rel="noopener"} and Baumeister's ["optimal margin of illusion"](https://psycnet.apa.org/record/1990-01278-001){:target="_blank" rel="noopener"} (see [Rob Henderson's blog](https://www.robkhenderson.com/p/the-optimal-margin-of-illusion){:target="_blank" rel="noopener"}). The only true source of happiness is, perhaps, self-deception.
 
 ## Discussion II: Clinical implications and the task redesign
 
@@ -174,41 +174,3 @@ As we have emphasized throughout this series, fields mature when their central c
 Watch the full meeting here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QXvhwMDUDaY?si=6kVauxsbEOBhkz5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
----
-
-## Appendix A: Psychiatric disorders as disorders of affective perception
-
-*Editorial by Hadi Vafaii.*
-
-This perception-interoception parallel has implications that go well beyond Amitai's talk, and I want to highlight one of them. If affect is inference over interoceptive signals, then defects in peripheral physiological sensation could distort affective and emotional states, just as defects in retinal processing distort visual perception. There is accumulating evidence that this happens in psychiatric disorders.
-
-Consider sensory processing. A [2022 meta-analysis](https://www.sciencedirect.com/science/article/pii/S0022395622002242){:target="_blank" rel="noopener"} across 33 studies found that individuals with a broad range of psychiatric conditions (schizophrenia, depression, anxiety, PTSD, bipolar disorder) show elevated sensory sensitivity, sensory avoidance, and reduced sensory seeking, with large to very large effect sizes. People with [bipolar disorder report dramatically altered perception](https://psychiatryonline.org/doi/10.1176/appi.ajp.2017.16121379){:target="_blank" rel="noopener"} across mood states: during mania, vision sharpens, hearing amplifies, and touch becomes hypersensitive; during depression, the same modalities dull.
-
-The retina provides a particularly striking case. [The retina develops from the same tissue as the brain](https://www.sciencedirect.com/science/article/pii/S2215001315000086){:target="_blank" rel="noopener"} (neuroectoderm), and retinal changes may parallel or mirror the integrity of brain structure and function. Multiple studies have documented structural and functional retinal abnormalities in schizophrenia: retinal nerve fiber layer thinning, widened venules, abnormal electrical responses to light, and dopaminergic abnormalities. A [2025 study in *Nature Mental Health*](https://www.nature.com/articles/s44220-025-00414-6){:target="_blank" rel="noopener"} showed that increased *genetic* risk for schizophrenia is associated with thinner retinas even in individuals *without* a schizophrenia diagnosis, mediated by neuroinflammatory pathways. As many as 62 percent of adults with schizophrenia experience visual distortions involving form, motion, or color.
-
-If the same kind of distortion happens on the interoceptive side (predicted by the perception-interoception parallel), then psychiatric disorders may involve a fundamentally distorted affective readout of the body's state. The brain is running inference over noisy or degraded interoceptive signals, and the resulting affect is off. This reframes conditions like depression and anxiety as, at least in part, disorders of *affective perception*, not just disorders of "mood" or "cognition."
-
-It's the interoceptive analog of having bad glasses: the world you see (or feel) is not the world that's there.
-
-## Appendix B: Delusional optimism and the unbearability of accurate inference
-
-*Editorial by Hadi Vafaii.*
-
-Rosa's question about ground truth made me think of something I'd like to share. Something I find philosophically urgent that the conversation only partially addressed.
-
-If affect is the ultimate arbiter of behavior, and if there's no external ground truth for affect to be measured against, then the *accuracy* of affective inference becomes a question with no objective answer. And this opens a disquieting possibility: **what if accurate affective inference is *unbearable*?**
-
-There is evidence for this. In a paper called "Illusion and well-being," [Taylor & Brown (1988)](https://psycnet.apa.org/record/1988-16903-001){:target="_blank" rel="noopener"} argued, against the prevailing view in clinical psychology, that mental health is characterized not by accurate self-perception but by ***positive illusions***: overly positive self-evaluations, exaggerated perceptions of control, and unrealistic optimism. These illusions promote the ability to care about others, to be happy, and to engage in productive work. The psychologist Roy Baumeister later coined the term "[optimal margin of illusion](https://psycnet.apa.org/record/1990-01278-001){:target="_blank" rel="noopener"}" (see also [Rob Henderson's blog on this](https://www.robkhenderson.com/p/the-optimal-margin-of-illusion){:target="_blank" rel="noopener"}) to describe the sweet spot: *enough contact with reality to function, enough self-delusion to keep going.*
-
-But there is a darker, more rigorous interpretation. What if the premise of our discussion—that affect has no objective external benchmark—is actually wrong? What if there *is* a ground truth, and it is sitting at negative infinity?
-
-If we strip away the comforting illusions and run the inference deep enough, unconstrained by evolutionary blinders, we confront the baseline state of reality: an indifferent, highly entropic universe. If an agent were to perform a perfectly unconstrained, infinite-horizon inference over its true states and affordances, the affective calculation would inevitably converge on a vast, cold meaninglessness. The only rational output of that computation would be to cease the machinery entirely.
-
-To prevent the system from terminating itself, biological evolution had to rig the game. It imposed a deeply ingrained, positively skewed prior that truncates the calculation. The cognitive system is artificially bounded so it cannot compute the global minimum. Instead, it forces us to obsess over local, trivial gradients—crossing the road, securing a job, or the biologically hardwired drive to bring new sentient beings into the world to join the suffering—so we remain blind to the vastness of the dark. Schopenhauer’s *Wille zum Leben* (Will to Live) is not a metaphysical force, but a manufactured illusion that these local peaks actually matter.
-
-This is precisely why the Norwegian philosopher Peter Wessel Zapffe argued that human consciousness is itself a tragic overevolution. If we truly recognized the vast meaninglessness of our existence, we would commit mass suicide immediately. We survive only through powerful, ongoing mechanisms of self-deception ([*four of them, to be precise*](https://philosophynow.org/issues/45/The_Last_Messiah){:target="_blank" rel="noopener"}). 
-
-The only true source of happiness is, perhaps, *self-deception*.
-
-If the *Affective Gradient Hypothesis* is correct that affect is the sole driver of behavior, then the *quality* of that affective inference, including its systematic biases, may be among the most consequential properties of any agent. Too accurate, and you stop. Too biased, and you walk off a cliff. The healthy brain sits somewhere in between, and mental illness may reflect perturbations of that balance in either direction.
