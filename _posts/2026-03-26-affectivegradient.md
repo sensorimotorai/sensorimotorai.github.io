@@ -30,8 +30,6 @@ The discussion was probing and sustained, and extended beyond the 2 hour meeting
 - [Discussion III: RL, the singular agent, and the Pavlovian core](#discussion-iii-rl-the-singular-agent-and-the-pavlovian-core)
 - [Synthesis: three inferences and the chicken, revisited](#synthesis-three-inferences-and-the-chicken-revisited)
 - [Closing the loop on the mini-series](#closing-the-loop-on-the-mini-series)
-- [Appendix A: Psychiatric disorders as disorders of affective perception](#appendix-a-psychiatric-disorders-as-disorders-of-affective-perception)
-- [Appendix B: Delusional optimism and the unbearability of accurate inference](#appendix-b-delusional-optimism-and-the-unbearability-of-accurate-inference)
 
 ---
 
