@@ -52,7 +52,7 @@ He laid out several provocative claims up front:
 
 The reason we've been able to avoid this problem is sociological: in lab tasks, the experimenter constrains the goal and the reward function, so the model doesn't need to explain goal selection. But in any real-world example (Amitai used the example of giving a talk, with its layered sub-goals like "don't say anything stupid," "stay on time," "make eye contact," plus physiological drives like hunger, plus exogenous interruptions like someone sneezing), the question of which goal drives behavior at any moment becomes unanswerable.
 
-I (Hadi) asked whether a recurrent circuit with learned attractor dynamics could solve this without a homunculus. Amitai's response: that's a value-free, policy-based solution that assumes you've pre-compiled every possible environment-goal configuration. It might work in Atari, but he's skeptical it can handle real-world behavior, for the same reason he's skeptical that habits cover as much of daily life as we assume. Even brushing your teeth involves concurrent goals and interruptions that seem far-fetched to have pre-compiled.
+I asked whether a recurrent circuit with learned attractor dynamics could solve this without a homunculus. Amitai's response: that's a value-free, policy-based solution that assumes you've pre-compiled every possible environment-goal configuration. It might work in Atari, but he's skeptical it can handle real-world behavior, for the same reason he's skeptical that habits cover as much of daily life as we assume. Even brushing your teeth involves concurrent goals and interruptions that seem far-fetched to have pre-compiled.
 
 He went further: if you are interested in reinforcement learning, decision-making, or higher-level cognition, and you are not thinking about how to solve this goal problem, you are committing "malpractice as a theoretician."
 
@@ -62,7 +62,7 @@ He went further: if you are interested in reinforcement learning, decision-makin
 
 ## Affect as perception
 
-This was the section of the talk I (Hadi) found most striking, and where Amitai and I went back and forth extensively.
+This was the section of the talk I found most striking, and where Amitai and I went back and forth extensively.
 
 Amitai proposed that affect can be understood as a feature of perception, sitting at an intermediate level between raw sensation and discrete categorizable emotion. He drew a direct parallel to visual processing. In vision, low-level processing extracts edges, mid-level processing assembles surfaces (the first stage accessible to consciousness), and high-level processing assigns semantic and conceptual labels.
 
@@ -122,7 +122,7 @@ Rosa closed with a comment that captured something important: "I have to say, th
 
 ## Synthesis: three inferences and the chicken, revisited
 
-Toward the end of the session, I (Hadi) offered a synthesis of the framework as I understood it. The AGH, as I see it, reduces to three inference problems:
+Toward the end of the session, I offered a synthesis of the framework as I understood it. The AGH, as I see it, reduces to three inference problems:
 
 1. **State inference.** What is out there? Given my observations, what is the state of the world? This is the standard perceptual inference problem: P(state \| observations).
 
@@ -139,13 +139,13 @@ Now return to the chicken. The chicken is standing on one side of the road. It i
 The joke is now substantiated. The chicken is performing affective gradient descent.
 
 > *"Man can do what he wills but he cannot will what he wills."*
-> --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/twofundamentalpr0000scho){:target="_blank" rel="noopener"}
+> --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
 
 Schopenhauer saw it two centuries ago. Perhaps what he called *Will* was *Affect* all along: not a mysterious metaphysical force, but a perceptual inference over the body's internal states, an inference that *precedes* and *generates* the experience of wanting. We don't choose what moves us. We are moved, and then we call it choice.
 
 ## Closing the loop on the mini-series
 
-This was the fourth and final talk in the March 2026 RL mini-series, and I (Hadi) want to close by connecting the four talks into a single arc.
+This was the fourth and final talk in the March 2026 RL mini-series, and I want to close by connecting the four talks into a single arc.
 
 We started by asking: what is an agent? Four speakers gave four complementary answers, each adding a necessary piece.
 
@@ -155,13 +155,15 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 **Dave Abel** (Talk 3, [Plasticity-Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}) delivered a concrete formalism. Using generalized directed information, he defined two measurable properties of agents: empowerment (influence over the environment) and plasticity (influence by the environment), and proved they are in tension. I argued that these behaviorist properties are mediated by a missing cognitive component: the agent's *internal world model*, which lets it simulate, predict, and plan.
 
-**Amitai Shenhav** (Talk 4, today) argued that the mystery of motivated behavior dissolves if we can mathematically and mechanistically define *affect*. Goals are emergent, value is unified, and the engine that drives all behavior is the gradient of anticipated feeling.
+**Amitai Shenhav** (Talk 4, today) argued that the mystery of motivated behavior dissolves if we can mathematically and mechanistically define *affect*. Goals are emergent, and the force that drives all behavior is the gradient of anticipated feeling.
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div style="border: 2px solid; padding: 16px 20px; margin: 24px 0; border-radius: 6px;">
+<div style="border: 2px solid; padding: 16px 20px; margin: 24px 0; border-radius: 10px;">
 
 An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
+
+<br><br>
 
 These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
 
