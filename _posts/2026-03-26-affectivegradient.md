@@ -9,9 +9,9 @@ Why did the chicken cross the road? Because it expected the other side would fee
 
 ...or at least that's what this week's speaker proposed. Amitai Shenhav (UC Berkeley) joined us in person for the fourth and final presentation in our March 2026 RL mini-series. Over the previous three weeks, we had identified what a theory of agency needs: precise definitions of agency itself ([Dave Abel's Three Dogmas]({% post_url 2026-03-05-threedogmasrl %}){:target="_blank" rel="noopener"}), a grounding in adaptation and evolution ([Mani Hamidi's response]({% post_url 2026-03-12-rldogmasevolution %}){:target="_blank" rel="noopener"}), and a formal vocabulary for an agent's capacity to control and be influenced ([Dave's plasticity-empowerment framework]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}).
 
-But one question was left hanging: where does *motivated behavior* come from? Dave's framework had empowerment and plasticity but no goals, no rewards, no reason to do one thing rather than another.
+But one question was left hanging: **where does *motivated behavior* come from?** Dave's framework had empowerment and plasticity but no goals, no rewards, no reason to do one thing rather than another.
 
-Amitai's work fills that gap. He claims that all motivated behavior, from avoiding predators to giving a talk to choosing sushi over tacos, is driven by a single quantity. Not goals. Not reward in the RL sense. *Affect*.
+Amitai's work fills that gap. He claims that all motivated behavior, from avoiding predators to giving a talk to choosing sushi over tacos, is driven by a single quantity. Not goals. Not reward in the RL sense. ***Affect***.
 
 We do things because we anticipate they will make us feel better or prevent us from feeling worse. Goals, in this view, are not antecedents of action but emergent properties of affect optimization.
 
@@ -37,21 +37,28 @@ The discussion was probing and sustained, and extended beyond the 2 hour meeting
 
 ## Three obstacles to solving motivated behavior
 
-Amitai opened with his lab's background in value-based decision-making and cognitive control, but quickly shifted to the motivating problem: their models work well for constrained lab tasks, but when you try to generalize to real-world behavior (having a conversation, driving while adjusting the radio and talking to your kid in the back seat), the models don't just need *scaling*. They hit fundamental obstacles.
+Amitai opened with his lab's background in value-based decision-making and cognitive control, but quickly shifted to the motivating problem: their models work well for constrained lab tasks, but when you try to generalize to real-world behavior (having a conversation, driving while adjusting the radio and talking to your kid in the back seat), these models face fundamental obstacles.
 
-He laid out several provocative claims up front: there is most likely only one objective function (not multiple), the brain may not represent goals explicitly, RL is probably overrated as a guide to real-world behavior, and people effectively do what they want, where "what they want" means what their Pavlovian system wants.
+He laid out several provocative claims up front:
+
+- There is most likely only one objective function (not multiple),
+- The brain may not represent goals explicitly,
+- RL is probably overrated as a guide to real-world behavior, and
+- People effectively do what they want, where "what they want" means what their Pavlovian system wants.
 
 **Eli** jumped in immediately to ask what arguments rule out multi-objective optimization. Amitai's answer: what he's proposing is, in a sense, multi-objective (there can be many values, like valuing wine along certain dimensions and food along others), but there is a single *value code* common across them. You can't have fundamentally separate objective functions (utility, information, free energy, empowerment) running in parallel without either a homunculus to arbitrate between them or a set of criteria that are very hard to meet.
 
-**Obstacle 1: The goal problem.** We take goals for granted as central to action selection, but we have no account of where they come from. Amitai talked to experts in goal-directed behavior across multiple fields, and to a person, they gave the same answer: we don't know how goals get selected. The reason we've been able to avoid this problem is sociological: in lab tasks, the experimenter constrains the goal and the reward function, so the model doesn't need to explain goal selection. But in any real-world example (Amitai used the example of giving a talk, with its layered sub-goals like "don't say anything stupid," "stay on time," "make eye contact," plus physiological drives like hunger, plus exogenous interruptions like someone sneezing), the question of which goal drives behavior at any moment becomes unanswerable.
+**Obstacle 1: The goal problem.** We take goals for granted as central to action selection, but we have no account of where they come from. Amitai talked to experts in goal-directed behavior across multiple fields, and they all gave the same answer: we don't know how goals get selected.
+
+The reason we've been able to avoid this problem is sociological: in lab tasks, the experimenter constrains the goal and the reward function, so the model doesn't need to explain goal selection. But in any real-world example (Amitai used the example of giving a talk, with its layered sub-goals like "don't say anything stupid," "stay on time," "make eye contact," plus physiological drives like hunger, plus exogenous interruptions like someone sneezing), the question of which goal drives behavior at any moment becomes unanswerable.
 
 I (Hadi) asked whether a recurrent circuit with learned attractor dynamics could solve this without a homunculus. Amitai's response: that's a value-free, policy-based solution that assumes you've pre-compiled every possible environment-goal configuration. It might work in Atari, but he's skeptical it can handle real-world behavior, for the same reason he's skeptical that habits cover as much of daily life as we assume. Even brushing your teeth involves concurrent goals and interruptions that seem far-fetched to have pre-compiled.
 
-He went further: if you are interested in reinforcement learning, decision-making, or higher-level cognition, and you are not thinking about how to solve this goal problem, you are committing "malpractice as a theoretician." It's like studying visual processes without thinking about how light enters the brain.
+He went further: if you are interested in reinforcement learning, decision-making, or higher-level cognition, and you are not thinking about how to solve this goal problem, you are committing "malpractice as a theoretician."
 
 **Obstacle 2: The value problem.** From Plato onward, theories of value have posited two streams: a "hot" (affective, reflexive) value system and a "cold" (non-hedonic, instrumental) value system. The problem is that if you have two value systems, something needs to arbitrate between them, and that something is another homunculus. **Eli** asked whether this hot/cold distinction is descriptive or an artifact of separate experimental traditions. Amitai was sympathetic to the suspicion that these were artificially separated, and noted that this was close to what he planned to argue: there is only one value system, and it's the hot one.
 
-**Obstacle 3: The affect problem.** Most people hear "affect" and think of something charged, prolonged, categorical (the six basic emotions from *Inside Out*), and unitary ("how happy do you feel right now?"). Each of these assumptions is wrong, or at least unhelpfully narrow. Amitai's solution is to reconceive affect as something much more general and perceptual in nature.
+**Obstacle 3: The affect problem.** Most people hear "affect" and think of something charged, prolonged, categorical (the six basic emotions from [*Inside Out*](https://www.imdb.com/title/tt2096673/){:target="_blank" rel="noopener"}), and unitary ("how happy do you feel right now?"). Each of these assumptions is wrong, or at least unhelpfully narrow. Amitai's solution is to reconceive affect as something much more general and perceptual in nature.
 
 ## Affect as perception
 
