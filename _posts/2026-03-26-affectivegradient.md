@@ -142,9 +142,9 @@ Toward the end of the session, I offered a synthesis of the framework as I under
 
 1. **State inference.** What is out there? Given my observations, what is the state of the world? This is the standard perceptual inference problem: **P(state \| observations)**.
 
-2. **Affordance inference.** What can I do? Given the inferred state, what actions are available to me? These are the root nodes of a simulation tree: **P([possible] actions \| state)**.
+2. **Affordance inference.** What can I do? Given the inferred state, what actions are available to me? These are the root nodes of a simulation tree: **P(<span style="font-size: 0.75em; opacity: 0.8;">[possible]</span> actions | state)**
 
-3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: **P([possible] outcomes \| state, action)**.
+3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: **P(<span style="font-size: 0.75em; opacity: 0.8;">[possible]</span> outcomes | state, action)**.
 
 4. **Affective inference.** How would each outcome feel? Given the possible outcomes, what affect is associated with each? This is the evaluative inference: **P(affect \| outcome)**.
 
