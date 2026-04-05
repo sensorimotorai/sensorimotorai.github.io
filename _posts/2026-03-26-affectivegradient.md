@@ -222,7 +222,9 @@ Putting these together, we arrive at the beginnings of a composite answer to the
 
 This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
-As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information. "Agency" is not there yet. But we're closer than we were four weeks ago.
+As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information.
+
+"Agency" is not there yet. But we're closer than we were four weeks ago.
 
 ---
 
