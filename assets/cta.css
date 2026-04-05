@@ -172,8 +172,10 @@ figcaption {
 /* Desktop override for Observation Box */
 @media (min-width: 1024px) {
 	.observation-box {
+		width: 100%;
 		max-width: var(--desktop-width, var(--box-max-width, 600px));
-		/* width stays 100% from the base rule */
+		flex: 0 0 100%;       /* if parent is flex, force full row */
+		grid-column: 1 / -1;  /* if parent is grid, span all columns */
 	}
 }
 
