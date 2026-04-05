@@ -140,11 +140,11 @@ A testable prediction follows: the same outcome representation should drive both
 
 Toward the end of the session, I offered a synthesis of the framework as I understood it. The AGH, as I see it, reduces to three inference problems, plus one simulation problem:
 
-1. **State inference.** What is out there? Given my observations, what is the state of the world? This is the standard perceptual inference problem: **P(state | observations)**.
+1. **State inference.** What is out there? Given my observations, what is the state of the world? This is the standard perceptual inference problem: <b>P(state | observations)</b>.
 
-2. **Affordance inference.** What can I do? Given the inferred state, what actions are available to me? These are the root nodes of a simulation tree: <b>P(<span style="font-size:0.75em;opacity:0.8">[possible]</span> actions | state)</b>.
+2. **Affordance inference.** What can I do? Given the inferred state, what actions are available to me? These are the root nodes of a simulation tree: <b>P(<span style="font-size:0.5em;opacity:0.8;font-style:italic">[possible]</span> actions | state)</b>.
 
-3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: <b>P(<span style="font-size:0.75em;opacity:0.8">[possible]</span> outcomes \| state, action)</b>.
+3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: <b>P(<span style="font-size:0.60em;opacity:0.8;font-style:italic">[possible]</span> outcomes | state, action)</b>.
 
 4. **Affective inference.** How would each outcome feel? Given the possible outcomes, what affect is associated with each? This is the evaluative inference: <b>P(affect | outcome)</b>.
 
