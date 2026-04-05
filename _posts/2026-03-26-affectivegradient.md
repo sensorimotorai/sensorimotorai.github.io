@@ -5,7 +5,16 @@ tags: [RL, affect, motivation, goals, perception, interoception, agency, Pavlovi
 categories: [2026, March]
 ---
 
-Why did the chicken cross the road? Because it expected the other side would feel better.
+Why did the chicken cross the road?
+
+<figure style="text-align:center; margin: 1em 0;">
+  <img class="fluid-img"
+       src="/assets/images/chicken_road.png"
+       alt="The chicken and the road"
+       style="--desktop-width: 80%;">
+</figure>
+
+Because it expected the other side would feel better.
 
 ...or at least that's what this week's speaker proposed. Amitai Shenhav (UC Berkeley) joined us in person for the fourth and final presentation in our March 2026 RL mini-series. Over the previous three weeks, we had identified what a theory of agency needs: precise definitions of agency itself ([Dave Abel's Three Dogmas]({% post_url 2026-03-05-threedogmasrl %}){:target="_blank" rel="noopener"}), a grounding in adaptation and evolution ([Mani Hamidi's response]({% post_url 2026-03-12-rldogmasevolution %}){:target="_blank" rel="noopener"}), and a formal vocabulary for an agent's capacity to control and be influenced ([Dave's plasticity-empowerment framework]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}).
 
@@ -132,14 +141,22 @@ Once you have these three pieces of subjective information, action follows: you 
 
 Amitai accepted this synthesis with one refinement: you don't necessarily need to infer a full landscape. Individual outcomes can locally tug at actions without requiring a globally computed map. Some outcomes will be in competition, others will be unrelated (you can have a conversation while drinking coffee). And the inference may be automatic, in the same way we infer the brightness of something, rather than requiring an extra deliberative layer. I agreed: unconscious inference. Bayesian inference without a committee meeting.
 
+### The chicken, revisited
+
 Now return to the chicken. The chicken is standing on one side of the road. It infers the state of the road (cars, weather, distance). It represents its affordances (walk, run, stay). It simulates the possible outcomes and infers the affect associated with each: the other side has food, this side has an approaching fox. The affective gradient points across the road. It crosses.
 
-The joke is now substantiated. The chicken is performing affective gradient descent.
+We now finally understand the chicken: it may be performing affective gradient ascent.
+
+But this still leaves something partially unaddressed: the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
 
-Schopenhauer saw it two centuries ago. Perhaps what he called *Will* was *Affect* all along: not a mysterious metaphysical force, but a perceptual inference over the body's internal states, an inference that *precedes* and *generates* the experience of wanting. We don't choose what moves us. We are moved, and then we call it choice.
+A chicken can cross the road, but can it also *Will* its desire to reach the other side?
+
+Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the experience of *wanting*.
+
+If this is true, then we don't choose what moves us. Decisions occur, movements occur, through mechanisms that follow the affect, but are shielded away from our conscious mind. Later, we provide a post-hoc rationalization, calling this "choice."
 
 ## Closing the loop on the mini-series
 
@@ -157,7 +174,7 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div style="border: 2px solid; padding: 16px 20px; margin: 24px 0; border-radius: 10px;">
+<div style="border: 2px solid; padding: 16px 20px; margin: 24px 0; border-radius: 15px;">
 
 An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
 
