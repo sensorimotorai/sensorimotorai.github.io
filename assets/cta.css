@@ -175,6 +175,12 @@ figcaption {
 	border-radius: var(--border-radius, 8px) var(--border-radius, 8px) 0 0;
 	font-size: var(--title-font-size, 0.9em);
 	font-weight: 500;
+	
+	/* The Fix: Force exact geometric matching */
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	border: var(--border-width, 2px) solid var(--title-bg-color, #666666);
 }
 
 .observation-box .box-content {
@@ -185,6 +191,11 @@ figcaption {
 	border-radius: 0 0 var(--border-radius, 8px) var(--border-radius, 8px);
 	font-size: var(--content-font-size, 1.0em);
 	line-height: 1.5;
+
+	/* The Fix: Force exact geometric matching */
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
 }
 
 /* If no title is present, adjust top border radius */

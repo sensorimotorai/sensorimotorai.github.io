@@ -161,6 +161,12 @@ This still leaves something partially unaddressed: the question of *free will*:
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
 
+<blockquote class="custom-quote">
+  <em>"Man can do what he wills but he cannot will what he wills."</em>
+  <br><br>
+  --- Arthur Schopenhauer, <a href="https://archive.org/details/essayonfreedomof0000scho" target="_blank" rel="noopener">On the Freedom of the Will (1839)</a>
+</blockquote>
+
 A chicken can cross the road, but can it also *Will* its desire to reach the other side?
 
 Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the conscious experience of *wanting*.
