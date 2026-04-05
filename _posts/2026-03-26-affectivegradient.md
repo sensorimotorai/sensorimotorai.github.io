@@ -196,7 +196,7 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div class="observation-box" style="--desktop-width: 80%;">
+<div class="observation-box" style="--desktop-width: 100%;">
   <div class="box-title align-center">Defining an Agent (a sketch)</div>
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
