@@ -159,12 +159,19 @@ figcaption {
 	margin-right: auto;
 }
 
-/* Observation Box */
+/* Base Observation Box (Mobile First) */
 .observation-box {
 	margin: 20px auto;
 	padding: 0;
-	max-width: var(--box-max-width, 600px);
+	width: 100%;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Desktop override for Observation Box */
+@media (min-width: 1024px) {
+	.observation-box {
+		width: var(--desktop-width, var(--box-max-width, 600px)); 
+	}
 }
 
 .observation-box .box-title {
@@ -176,7 +183,7 @@ figcaption {
 	font-size: var(--title-font-size, 0.9em);
 	font-weight: 500;
 	
-	/* The Fix: Force exact geometric matching */
+	/* Force exact geometric matching */
 	box-sizing: border-box;
 	width: 100%;
 	display: block;
@@ -192,7 +199,7 @@ figcaption {
 	font-size: var(--content-font-size, 1.0em);
 	line-height: 1.5;
 
-	/* The Fix: Force exact geometric matching */
+	/* Force exact geometric matching */
 	box-sizing: border-box;
 	width: 100%;
 	display: block;
@@ -212,4 +219,3 @@ figcaption {
 .observation-box .align-center {
 	text-align: center;
 }
-

@@ -196,7 +196,7 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div class="observation-box" style="margin-bottom: 1.5em;">
+<div class="observation-box" style="--desktop-width: 80%; margin-bottom: 1.5em;">
   <div class="box-title align-center">Defining an Agent</div>
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
@@ -205,7 +205,7 @@ Putting these together, we arrive at the beginnings of a composite answer to the
   </div>
 </div>
 
-This is, of course, a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
+This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
 As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information. "Agency" is not there yet. But it's closer than it was four weeks ago.
 
