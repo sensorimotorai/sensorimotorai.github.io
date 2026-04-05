@@ -12,6 +12,7 @@ Why did the chicken cross the road?
        src="/assets/images/chicken_road.png"
        alt="The chicken and the road"
        style="--desktop-width: 80%;">
+  <figcaption>Figure 1. The chicken and the road (credit: Gemini).</figcaption>
 </figure>
 
 Because it expected the other side would feel better.
@@ -147,6 +148,14 @@ Now return to the chicken. The chicken is standing on one side of the road. It i
 
 We now finally understand the chicken: it may be performing affective gradient ascent.
 
+<figure style="text-align:center; margin: 1em 0;">
+  <img class="fluid-img"
+       src="/assets/images/chicken_affective_gradient_ascent.png"
+       alt="The chicken and the road"
+       style="--desktop-width: 100%;">
+  <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
+</figure>
+
 But this still leaves something partially unaddressed: the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
@@ -156,7 +165,15 @@ A chicken can cross the road, but can it also *Will* its desire to reach the oth
 
 Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the experience of *wanting*.
 
-If this is true, then we don't choose what moves us. Decisions occur, movements occur, through mechanisms that follow the affect, but are shielded away from our conscious mind. Later, we provide a post-hoc rationalization, calling this "choice."
+<figure style="text-align:center; margin: 1em 0;">
+  <img class="fluid-img"
+       src="/assets/images/chicken_schopenhauer.png"
+       alt="The chicken and the road"
+       style="--desktop-width: 80%;">
+  <figcaption>Figure 3. Schopenhauer's take on the chicken (probably, at least according to Gemini).</figcaption>
+</figure>
+
+If this is true, then we don't choose what moves us. Decisions ***occur***, movements ***occur***, through mechanisms that follow the affect, but are shielded away from our conscious mind. Later, we provide a post-hoc rationalization, calling this "***choice***."
 
 ## Closing the loop on the mini-series
 
