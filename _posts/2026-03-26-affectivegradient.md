@@ -156,20 +156,20 @@ We now finally understand the chicken: it may be performing affective gradient a
   <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
 </figure>
 
-But this still leaves something partially unaddressed: the question of *free will*:
+This still leaves something partially unaddressed: the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
 
 A chicken can cross the road, but can it also *Will* its desire to reach the other side?
 
-Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the experience of *wanting*.
+Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the conscious experience of *wanting*.
 
 <figure style="text-align:center; margin: 1em 0;">
   <img class="fluid-img"
        src="/assets/images/chicken_schopenhauer.png"
        alt="The chicken and the road"
-       style="--desktop-width: 85%;">
+       style="--desktop-width: 100%;">
   <figcaption>Figure 3. Schopenhauer's take on the chicken (probably, at least according to Gemini).</figcaption>
 </figure>
 
@@ -177,9 +177,8 @@ If this is true, then we don't choose what moves us. Decisions ***occur***, move
 
 Later, we provide a post-hoc rationalization, calling this "***choice***."
 
-(For a somewhat different take, see Michael Gazzaniga's ["*Free Yet Determined and Constrained*"](https://www.youtube.com/watch?v=aGtZek7RPts){:target="_blank" rel="noopener"}, arguing that the deterministic nature of the physical brain does not negate moral responsibility; and his ["*The Interpreter*"](https://www.youtube.com/watch?v=mJKloz2vwlc){:target="_blank" rel="noopener"}, where he explores empirical work showing that our conscious "self" is merely a post-hoc narrator rationalizing actions already executed by the brain's unconscious modules.
-
-Overall, Gazzaniga argues the feeling of conscious choice is a fabricated retroactive translation of physiological events, yet we remain accountable agents precisely because responsibility exists in the space between individuals, not inside a deterministic skull.)
+> **Remark:** For a somewhat different take, see Michael Gazzaniga's ["Free Yet Determined and Constrained"](https://www.youtube.com/watch?v=aGtZek7RPts){:target="_blank" rel="noopener"}, arguing that the deterministic nature of the physical brain does not negate moral responsibility; and his ["The Interpreter"](https://www.youtube.com/watch?v=mJKloz2vwlc){:target="_blank" rel="noopener"}, where he explores empirical work showing that our conscious "self" is merely a post-hoc narrator rationalizing actions already executed by the brain's unconscious modules.
+> Overall, Gazzaniga argues the feeling of conscious choice is a fabricated retroactive translation of physiological events, yet we remain accountable agents because responsibility exists in the space between individuals, not inside a deterministic skull.
 
 ## Closing the loop on the mini-series
 
@@ -191,20 +190,19 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 **Mani Hamidi** (Talk 2, [Evolutionary Response]({% post_url 2026-03-12-rldogmasevolution %}){:target="_blank" rel="noopener"}) argued that agency cannot be understood without evolution and thermodynamics. Agents are far-from-equilibrium, driven-dissipative systems. Adaptation is not just learning from data but a multi-scale process ranging from evolutionary timescales to moment-to-moment neural dynamics.
 
-**Dave Abel** (Talk 3, [Plasticity-Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}) delivered a concrete formalism. Using generalized directed information, he defined two measurable properties of agents: empowerment (influence over the environment) and plasticity (influence by the environment), and proved they are in tension. I argued that these behaviorist properties are mediated by a missing cognitive component: the agent's *internal world model*, which lets it simulate, predict, and plan.
+**Dave Abel** (Talk 3, [Plasticity-Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}) delivered a concrete formalism. Using generalized directed information, he defined two measurable properties of agents: empowerment (influence over the environment) and plasticity (influence by the environment), and proved they are in tension. I argued that these behaviorist properties should be mediated by a missing cognitive component: the agent's *internal world model*, which lets it simulate, predict, and plan.
 
 **Amitai Shenhav** (Talk 4, today) argued that the mystery of motivated behavior dissolves if we can mathematically and mechanistically define *affect*. Goals are emergent, and the force that drives all behavior is the gradient of anticipated feeling.
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div style="border: 2px solid; padding: 16px 20px; margin: 24px 0; border-radius: 15px;">
-
-An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
-
-<br><br>
-
-These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
-
+<div class="observation-box">
+  <div class="box-title">Defining an Agent</div>
+  <div class="box-content">
+    An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
+    <br><br>
+    These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
+  </div>
 </div>
 
 This is, of course, a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.

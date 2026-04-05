@@ -113,3 +113,83 @@ figcaption {
   /* margin-top: 8px;  Adds a little breathing room below the image */
   /* font-size: 0.9em; Optional: makes caption slightly smaller than your 19px base font */
 }
+
+/* Quotes, Pullquotes, and Footnotes */
+.wp-block-footnotes {
+	font-size: 14.4px;
+	line-height: 1.5;
+}
+
+.custom-separator {
+	margin: 10px auto 15px;
+	max-width: 550px;
+	height: 2px;
+	background: linear-gradient(to right, transparent, #666666, transparent);
+}
+
+.custom-quote {
+	display: block;
+	margin-left: var(--quote-margin-left, 60px);
+	margin-right: var(--quote-margin-right, 60px);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	border-left: var(--quote-line-width, 4px) solid var(--quote-line-color, #2d6a99);
+}
+
+.wp-block-pullquote p {
+	font-size: .8em;
+	line-height: 1.5;
+}
+
+.wp-block-pullquote cite {
+	display: block;
+	font-size: .7em;
+	margin-top: 1.4em;
+	font-style: italic;
+}
+
+.wp-block-pullquote {
+	padding-top: 0;
+	padding-bottom: 1.1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Observation Box */
+.observation-box {
+	margin: 20px auto;
+	padding: 0;
+	max-width: var(--box-max-width, 600px);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.observation-box .box-title {
+	background-color: var(--title-bg-color, #666666);
+	color: white;
+	padding: var(--title-padding, 1px 12px);
+	margin: 0;
+	border-radius: var(--border-radius, 8px) var(--border-radius, 8px) 0 0;
+	font-size: var(--title-font-size, 0.9em);
+	font-weight: 500;
+}
+
+.observation-box .box-content {
+	background-color: var(--content-bg-color, rgba(255, 255, 0, 0.2));
+	border: var(--border-width, 2px) solid var(--border-color, #666666);
+	border-top: none;
+	padding: var(--content-padding, 10px);
+	text-align: center;
+	border-radius: 0 0 var(--border-radius, 8px) var(--border-radius, 8px);
+	font-size: var(--content-font-size, 1.0em);
+	line-height: 1.5;
+}
+
+/* If no title is present, adjust top border radius */
+.observation-box .box-content:first-child {
+	border-top: var(--border-width, 1px) solid var(--border-color, #666666);
+	border-radius: var(--border-radius, 8px);
+}
