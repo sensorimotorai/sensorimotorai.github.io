@@ -144,9 +144,9 @@ Toward the end of the session, I offered a synthesis of the framework as I under
 
 2. **Affordance inference.** What can I do? Given the inferred state, what actions are available to me? These are the root nodes of a simulation tree: <b>P(<span style="font-size:0.75em;opacity:0.8">[possible]</span> actions | state)</b>.
 
-3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: <b>P(<span style="font-size:0.75em;opacity:0.8">[possible]</span> outcomes | state, action)</b>.
+3. **Outcome simulation.** What would happen? Run the world model forward from each affordance to produce a distribution of possible outcomes: <b>P(<span style="font-size:0.75em;opacity:0.8">[possible]</span> outcomes \| state, action)</b>.
 
-4. **Affective inference.** How would each outcome feel? Given the possible outcomes, what affect is associated with each? This is the evaluative inference: **P(affect | outcome)**.
+4. **Affective inference.** How would each outcome feel? Given the possible outcomes, what affect is associated with each? This is the evaluative inference: <b>P(affect | outcome)</b>.
 
 Once you have these four pieces of subjective information, action follows: you act to move along the affective gradient, <span style="color: green;">***toward***</span> states that <span style="color: green;">***feel better***</span> and <span style="color: red;">***away***</span> from states that <span style="color: red;">***feel worse***</span> (in expectation).
 
