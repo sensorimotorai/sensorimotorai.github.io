@@ -11,8 +11,8 @@ Why did the chicken cross the road?
   <img class="fluid-img"
        src="/assets/images/chicken_road.png"
        alt="The chicken and the road"
-       style="--desktop-width: 80%;">
-  <figcaption>Figure 1. The chicken and the road (credit: Gemini).</figcaption>
+       style="--desktop-width: 85%;">
+  <figcaption style="text-align: center;">Figure 1. The chicken and the road (credit: Gemini).</figcaption>
 </figure>
 
 Because it expected the other side would feel better.
@@ -152,8 +152,8 @@ We now finally understand the chicken: it may be performing affective gradient a
   <img class="fluid-img"
        src="/assets/images/chicken_affective_gradient_ascent.png"
        alt="The chicken and the road"
-       style="--desktop-width: 100%;">
-  <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
+       style="--desktop-width: 95%;">
+  <figcaption style="text-align: center;">Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
 </figure>
 
 But this still leaves something partially unaddressed: the question of *free will*:
@@ -169,11 +169,17 @@ Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*:
   <img class="fluid-img"
        src="/assets/images/chicken_schopenhauer.png"
        alt="The chicken and the road"
-       style="--desktop-width: 80%;">
-  <figcaption>Figure 3. Schopenhauer's take on the chicken (probably, at least according to Gemini).</figcaption>
+       style="--desktop-width: 85%;">
+  <figcaption style="text-align: center;">Figure 3. Schopenhauer's take on the chicken (probably, at least according to Gemini).</figcaption>
 </figure>
 
-If this is true, then we don't choose what moves us. Decisions ***occur***, movements ***occur***, through mechanisms that follow the affect, but are shielded away from our conscious mind. Later, we provide a post-hoc rationalization, calling this "***choice***."
+If this is true, then we don't choose what moves us. Decisions ***occur***, movements ***occur***, through mechanisms that follow the affect, but are shielded away from our conscious mind.
+
+Later, we provide a post-hoc rationalization, calling this "***choice***."
+
+(For a somewhat different take, see Michael Gazzaniga's ["*Free Yet Determined and Constrained*"](https://www.youtube.com/watch?v=aGtZek7RPts){:target="_blank" rel="noopener"}, arguing that the deterministic nature of the physical brain does not negate moral responsibility; and his ["*The Interpreter*"](https://www.youtube.com/watch?v=mJKloz2vwlc){:target="_blank" rel="noopener"}, where he explores empirical work showing that our conscious "self" is merely a post-hoc narrator rationalizing actions already executed by the brain's unconscious modules.
+
+Overall, Gazzaniga argues the feeling of conscious choice is a fabricated retroactive translation of physiological events, yet we remain accountable agents precisely because responsibility exists in the space between individuals, not inside a deterministic skull.)
 
 ## Closing the loop on the mini-series
 
