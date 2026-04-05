@@ -172,7 +172,8 @@ figcaption {
 /* Desktop override for Observation Box */
 @media (min-width: 1024px) {
 	.observation-box {
-		width: var(--desktop-width, var(--box-max-width, 600px)); 
+		max-width: var(--desktop-width, var(--box-max-width, 600px));
+		/* width stays 100% from the base rule */
 	}
 }
 
