@@ -161,12 +161,6 @@ This still leaves something partially unaddressed: the question of *free will*:
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
 
-<blockquote class="custom-quote">
-  <em>"Man can do what he wills but he cannot will what he wills."</em>
-  <br><br>
-  --- Arthur Schopenhauer, <a href="https://archive.org/details/essayonfreedomof0000scho" target="_blank" rel="noopener">On the Freedom of the Will (1839)</a>
-</blockquote>
-
 A chicken can cross the road, but can it also *Will* its desire to reach the other side?
 
 Perhaps *Affect* is the biological footprint of what Schopenhauer called *Will*: not the metaphysical force itself, but the brain's perceptual inference over the body's blind, perpetual physiological drives. An inference that *precedes* and *generates* the conscious experience of *wanting*.
@@ -202,8 +196,8 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div class="observation-box">
-  <div class="box-title align-center">Defininig an Agent</div>
+<div class="observation-box" style="margin-bottom: 1.5em;">
+  <div class="box-title align-center">Defining an Agent</div>
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
     <br><br>
