@@ -100,3 +100,16 @@ body {
     display: none !important;
   }
 }
+
+/* Center all figure captions globally */
+figure {
+  margin: 1em 0;
+}
+
+figcaption {
+  text-align: center;
+  display: block;
+  width: 100%;
+  /* margin-top: 8px;  Adds a little breathing room below the image */
+  /* font-size: 0.9em; Optional: makes caption slightly smaller than your 19px base font */
+}
