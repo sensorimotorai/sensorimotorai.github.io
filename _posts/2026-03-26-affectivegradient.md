@@ -148,15 +148,17 @@ Toward the end of the session, I offered a synthesis of the framework as I under
 
 4. **Affective inference.** How would each outcome feel? Given the possible outcomes, what affect is associated with each? This is the evaluative inference: **P(affect \| outcome)**.
 
-Once you have these four pieces of subjective information, action follows: you act to move along the affective gradient, <span style="color: green;">*toward*</span> states that <span style="color: green;">*feel better*</span> and <span style="color: red;">*away*</span> from states that <span style="color: red;">*feel worse*</span> (in expectation).
+Once you have these four pieces of subjective information, action follows: you act to move along the affective gradient, <span style="color: green;">***toward***</span> states that <span style="color: green;">***feel better***</span> and <span style="color: red;">***away***</span> from states that <span style="color: red;">***feel worse***</span> (in expectation).
 
-Amitai accepted this synthesis with one refinement: you don't necessarily need to infer a full landscape. Individual outcomes can locally tug at actions without requiring a globally computed map. Some outcomes will be in competition, others will be unrelated (you can have a conversation while drinking coffee). And the inference may be automatic, in the same way we infer the brightness of something, rather than requiring an extra deliberative layer. I agreed: *unconscious inference*. Bayesian inference without a committee meeting.
+Amitai accepted this synthesis with one refinement: you don't necessarily need to infer a full landscape. Individual outcomes can **locally** tug at actions without requiring a globally computed map. Some outcomes will be in competition, others will be unrelated (you can have a conversation while drinking coffee).
+
+And the inference may be automatic, in the same way we infer the brightness of something, rather than requiring an extra deliberative layer. I agreed: ***unconscious inference***. Bayesian inference without a committee meeting.
 
 ### The chicken, revisited
 
 Now return to the chicken. The chicken is standing on one side of the road. It infers the state of the road (cars, weather, distance). It represents its affordances (walk, run, stay). It simulates the possible outcomes and infers the affect associated with each: the other side has food, this side has an approaching fox. The affective gradient points across the road. It crosses.
 
-We now finally understand the chicken: it may be performing affective gradient ascent.
+We now finally understand the chicken: it may be performing *Affective Gradient Ascent*!
 
 <figure style="text-align:center; margin: 1em 0;">
   <img class="fluid-img"
@@ -166,7 +168,7 @@ We now finally understand the chicken: it may be performing affective gradient a
   <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
 </figure>
 
-This still leaves something partially unaddressed: the question of *free will*:
+So far so good. But this still leaves something partially unaddressed---the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
@@ -194,15 +196,15 @@ Later, we provide a post-hoc rationalization, calling this "***choice***."
 
 This was the fourth and final talk in the March 2026 RL mini-series, and I want to close by connecting the four talks into a single arc.
 
-We started by asking: what is an agent? Four speakers gave four complementary answers, each adding a necessary piece.
+We started by asking: ***what is an agent***? Four speakers gave four complementary answers, each adding a necessary piece.
 
-**Dave Abel** (Talk 1, [Three Dogmas]({% post_url 2026-03-05-threedogmasrl %}){:target="_blank" rel="noopener"}) argued that the field needs precise definitions, and that three dogmas (environment spotlight, learning as task-solving, the reward hypothesis) are holding us back from formulating them. He offered a behaviorist starting point: define agents in terms of their measurable interactions with the environment.
+**Dave Abel** (Talk 1, [Three Dogmas]({% post_url 2026-03-05-threedogmasrl %}){:target="_blank" rel="noopener"}) argued that the field needs precise definitions, and that three dogmas (*environment spotlight, learning as task-solving, the reward hypothesis*) are holding us back from formulating them. He offered a behaviorist starting point: define agents in terms of their measurable interactions with the environment.
 
 **Mani Hamidi** (Talk 2, [Evolutionary Response]({% post_url 2026-03-12-rldogmasevolution %}){:target="_blank" rel="noopener"}) argued that agency cannot be understood without evolution and thermodynamics. Agents are far-from-equilibrium, driven-dissipative systems. Adaptation is not just learning from data but a multi-scale process ranging from evolutionary timescales to moment-to-moment neural dynamics.
 
-**Dave Abel** (Talk 3, [Plasticity-Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}) delivered a concrete formalism. Using generalized directed information, he defined two measurable properties of agents: empowerment (influence over the environment) and plasticity (influence by the environment), and proved they are in tension. I argued that these behaviorist properties should be mediated by a missing cognitive component: the agent's *internal world model*, which lets it simulate, predict, and plan.
+**Dave Abel** (Talk 3, [Plasticity-Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}) delivered a concrete formalism. Using generalized directed information, he defined two measurable properties of agents: *empowerment* (influence over the environment) and *plasticity* (influence by the environment), and proved they are in tension. I argued that these behaviorist properties should be mediated by a missing cognitive component: the agent's *internal world model*, which lets it simulate, predict, and plan.
 
-**Amitai Shenhav** (Talk 4, today) argued that the mystery of motivated behavior dissolves if we can mathematically and mechanistically define *affect*. Goals are emergent, and the force that drives all behavior is the gradient of anticipated feeling.
+**Amitai Shenhav** (Talk 4, today) argued that the mystery of motivated behavior dissolves if we can mathematically and mechanistically define *affect*. Goals are emergent, and the force that drives all behavior is the gradient of *anticipated feeling*.
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
@@ -220,7 +222,7 @@ Putting these together, we arrive at the beginnings of a composite answer to the
 
 This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
-As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information. "Agency" is not there yet. But it's closer than it was four weeks ago.
+As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information. "Agency" is not there yet. But we're closer than we were four weeks ago.
 
 ---
 
