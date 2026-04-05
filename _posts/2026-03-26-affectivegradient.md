@@ -196,18 +196,14 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<!-- Invisible wrapper to enforce full row consumption and prevent text wrapping -->
-<div style="width: 100%; display: block; clear: both;">
-  
-  <div class="observation-box" style="--desktop-width: 80%; margin: 0 auto 1.5em auto;">
-    <div class="box-title align-center">Defining an Agent (test)</div>
-    <div class="box-content align-left">
-      An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
-      <br><br>
-      These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
-    </div>
+<div class="observation-box" style="--desktop-width: 80%; margin-bottom: 1.5em;">
+  <div class="box-title align-center">Defining an Agent</div>
+  <div class="box-content align-left">
+    An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
+    <br><br>
+    These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
   </div>
-
+  <br>
 </div>
 
 This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
