@@ -196,7 +196,7 @@ We started by asking: what is an agent? Four speakers gave four complementary an
 
 Putting these together, we arrive at the beginnings of a composite answer to the question of what an agent is:
 
-<div class="observation-box" style="--desktop-width: 100%;">
+<div class="observation-box" style="--desktop-width: 95%;">
   <div class="box-title align-center">Defining an Agent (a sketch)</div>
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
@@ -206,7 +206,7 @@ Putting these together, we arrive at the beginnings of a composite answer to the
 </div>
 
 <!-- forced paragraph break -->
-<div style="clear:both; width:100%; height:1.5em;"></div>
+<div style="clear:both; width:100%; height:1.0em;"></div>
 
 This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
