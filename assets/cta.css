@@ -182,7 +182,6 @@ figcaption {
 	border: var(--border-width, 2px) solid var(--border-color, #666666);
 	border-top: none;
 	padding: var(--content-padding, 10px);
-	text-align: center;
 	border-radius: 0 0 var(--border-radius, 8px) var(--border-radius, 8px);
 	font-size: var(--content-font-size, 1.0em);
 	line-height: 1.5;
@@ -193,3 +192,13 @@ figcaption {
 	border-top: var(--border-width, 1px) solid var(--border-color, #666666);
 	border-radius: var(--border-radius, 8px);
 }
+
+/* Alignment modifiers for Observation Box */
+.observation-box .align-left {
+	text-align: left;
+}
+
+.observation-box .align-center {
+	text-align: center;
+}
+
