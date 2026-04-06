@@ -170,7 +170,7 @@ We now finally understand the chicken: it may be performing *Affective Gradient 
   <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
 </figure>
 
-So far so good. But this is where the framework sends my own thinking somewhere Amitai didn't go in the talk---the question of *free will*:
+So far so good. But the framework got me thinking about something Amitai didn't cover, neither in the paper, nor in the talk---the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
@@ -215,7 +215,7 @@ Putting these together, we arrive at the beginnings of a composite answer to the
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
     <br><br>
-    These capacities are organized in service of <strong>maximizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
+    These capacities are organized in service of <strong>optimizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
   </div>
 </div>
 
