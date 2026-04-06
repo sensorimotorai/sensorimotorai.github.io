@@ -152,9 +152,9 @@ Once you have these four pieces of subjective information, action follows: you a
 
 Amitai accepted this synthesis with one refinement: you don't necessarily need to infer a full landscape. Individual outcomes can **locally** tug at actions without requiring a globally computed map. Some outcomes will be in competition, others will be unrelated (you can have a conversation while drinking coffee).
 
-> **Caveat.** This four-step decomposition is my pedagogical reformulation, not Amitai's. It imposes a cleaner pipeline structure than what the paper actually describes. In Amitai's formulation, affect is not a separate downstream evaluation computed over simulated outcomes; it is a feature *already embedded in* state representations. As the paper puts it, affect is "both multivariate and --- similar to perceptual features like color and depth --- evoked by any stimulus or context that is brought to mind." On this view, bringing a state to mind *just is* evoking its affective features, with no extra inference step required. The pipeline framing is useful for exposition, but readers should be aware that it risks inviting the objection that this is model-based RL with affect as the reward signal --- precisely the reading Amitai resists.
-
 And the inference may be automatic, in the same way we infer the brightness of something, rather than requiring an extra deliberative layer. I agreed: ***unconscious inference***. Bayesian inference without a committee meeting.
+
+> **Caveat.** This four-step decomposition is my pedagogical reformulation, not Amitai's. It imposes a cleaner pipeline structure than what the paper actually describes. In Amitai's formulation, affect is not a separate downstream evaluation computed over simulated outcomes; it is a feature *already embedded in* state representations. As the paper puts it, affect is "both multivariate and --- similar to perceptual features like color and depth --- evoked by any stimulus or context that is brought to mind." On this view, bringing a state to mind *just is* evoking its affective features, with no extra inference step required. The pipeline framing is useful for exposition, but readers should be aware that it risks inviting the objection that this is model-based RL with the reward swapped with affect. It is not.
 
 ### The chicken, revisited
 
@@ -215,14 +215,14 @@ Putting these together, we arrive at the beginnings of a composite answer to the
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
     <br><br>
-    These capacities are organized in service of <strong>optimizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse.
+    These capacities are organized in service of <strong>optimizing affect</strong>: the agent acts to approach states that would feel better, and avoid states that would feel worse (in expectation).
   </div>
 </div>
 
 <!-- forced paragraph break -->
 <div style="clear:both; width:100%; height:1.2em;"></div>
 
- Goals, rewards, and plans are not inputs to this system but emergent properties of it. But this is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
+ Goals, rewards, and plans are not inputs to this system but emergent properties of it. This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
 As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information.
 
