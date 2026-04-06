@@ -122,7 +122,7 @@ The AGH also reinterprets standard cognitive neuroscience constructs. If the bra
 
 ## Discussion III: RL, the singular agent, and the Pavlovian core
 
-I played devil's advocate. Someone from the "reward is enough" camp might respond to all of this by object: there's a reward function, there's a value, you maximize it. And in domains with well-defined reward functions (Atari, verifiable rewards in RLVR), RL works. So, is this AGH actually offering something distinct from RL? Or is it just RL, with affect playing the role of the reward signal?
+I played devil's advocate. Someone from the "reward is enough" camp might respond to all of this by arguing: there's a reward function, there's a value, you maximize it; and in domains with well-defined reward functions (Atari, verifiable rewards), RL works. So, is this AGH actually offering something distinct from RL? Or is it just RL, with affect playing the role of the reward signal?
 
 Amitai's answer was carefully layered. In one sense, yes: if you're committed to a single value function, this framework is not a radical departure. But in another sense, the differences are real. Standard RL, as typically practiced, assumes fixed goals and pre-compiled action-value functions. To apply RL to real-world behavior, you'd need to know in advance all possible valued actions, which Amitai called the **problem of omniscience**. The AGH avoids this by localizing the optimization: you don't need a global action-value map, you just need to represent a few predicted outcomes and their affective valence and then optimize locally.
 
@@ -152,6 +152,8 @@ Once you have these four pieces of subjective information, action follows: you a
 
 Amitai accepted this synthesis with one refinement: you don't necessarily need to infer a full landscape. Individual outcomes can **locally** tug at actions without requiring a globally computed map. Some outcomes will be in competition, others will be unrelated (you can have a conversation while drinking coffee).
 
+> **Caveat.** This four-step decomposition is my pedagogical reformulation, not Amitai's. It imposes a cleaner pipeline structure than what the paper actually describes. In Amitai's formulation, affect is not a separate downstream evaluation computed over simulated outcomes; it is a feature *already embedded in* state representations. As the paper puts it, affect is "both multivariate and --- similar to perceptual features like color and depth --- evoked by any stimulus or context that is brought to mind." On this view, bringing a state to mind *just is* evoking its affective features, with no extra inference step required. The pipeline framing is useful for exposition, but readers should be aware that it risks inviting the objection that this is model-based RL with affect as the reward signal --- precisely the reading Amitai resists.
+
 And the inference may be automatic, in the same way we infer the brightness of something, rather than requiring an extra deliberative layer. I agreed: ***unconscious inference***. Bayesian inference without a committee meeting.
 
 ### The chicken, revisited
@@ -168,7 +170,7 @@ We now finally understand the chicken: it may be performing *Affective Gradient 
   <figcaption>Figure 2. The chicken, revisited: affective gradient ascent solving an ancient riddle (credit: Gemini).</figcaption>
 </figure>
 
-So far so good. But this still leaves something partially unaddressed---the question of *free will*:
+So far so good. But this is where the framework sends my own thinking somewhere Amitai didn't go in the talk---the question of *free will*:
 
 > *"Man can do what he wills but he cannot will what he wills."*
 > --- Arthur Schopenhauer, [*On the Freedom of the Will* (1839)](https://archive.org/details/essayonfreedomof0000scho){:target="_blank" rel="noopener"}
