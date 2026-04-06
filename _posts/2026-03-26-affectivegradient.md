@@ -215,14 +215,14 @@ Putting these together, we arrive at the beginnings of a composite answer to the
   <div class="box-content align-left">
     An agent is a <strong>far-from-equilibrium, driven-dissipative system</strong> that possesses <strong>empowerment</strong> (the capacity to influence its environment), <strong>plasticity</strong> (the capacity to be influenced by its environment), and an <strong>internal world model</strong> (the capacity to simulate, predict, and plan).
     <br><br>
-    These capacities are organized in service of <strong>optimizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse. Goals, rewards, and plans are not inputs to this system but emergent properties of it.
+    These capacities are organized in service of <strong>optimizing affect</strong>: the agent acts to approach states it expects to feel better and avoid states it expects to feel worse.
   </div>
 </div>
 
 <!-- forced paragraph break -->
 <div style="clear:both; width:100%; height:1.2em;"></div>
 
-This is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
+ Goals, rewards, and plans are not inputs to this system but emergent properties of it. But this is, of course, just a sketch, not a theorem. Each component needs its own formalization, and the interfaces between them are open problems (*how does the quality of the world model bound achievable empowerment? how does affect shape the trajectory through the plasticity-empowerment simplex?*). But after four talks, we have at least four candidate primitives, each with some mathematical grounding, and a direction for integration.
 
 As we have emphasized throughout this series, fields mature when their central concepts become precise enough to analyze systematically. Newton did it for mechanics. Shannon did it for information.
 
