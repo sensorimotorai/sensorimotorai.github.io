@@ -8,7 +8,7 @@ excerpt: Monthly journal club + RL Debate Series
   <img src="/assets/images/sensorimotor_narrow.png" alt="Sensorimotor AI Journal Club" style="max-width: 600px; width: 100%; height: auto;">
 </p>
 
-**Next session**: Thursday, April 9, 2026<br>
-**Topic**: Intrinsic Goals for Autonomous Agents: Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics<br>
-**Presenter**: Reece Keller<br>
-**Paper**: <a href="https://openreview.net/forum?id=g2vViuEVDS" target="_blank" rel="noopener noreferrer">Keller et al., NeurIPS 2025</a>
+**Next session**: Thursday, April 16, 2026<br>
+**Topic**: World Modeling with Probabilistic Structure Integration<br>
+**Presenter**: Dan Yamins<br>
+**Paper**: <a href="https://arxiv.org/abs/2509.09737" target="_blank" rel="noopener noreferrer">Yamins et al., arXiv</a>
