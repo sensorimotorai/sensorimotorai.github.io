@@ -5,13 +5,15 @@ tags: [NeuroAI, intrinsic-motivation, exploration, world-models, zebrafish, curi
 categories: [2026, April]
 ---
 
-Why do we do things? Standard RL says to maximize rewards, generously handed to us by the environment. But if you watch a baby crawling around a room, touching everything, putting things in its mouth, wandering with no instruction and no reward, you realize how shallow that answer is.
+Why do we do things? Standard RL says: *to maximize rewards, generously handed to us by the environment.*
 
-The baby has no task. No one is supervising it. And yet its behavior is structured, purposeful, and unmistakably intelligent.
+But if you watch a baby crawling around a room, touching everything, putting things in its mouth, wandering with no instruction and no reward, you realize how shallow that answer is.
+
+The baby has no task. No one is supervising it. And yet its behavior is structured, purposeful, and intelligent.
 
 How do you write down an objective function for *that*?
 
-This was the opening question when Reece Keller (Carnegie Mellon University) joined us for the first session in our April world-modeling series. Reece presented his recent work on model-based intrinsic motivation, using a virtual zebrafish to show that a single self-supervised objective---trained on *zero* neural data---can simultaneously capture the animal's behavior *and* predict its whole-brain dynamics.
+This was the opening question when Reece Keller joined us for the first session in our April world-modeling series. Reece presented his recent work on model-based intrinsic motivation, using a virtual zebrafish to show that a single self-supervised objective---trained on *zero* neural data---can simultaneously capture the animal's behavior *and* predict its whole-brain dynamics.
 
 - Paper: [Intrinsic Goals for Autonomous Agents](https://openreview.net/forum?id=g2vViuEVDS){:target="_blank" rel="noopener"}
 - Presenter: Reece Keller (Carnegie Mellon University)
@@ -33,11 +35,11 @@ The discussion was wide-ranging and interactive, with questions woven throughout
 
 ## NeuroAI done right
 
-Before Reece started his slides, I wanted to flag something about the *philosophy* behind this work, because it stands apart from the dominant mode in NeuroAI today.
+Before Reece started his slides, I wanted to emphasize something about the *philosophy* behind this work, because it stands apart from the dominant mode in NeuroAI today.
 
-Most NeuroAI papers take the following approach: fit a model to neural data, report a predictive score, publish. First off, there is nothing wrong with that. Data-driven models are essential for discovering phenomena. But: they are *descriptive*, not *explanatory*. You learn that a model predicts neural activity, not *why* the brain would compute things that way. Overall, purely descriptive approaches leave the "so what" question unaddressed.
+Most NeuroAI papers take the following approach: fit a model to neural data, report a predictive score, publish. First off, there is nothing wrong with that. Data-driven models are essential for discovering phenomena. But: they are *descriptive*, not *explanatory*. You learn that a model predicts neural activity, not *why* the brain would compute things that way. Thus, **purely descriptive** approaches leave the "**so what**" question unaddressed.
 
-Reece's approach is **normative**. It starts from a principle (the agent generates its own intrinsic drive), derives an objective function, trains a model with *no neural data at all*, and then asks: does this unsupervised agent's behavior and internal activity match what we see in the real brain? The fact that it does, for both behavior and neural dynamics, is the payoff. And because the model was never trained on neural data, any correspondence tells you something about the computational logic of the circuit, not just about the statistical structure of the recording.
+Reece's approach is ***normative***. It starts from a principle (the agent generates its own intrinsic drive), derives an objective function, trains a model with *no neural data at all*, and then asks: does this unsupervised agent's behavior and internal activity match what we see in the real brain? The fact that it does, for both behavior and neural dynamics, is the payoff. And because the model was never trained on neural data, any correspondence tells you something about the computational logic of the circuit, not just about the statistical structure of the recording.
 
 This connects to a framework Reece's advisor **Aran Nayebi** and colleagues have proposed: a [**NeuroAI Turing test**](https://arxiv.org/abs/2502.16238){:target="_blank" rel="noopener"}. The original Turing test asks whether a machine can produce behavior indistinguishable from a human. The embodied Turing test extends this to continuous sensorimotor behavior (can a robot walk like a human?). The NeuroAI Turing test goes further: not only must the model match behavior, but its internal mechanisms must be sufficient and necessary to predict brain data. Neither behavioral mimicry, nor representational convergence, are enough in isolation. We need both.
 
@@ -61,7 +63,7 @@ Reece showed a video of what happens when you apply prediction-error-based curio
 
 Reece surveyed three representative model-based approaches:
 
-**Curiosity (ICM):** Train a world model to predict the next state. Use prediction error as the intrinsic reward. The agent pursues transitions its model can't predict. This works in discrete environments (the Mario demo was striking: an agent with *no* game score reward beating early levels). But it fails in continuous control and falls prey to the **noisy TV problem**: if there's a source of irreducible stochasticity, the agent perseverates on it forever because it can never reduce its prediction error there.
+**[Curiosity (ICM)](https://proceedings.mlr.press/v70/pathak17a.html){:target="_blank" rel="noopener"}:** Train a world model to predict the next state. Use prediction error as the intrinsic reward. The agent pursues transitions its model can't predict. This works in discrete environments (the Mario demo was striking: an agent with *no* game score reward beating early levels). But it fails in continuous control and falls prey to the **noisy TV problem**: if there's a source of irreducible stochasticity, the agent perseverates on it forever because it can never reduce its prediction error there.
 
 **Eli** anticipated this, asking whether information gain would be a better signal. Reece confirmed: that's the natural next step, and ensemble disagreement is one computationally efficient estimator of Bayesian information gain.
 
@@ -69,7 +71,7 @@ Reece surveyed three representative model-based approaches:
 
 **Learning progress (Gamma Progress):** Track the *dynamics* of prediction error over time using an exponential moving average of model parameters. Reward the agent for transitions where its prediction error is *changing*, not just large. This also avoids perseveration on static noise.
 
-I mentioned Fritz Sommer's work on **predictive information gain (PIG)** (Fritz [presented at our journal club]({% post_url 2025-10-17-fritzsommer %}){:target="_blank" rel="noopener"} last year), which starts from the forward KL, quantifies the learnable information remaining in the environment, and turns it into Bayesian inference. Reece was familiar with it and agreed it's among the more principled formulations, but noted that the deep RL community has generally traded mathematical elegance for computational efficiency, coming up with fast online estimators rather than tight bounds.
+I mentioned Fritz Sommer's work on **predictive information gain (PIG)** (Fritz [presented this at our journal club]({% post_url 2025-10-17-fritzsommer %}){:target="_blank" rel="noopener"} last year), which starts from the forward KL, quantifies the learnable information remaining in the environment, and turns it into Bayesian inference. Reece was familiar with it and agreed it's among the more principled formulations, but noted that the deep RL community has generally traded mathematical elegance for computational efficiency, coming up with fast online estimators rather than tight bounds.
 
 This points to a tension we didn't have time to fully explore: the gap between *elegant, principled, but intractable* approaches and *inelegant, hacky, but working* engineering solutions. Empowerment is another example on the elegant side. Fritz's PIG is yet another. The deep RL intrinsic motivation literature has mostly landed on the hacky side, and yet, as Reece showed, even the hacky methods produce impressively structured behavior in discrete domains.
 
@@ -107,11 +109,11 @@ All baseline algorithms (ICM, disagreement, learning progress, random network di
 
 3M Progress does. Its activity trace shows short active bursts interspersed with longer passive intervals, matching the real zebrafish barcode.
 
-For neural alignment, Reece used a stringent metric: for each real neuron, find the single most correlated unit in the model. Zebrafish brains are so homogeneous across individuals that this one-to-one matching (no linear regression, no population weighting) already saturates inter-animal alignment. 3M Progress saturates this benchmark. The baselines don't.
+For neural alignment, Reece used a stringent metric: for each real neuron, find the single most correlated unit in the model. Zebrafish brains are so homogeneous across individuals that this one-to-one matching (no linear regression, no population weighting) already saturates inter-animal alignment. 3M Progress saturates this benchmark, but the other baselines fall short.
 
 I raised the caveat that this ceiling is reachable partly because zebrafish whole-brain activity during this behavior is low-dimensional: the first two PCs capture nearly all the variance. Reece agreed and emphasized that in more complex animals, the absolute scores would be lower, but the *relative* ordering should hold: the model with the right mechanisms should still outperform the ones without.
 
-He also made a point I want to underscore: ICM actually predicts ~60% of the neural variance *despite* failing to capture the behavior. If we were just looking at a predictive score, a "brain score," we might rank ICM as a decent model of zebrafish. But it's mechanistically wrong. It's missing the prior. The behavioral filter is essential: without matching the behavior, neural predictivity is ambiguous, because many different computations could produce correlated activity patterns in such a low-dimensional signal.
+He also made a point I want to underscore: ICM actually predicts ~60% of the neural variance *despite* failing to capture the behavior. If we were just looking at a predictive score, a "**Brain Score**," we might rank ICM as a decent model of zebrafish. But it's mechanistically wrong. It's missing the prior. The behavioral filter is essential: without matching the behavior, neural predictivity is ambiguous, because many different computations could produce correlated activity patterns in such a low-dimensional signal.
 
 The principal components of the 3M agent's RNN map cleanly onto the biological circuit: PC1 tracks noradrenergic neuron activity (high during active swimming, low during passivity), and PC2 tracks astrocyte calcium dynamics (ramping up toward the active-to-passive transition).
 
@@ -125,11 +127,11 @@ I also suggested a concrete analysis: take all the different agents (3M, ICM, di
 
 **Mani Hamidi** connected the work to **Tomasello's evolutionary stages of agency**, asking where zebrafish fall in that phylogeny. Reece hadn't read the book but offered a general view: existing animals are snapshots of the evolutionary process at different points, and the goal of his program is to write down objectives that capture each stage's capacities after the fact, rather than trying to replicate the evolutionary process that produced them.
 
-Two threads we didn't have time to explore fully deserve mention:
+### Two threads we didn't have time to explore fully deserve mention:
 
-**Active inference.** The idea of introducing a prior over dynamics that captures the agent's expectations about how the world *should* work is strongly reminiscent of active inference, where agents minimize the divergence between their generative model and sensory observations. Reece uses actor-critic with PPO rather than variational inference, so the optimization machinery is different. But the normative structure (a prior, a residual, behavior driven by discrepancy) has clear parallels. How well a pure active inference agent would perform on this task, compared to 3M Progress, is an open and interesting question.
+1. **Active inference.** The idea of introducing a prior over dynamics that captures the agent's expectations about how the world *should* work is strongly reminiscent of Friston's active inference, where agents minimize the divergence between their generative model and sensory observations. Reece uses actor-critic with PPO rather than variational inference, so the optimization machinery is different. But the normative structure (a prior, a residual, behavior driven by discrepancy) has clear parallels. How well a pure active inference agent would perform on this task, compared to 3M Progress, is an open and interesting question.
 
-**Principled vs. practical.** We briefly touched on the tension between mathematically principled intrinsic motivations (predictive information gain, empowerment, Bayesian information gain) and the computationally efficient approximations that actually get deployed (ensemble variance, exponential moving averages, random network distillation). The deep RL community has mostly sided with the practical, and the practical has been surprisingly effective. But as Reece's results show, even the practical methods fail when you test them against real animal behavior. Whether the principled methods would do better, or whether the right answer lies in a different direction entirely, as 3M Progress suggests, remains open.
+2. **Principled vs. practical.** We briefly touched on the tension between mathematically principled intrinsic motivations (predictive information gain, empowerment, Bayesian information gain) and the computationally efficient approximations that actually get deployed (ensemble variance, exponential moving averages, random network distillation). The deep RL community has mostly sided with the practical, and the practical has been surprisingly effective. But as Reece's results show, even the practical methods fail when you test them against real animal behavior. Whether the principled methods would do better, or whether the right answer lies in a different direction entirely remains open.
 
 ---
 
