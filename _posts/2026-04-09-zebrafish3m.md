@@ -101,21 +101,25 @@ Reece's answer: the physics of your ecological niche. Animals develop (or are bo
 
 The absolute value is the normative choice: it makes the reward symmetric, so the agent is rewarded both for entering familiar-physics states (*niche-seeking*) and for leaving them (*niche-avoidance*). The result is an agent that straddles the boundary between known and unknown dynamics. Reece compared this to computation at the edge of chaos, where the most interesting dynamics live near a critical transition.
 
-The pre-training phase can be interpreted as simulating development, or as a proxy for evolution. I asked about this directly, noting work by [Barabási, Schuhknecht & Engert (2024)](https://www.nature.com/articles/s41467-023-44681-2){:target="_blank" rel="noopener"}, showing zebrafish optomotor response is largely genetically predetermined. Reece agreed the distinction is important, but argued the key point is model-agnostic: *some process* endows the animal with a dynamics prior, and 3M Progress just needs that prior to exist, regardless of how it got there.
+The pre-training phase can be interpreted as **simulating development, or as a proxy for evolution**. I asked about this directly, noting work by [Barabási, Schuhknecht & Engert (2024)](https://www.nature.com/articles/s41467-023-44681-2){:target="_blank" rel="noopener"}, showing zebrafish optomotor response is largely genetically predetermined. Reece agreed the distinction is important, but argued the key point is model-agnostic: *some process* endows the animal with a dynamics prior, and 3M Progress just needs that prior to exist, regardless of how it got there.
 
 ## Results: behavior and brain alignment
 
 All baseline algorithms (ICM, disagreement, learning progress, random network distillation, max-entropy) converge to **stationary policies** in the open-loop condition. Some swim at full power for the entire episode. Some go fully passive. None produce the characteristic active-passive switching seen in real zebrafish.
 
-3M Progress does. Its activity trace shows short active bursts interspersed with longer passive intervals, matching the real zebrafish barcode.
+3M Progress does. Its activity trace shows short active bursts interspersed with longer passive intervals, matching the real zebrafish barcode-structured behavioral episodes.
 
-For neural alignment, Reece used a stringent metric: for each real neuron, find the single most correlated unit in the model. Zebrafish brains are so homogeneous across individuals that this one-to-one matching (no linear regression, no population weighting) already saturates inter-animal alignment. 3M Progress saturates this benchmark, but the other baselines fall short.
+For neural alignment, Reece used a stringent version of the **inter-animal alignment** metric: for each real neuron, find the single most correlated unit in the model. Zebrafish brains are so homogeneous across individuals that this one-to-one matching (no linear regression, no population weighting) already saturates inter-animal alignment. 3M Progress saturates this benchmark, but the other baselines fall short.
 
-I raised the caveat that this ceiling is reachable partly because zebrafish whole-brain activity during this behavior is low-dimensional: the first two PCs capture nearly all the variance. Reece agreed and emphasized that in more complex animals, the absolute scores would be lower, but the *relative* ordering should hold: the model with the right mechanisms should still outperform the ones without.
+I raised the caveat that this ceiling is reachable partly because zebrafish whole-brain activity during this behavior is low-dimensional: **the first two PCs capture nearly all the variance**. Reece agreed and emphasized that in more complex animals, the absolute scores would be lower, but the *relative* ordering should hold: the model with the right mechanisms should still outperform the ones without.
 
-He also made a point I want to underscore: ICM actually predicts ~60% of the neural variance *despite* failing to capture the behavior. If we were just looking at a predictive score, a "**Brain Score**," we might rank ICM as a decent model of zebrafish. But it's mechanistically wrong. It's missing the prior. The behavioral filter is essential: without matching the behavior, neural predictivity is ambiguous, because many different computations could produce correlated activity patterns in such a low-dimensional signal.
+### The BrainScore caveat
 
-The principal components of the 3M agent's RNN map cleanly onto the biological circuit: PC1 tracks noradrenergic neuron activity (high during active swimming, low during passivity), and PC2 tracks astrocyte calcium dynamics (ramping up toward the active-to-passive transition).
+I made another point during the meeting that I want to highlight here as well: ICM actually predicts ~60% of the neural variance *despite* failing to capture the behavior. If we were just looking at a predictive score, say a zebrafish "**BrainScore**," we might rank ICM as a decent model of zebrafish. And in the absence of 3M, it would be considered the best existing model of zebrafish, despire being mechanistically wrong (since ICM is missing the prior).
+
+This shows the behavioral filter is essential: without matching the behavior, neural predictivity is ambiguous, because many different computations could produce correlated activity patterns in such a low-dimensional signal. In the absence of behavior or mechanistic grounding, BrainScore type of measures should be interpreted with caution.
+
+The 3M model performance in explaining neural variance is strong. The principal components of its world model RNN map cleanly onto the biological circuit: PC1 tracks noradrenergic neuron activity (high during active swimming, low during passivity), and PC2 tracks astrocyte calcium dynamics (ramping up toward the active-to-passive transition).
 
 ## Discussion: empowerment, active inference, and the road ahead
 
@@ -125,9 +129,9 @@ I suggested that empowerment might be best used as a **diagnostic tool** rather 
 
 I also suggested a concrete analysis: take all the different agents (3M, ICM, disagreement, etc.), estimate their empowerment and plasticity using the framework Dave Abel presented in his recent talk on [Plasticity as the Mirror of Empowerment]({% post_url 2026-03-19-plasticityempowerment %}){:target="_blank" rel="noopener"}, and see whether 3M occupies a distinctive point on that simplex. This could connect the zebrafish work directly to the information-theoretic formalism from the RL mini-series.
 
-**Mani Hamidi** connected the work to **Tomasello's evolutionary stages of agency**, asking where zebrafish fall in that phylogeny. Reece hadn't read the book but offered a general view: existing animals are snapshots of the evolutionary process at different points, and the goal of his program is to write down objectives that capture each stage's capacities after the fact, rather than trying to replicate the evolutionary process that produced them.
+**Mani Hamidi** connected the work to **Tomasello's evolutionary stages of agency**, asking where zebrafish fall in that phylogeny. Reece said he has not read the book, but offered a general view: existing animals are snapshots of the evolutionary process at different points, and the goal of his program is to write down objectives that capture each stage's capacities after the fact, rather than trying to replicate the evolutionary process that produced them.
 
-### Two threads we didn't have time to explore fully deserve mention:
+### Two threads we didn't have time to explore properly:
 
 1. **Active inference.** The idea of introducing a prior over dynamics that captures the agent's expectations about how the world *should* work is strongly reminiscent of Friston's active inference, where agents minimize the divergence between their generative model and sensory observations. Reece uses actor-critic with PPO rather than variational inference, so the optimization machinery is different. But the normative structure (a prior, a residual, behavior driven by discrepancy) has clear parallels. How well a pure active inference agent would perform on this task, compared to 3M Progress, is an open and interesting question.
 
